@@ -1,2 +1,0 @@
-# nylzhy.github.io
-blog
