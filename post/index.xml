@@ -165,12 +165,12 @@
 </description>
         </item>
         <item>
-        <title>Markdown Syntax Guide</title>
-        <link>https://nylzhy.github.io/p/markdown-syntax-guide/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Markdown 语法导览</title>
+        <link>https://nylzhy.github.io/p/markdown-%E8%AF%AD%E6%B3%95%E5%AF%BC%E8%A7%88/</link>
+        <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://nylzhy.github.io/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="https://nylzhy.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;本文提供了一个可以在 Hugo 内容文件中使用的基本 Markdown 语法示例，还展示了基本 HTML 元素是否在 Hugo 主题中使用 CSS 进行装饰。&lt;/p&gt;
+        <guid>https://nylzhy.github.io/p/markdown-%E8%AF%AD%E6%B3%95%E5%AF%BC%E8%A7%88/</guid>
+        <description>&lt;img src="https://nylzhy.github.io/p/markdown-%E8%AF%AD%E6%B3%95%E5%AF%BC%E8%A7%88/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown 语法导览" /&gt;&lt;p&gt;本文提供了一个可以在 Hugo 内容文件中使用的基本 Markdown 语法示例，还展示了基本 HTML 元素是否在 Hugo 主题中使用 CSS 进行装饰。&lt;/p&gt;
 &lt;h2 id=&#34;标题&#34;&gt;标题&lt;/h2&gt;
 &lt;p&gt;下面的 HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; 元素代表了六个级别的章节标题。 &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; 是最高的部分级别，而 &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; 是最低的。&lt;/p&gt;
 &lt;h1 id=&#34;h1-一级标题&#34;&gt;H1 一级标题&lt;/h1&gt;
@@ -374,10 +374,10 @@
 &lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;ALT&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;Delete&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; to end the session.&lt;/p&gt;
 &lt;p&gt;Most &lt;!-- raw HTML omitted --&gt;salamanders&lt;!-- raw HTML omitted --&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
 &lt;h2 id=&#34;图片连接&#34;&gt;图片连接&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/p/markdown-syntax-guide/assets/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/p/markdown-%E8%AF%AD%E6%B3%95%E5%AF%BC%E8%A7%88/assets/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png&#34;
 	width=&#34;540&#34;
 	height=&#34;258&#34;
-	srcset=&#34;https://nylzhy.github.io/p/markdown-syntax-guide/assets/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf_hu1b64f4ed66e9898aeb31d98274d643b9_15444_480x0_resize_box_3.png 480w, https://nylzhy.github.io/p/markdown-syntax-guide/assets/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf_hu1b64f4ed66e9898aeb31d98274d643b9_15444_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://nylzhy.github.io/p/markdown-%E8%AF%AD%E6%B3%95%E5%AF%BC%E8%A7%88/assets/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf_hu1b64f4ed66e9898aeb31d98274d643b9_15444_480x0_resize_box_3.png 480w, https://nylzhy.github.io/p/markdown-%E8%AF%AD%E6%B3%95%E5%AF%BC%E8%A7%88/assets/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf_hu1b64f4ed66e9898aeb31d98274d643b9_15444_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;img&#34;
@@ -392,15 +392,26 @@
 &lt;p&gt;$$
 S = \int_0^ndx
 $$&lt;/p&gt;
-&lt;p&gt;$$
-\begin{array}{11}
-\nabla \cdot \mathbf{E} &amp;amp;= \cfrac{\rho}{\varepsilon_0} \
-\nabla \cdot \mathbf{B} &amp;amp;= 0 \
-\nabla \times \mathbf{E} &amp;amp;= -\cfrac{\partial \mathbf{B}}{\partial t}\
-\nabla \times \mathbf{B} &amp;amp;= \mu_0 \mathbf{J} + \mu_0 \varepsilon_0\cfrac{\partial \mathbf{E}}{\partial t}
-\end{array}
-$$&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;p&gt;并不是所有的数学公式都支持，这个复杂的就不支持&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\begin{array}{11}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\nabla \cdot \mathbf{E} &amp;amp;= \cfrac{\rho}{\varepsilon_0} \\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\nabla \cdot \mathbf{B} &amp;amp;= 0 \\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\nabla \times \mathbf{E} &amp;amp;= -\cfrac{\partial \mathbf{B}}{\partial t}\\
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\nabla \times \mathbf{B} &amp;amp;= \mu_0 \mathbf{J} + \mu_0 \varepsilon_0\cfrac{\partial \mathbf{E}}{\partial t}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\end{array}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
