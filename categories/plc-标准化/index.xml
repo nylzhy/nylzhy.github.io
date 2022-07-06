@@ -16,14 +16,18 @@
 &lt;h2 id=&#34;1-通用&#34;&gt;1 通用&lt;/h2&gt;
 &lt;p&gt;《IEC 61131-4  第4部分 用户导则》， 这篇规范的目的是向可编程控制器 (PLC) 的终端用户介绍 IEC 61131 系列标准，并根据 IEC 61131 标准帮助用户进行 PLC 选型和规划。 该篇规范的主要受众是 PLC 最终用户。&lt;/p&gt;
 &lt;p&gt;PLC、PLC内应用程序和它们相关的外围设备通常被视为控制系统的组成部分，本标准并不能涉及整个自动化系统， 但在应用此用户指南时，建议进行整体系统架构评估。 这篇规范还有一个目标就是促进 PLC 用户和 PLC 供应商之间的沟通交流。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/image-20220706083911439.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/image-20220706083911439.png&#34;
+	width=&#34;598&#34;
+	height=&#34;265&#34;
+	srcset=&#34;https://nylzhy.github.io/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/image-20220706083911439_hu2a7caa088d2308893325d70c05d89862_14208_480x0_resize_box_3.png 480w, https://nylzhy.github.io/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/image-20220706083911439_hu2a7caa088d2308893325d70c05d89862_14208_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;受众用户&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;225&#34;
+		data-flex-basis=&#34;541px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;2-关键概念&#34;&gt;2 关键概念&lt;/h2&gt;
