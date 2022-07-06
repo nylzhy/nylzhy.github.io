@@ -2,26 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nylzhy.github.io/about/</loc>
-    <lastmod>2022-05-05T19:01:52+08:00</lastmod>
-  </url><url>
     <loc>https://nylzhy.github.io/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nylzhy.github.io/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nylzhy.github.io/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://nylzhy.github.io/categories/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nylzhy.github.io/categories/iec-61131/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nylzhy.github.io/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nylzhy.github.io/tags/iec61131/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nylzhy.github.io/tags/plc/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nylzhy.github.io/categories/plc-%E6%A0%87%E5%87%86%E5%8C%96/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nylzhy.github.io/post/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nylzhy.github.io/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://nylzhy.github.io/tags/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nylzhy.github.io/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <loc>https://nylzhy.github.io/categories/%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8/</loc>
+    <lastmod>2022-07-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nylzhy.github.io/about/</loc>
+    <lastmod>2022-05-05T19:01:52+08:00</lastmod>
   </url><url>
     <loc>https://nylzhy.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
@@ -44,47 +59,19 @@
     <loc>https://nylzhy.github.io/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nylzhy.github.io/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nylzhy.github.io/tags/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nylzhy.github.io/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nylzhy.github.io/categories/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/categories/%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/tags/%D9%85%D8%A7%D8%B1%D9%83%D8%AF%D8%A7%D9%88%D9%86/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/tags/%D9%86%D8%B5/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/tags/%D9%88%D8%B3%D9%85-%D9%85%D8%B9-%D9%81%D8%B1%D8%A7%D8%BA%D8%A7%D8%AA/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/p/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/p/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nylzhy.github.io/p/</loc>
+    <loc>https://nylzhy.github.io/categories/plc/iec-61131-4-programmable-controllers-part-4-user-guidelines/</loc>
   </url><url>
     <loc>https://nylzhy.github.io/links/</loc>
   </url><url>
     <loc>https://nylzhy.github.io/search/</loc>
+  </url><url>
+    <loc>https://nylzhy.github.io/categories/test/</loc>
   </url><url>
     <loc>https://nylzhy.github.io/%E5%85%B3%E4%BA%8E/</loc>
   </url>

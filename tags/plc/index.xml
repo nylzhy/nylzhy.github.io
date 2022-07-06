@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>PLC on 世间阁</title>
+        <link>https://nylzhy.github.io/tags/plc/</link>
+        <description>Recent content in PLC on 世间阁</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nylzhy.github.io/tags/plc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>IEC 61131-4 可编程控制器  第4部分 用户导则</title>
+        <link>https://nylzhy.github.io/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/</link>
+        <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://nylzhy.github.io/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/</guid>
+        <description>&lt;img src="https://nylzhy.github.io/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post IEC 61131-4 可编程控制器  第4部分 用户导则" /&gt;&lt;h1 id=&#34;iec-61131-4-可编程控制器--第4部分-用户导则&#34;&gt;IEC 61131-4 可编程控制器  第4部分 用户导则&lt;/h1&gt;
+&lt;h2 id=&#34;1-通用&#34;&gt;1 通用&lt;/h2&gt;
+&lt;p&gt;《IEC 61131-4  第4部分 用户导则》， 这篇规范的目的是向可编程控制器 (PLC) 的终端用户介绍 IEC 61131 系列标准，并根据 IEC 61131 标准帮助用户进行 PLC 选型和规划。 该篇规范的主要受众是 PLC 最终用户。&lt;/p&gt;
+&lt;p&gt;PLC、PLC内应用程序和它们相关的外围设备通常被视为控制系统的组成部分，本标准并不能涉及整个自动化系统， 但在应用此用户指南时，建议进行整体系统架构评估。 这篇规范还有一个目标就是促进 PLC 用户和 PLC 供应商之间的沟通交流。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/image-20220706083911439.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;受众用户&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-关键概念&#34;&gt;2 关键概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;应用程序（用户程序）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;是指机器控制或过程控制过程中的信息处理所需的所有编程语言元素和结构逻辑的组合&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自动化系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;并不局限于 IEC 61131 范围的控制系统，PLC 系统由用户集成，包括PLC及其他外围组件，也包括应用程序&lt;/p&gt;
+&lt;h2 id=&#34;3-安装的一般建议&#34;&gt;3 安装的一般建议&lt;/h2&gt;
+&lt;p&gt;安装程序应满足系统选型/设计/应用阶段产生文件中给定的要求，并非所有现场条件都可以在 PLC 选型阶段被识别注意。 在安装过程中，根据现场组装或修改 PLC 设备的情况，更新所有工程和应用文件非常重要。&lt;/p&gt;
+&lt;h3 id=&#34;31-环境条件&#34;&gt;3.1 环境条件&lt;/h3&gt;
+&lt;p&gt;用户应用PLC自动化系统时，应当特别注意环境温度、污染物、冲击、振动和电磁影响等周边应用环境。 有关特定环境要求，请参阅 IEC 61131-2， 下表描述了安装期间要评估的环境条件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;温度，检查可能影响的任意稳定或临时热源：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;空间内热源&lt;/li&gt;
+&lt;li&gt;太阳辐射热源&lt;/li&gt;
+&lt;li&gt;周边经过热的器件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;污染物，水分、腐蚀性气体、液体和导电灰尘会影响 PLC 系统的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用符合国际/国家规范的适当外壳&lt;/li&gt;
+&lt;li&gt;符合制造商的安装说明&lt;/li&gt;
+&lt;li&gt;灰尘引起的热效率下降&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;振动和冲击，检查周边的可能大型机器或设备&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;引擎&lt;/li&gt;
+&lt;li&gt;压缩机&lt;/li&gt;
+&lt;li&gt;传输线&lt;/li&gt;
+&lt;li&gt;压力机、锤子&lt;/li&gt;
+&lt;li&gt;车辆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;电磁影响，检查周边的电磁影响&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电机&lt;/li&gt;
+&lt;li&gt;开关齿轮，晶闸管&lt;/li&gt;
+&lt;li&gt;无线电控制设备&lt;/li&gt;
+&lt;li&gt;焊接设备 - 电弧&lt;/li&gt;
+&lt;li&gt;开关电源&lt;/li&gt;
+&lt;li&gt;电源转换器/逆变器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;32-现场接线&#34;&gt;3.2 现场接线&lt;/h3&gt;
+&lt;p&gt;正确的现场接线实践对于 PLC 应用至关重要, 安装人员需要遵循制造商的接线说明和适用的当地法规。&lt;/p&gt;
+&lt;p&gt;在安装过程两种接地需要被考虑到：（1）保护性接地，安全接地 （2）功能性接地，信号参考地&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;保护性接地&lt;/strong&gt;，要求非活动金属部件与等电位金属网格（框架、底盘、机柜）的牢固连接，例如，低阻抗连接，包括星形垫圈、焊接、锡焊等。 根据当地和国家法规，电网需要连接到保护接地。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;保护接地需要为接地连接提供足够的导体横截面&lt;/li&gt;
+&lt;li&gt;柜门应当接地根据当地法律法规&lt;/li&gt;
+&lt;li&gt;需要验证接地是否紧密牢靠，且耐震动和腐蚀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;功能性接地&lt;/strong&gt;, 需要信号参考线连接到一个低阻抗网络， 这个低阻抗网络应该是一个与保护接地分开的网络。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通常功能性接地参考仅在单点接地。当进行多个接地连接时，应注意避免接地回路干扰。这种多点接地连接必须连接到等电位电网。&lt;/li&gt;
+&lt;li&gt;保护性接地导体可能适用于功能接地。这种做法可以通过在 50 Hz/60 Hz 和高于信号频率的频率下进行测量来确定。这种质量可以通过专门安装的电极或可能的接地导电建筑结构来提高。&lt;/li&gt;
+&lt;li&gt;如果无法将 PLC 的信号接地直接连接到参考地，则可以通过合适的电容器进行连接。电容器应与PLC电路的额定绝缘电压相对应，并应具有良好的高频特性。使用高阻值的电阻放电可以防止静电充电。&lt;/li&gt;
+&lt;li&gt;接地电路不应出现中断，例如可能由端子和插座引入的中断。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注意：保护接地旨在降低触电危险。 在任何情况下都不应将保护接地与 PLC 断开。 可根据需要暂时断开功能性接地连接以进行维修和/或维护。&lt;/p&gt;
+&lt;h3 id=&#34;33-电磁兼容&#34;&gt;3.3 电磁兼容&lt;/h3&gt;
+&lt;p&gt;已发现许多常见的安装做法可以最大限度地减少与 EMC 相关的问题。 其中一些下面列出。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;电源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电源接线应与其他 PLC 接线分开安装，如电源线与信号线的间距为 10 厘米或更多。&lt;/li&gt;
+&lt;li&gt;不可避免的交叉点应该是直角。&lt;/li&gt;
+&lt;li&gt;如果需要，在机柜用电馈入处使用电源滤波器。&lt;/li&gt;
+&lt;li&gt;电源入口处可能需要瞬态抑制器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;输入输出&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将现场接线与内部 I/O 电缆以及总线线路分开。&lt;/li&gt;
+&lt;li&gt;必须注意不要损害 I/O 现场接线和内部 PLC 系统之间的电路隔离（例如，通过光学隔离）。&lt;/li&gt;
+&lt;li&gt;可能需要过滤易受影响的 I/O 电缆&lt;/li&gt;
+&lt;li&gt;使用带有低电感电缆屏蔽层的屏蔽电缆&lt;/li&gt;
+&lt;li&gt;现场必须接地测量&lt;/li&gt;
+&lt;li&gt;屏蔽层可以连接到功能接地或保护接地&lt;/li&gt;
+&lt;li&gt;与感性负载串联的电触点需要特别注意电压浪涌和存储能量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;噪声源，使用噪声抑制器在噪声源处增加噪声阻尼&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用于输入、输出和电源电路的单独电缆。&lt;/li&gt;
+&lt;li&gt;尽量减少接线的总长度&lt;/li&gt;
+&lt;li&gt;使用制造商推荐的电缆和引线。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;模拟量及其他噪声敏感电路&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用屏蔽电缆&lt;/li&gt;
+&lt;li&gt;使用双绞电缆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;线路&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;干扰电压或电流噪声会通过连接信号或电源电缆进入连接的 PLC。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 PLC 和这些控制设备之间延伸的接线应正确布线，以尽量减少这些线缆上的感应噪声。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;34-用户标记系统&#34;&gt;3.4 用户标记系统&lt;/h3&gt;
+&lt;p&gt;应当按照安装图纸和适用规范，对用户系统组件进行标记，如传感器、执行器、电缆、配电板、外壳、模块等。需要特别注意接线的标记，每根场线都应标有与图纸相对应的标记， 对图纸的更改应立即在同一图纸上注明。&lt;/p&gt;
+&lt;p&gt;标记需要注意一下事项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标记必须有足够的耐磨性&lt;/li&gt;
+&lt;li&gt;足够大小的字母和标志&lt;/li&gt;
+&lt;li&gt;保险丝位置、类型、额定值需要清楚地标明&lt;/li&gt;
+&lt;li&gt;标记必须具有可见性&lt;/li&gt;
+&lt;li&gt;根据最终安装修订安装图纸&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-安全应用中的plc&#34;&gt;4 安全应用中的PLC&lt;/h2&gt;
+&lt;p&gt;当要求 PLC 执行安全功能时，需要采取特殊措施来避免和限制相关系统中的危险故障。安全相关系统 (SRS) 的详细要求包含在 IEC 61508 和新兴行业实施标准（例如 IEC 61511 系列）中。 本篇规范的目的是提供一些需要解决的功能安全问题的概述，它并非旨在为实施提供明确或详细的指导。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

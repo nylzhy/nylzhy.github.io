@@ -6,7 +6,161 @@
         <description>Recent content on 世间阁</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nylzhy.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nylzhy.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>IEC 61131-4 可编程控制器  第4部分 用户导则</title>
+        <link>https://nylzhy.github.io/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/</link>
+        <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://nylzhy.github.io/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/</guid>
+        <description>&lt;img src="https://nylzhy.github.io/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post IEC 61131-4 可编程控制器  第4部分 用户导则" /&gt;&lt;h1 id=&#34;iec-61131-4-可编程控制器--第4部分-用户导则&#34;&gt;IEC 61131-4 可编程控制器  第4部分 用户导则&lt;/h1&gt;
+&lt;h2 id=&#34;1-通用&#34;&gt;1 通用&lt;/h2&gt;
+&lt;p&gt;《IEC 61131-4  第4部分 用户导则》， 这篇规范的目的是向可编程控制器 (PLC) 的终端用户介绍 IEC 61131 系列标准，并根据 IEC 61131 标准帮助用户进行 PLC 选型和规划。 该篇规范的主要受众是 PLC 最终用户。&lt;/p&gt;
+&lt;p&gt;PLC、PLC内应用程序和它们相关的外围设备通常被视为控制系统的组成部分，本标准并不能涉及整个自动化系统， 但在应用此用户指南时，建议进行整体系统架构评估。 这篇规范还有一个目标就是促进 PLC 用户和 PLC 供应商之间的沟通交流。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/image-20220706083911439.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;受众用户&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-关键概念&#34;&gt;2 关键概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;应用程序（用户程序）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;是指机器控制或过程控制过程中的信息处理所需的所有编程语言元素和结构逻辑的组合&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自动化系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;并不局限于 IEC 61131 范围的控制系统，PLC 系统由用户集成，包括PLC及其他外围组件，也包括应用程序&lt;/p&gt;
+&lt;h2 id=&#34;3-安装的一般建议&#34;&gt;3 安装的一般建议&lt;/h2&gt;
+&lt;p&gt;安装程序应满足系统选型/设计/应用阶段产生文件中给定的要求，并非所有现场条件都可以在 PLC 选型阶段被识别注意。 在安装过程中，根据现场组装或修改 PLC 设备的情况，更新所有工程和应用文件非常重要。&lt;/p&gt;
+&lt;h3 id=&#34;31-环境条件&#34;&gt;3.1 环境条件&lt;/h3&gt;
+&lt;p&gt;用户应用PLC自动化系统时，应当特别注意环境温度、污染物、冲击、振动和电磁影响等周边应用环境。 有关特定环境要求，请参阅 IEC 61131-2， 下表描述了安装期间要评估的环境条件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;温度，检查可能影响的任意稳定或临时热源：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;空间内热源&lt;/li&gt;
+&lt;li&gt;太阳辐射热源&lt;/li&gt;
+&lt;li&gt;周边经过热的器件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;污染物，水分、腐蚀性气体、液体和导电灰尘会影响 PLC 系统的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用符合国际/国家规范的适当外壳&lt;/li&gt;
+&lt;li&gt;符合制造商的安装说明&lt;/li&gt;
+&lt;li&gt;灰尘引起的热效率下降&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;振动和冲击，检查周边的可能大型机器或设备&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;引擎&lt;/li&gt;
+&lt;li&gt;压缩机&lt;/li&gt;
+&lt;li&gt;传输线&lt;/li&gt;
+&lt;li&gt;压力机、锤子&lt;/li&gt;
+&lt;li&gt;车辆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;电磁影响，检查周边的电磁影响&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电机&lt;/li&gt;
+&lt;li&gt;开关齿轮，晶闸管&lt;/li&gt;
+&lt;li&gt;无线电控制设备&lt;/li&gt;
+&lt;li&gt;焊接设备 - 电弧&lt;/li&gt;
+&lt;li&gt;开关电源&lt;/li&gt;
+&lt;li&gt;电源转换器/逆变器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;32-现场接线&#34;&gt;3.2 现场接线&lt;/h3&gt;
+&lt;p&gt;正确的现场接线实践对于 PLC 应用至关重要, 安装人员需要遵循制造商的接线说明和适用的当地法规。&lt;/p&gt;
+&lt;p&gt;在安装过程两种接地需要被考虑到：（1）保护性接地，安全接地 （2）功能性接地，信号参考地&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;保护性接地&lt;/strong&gt;，要求非活动金属部件与等电位金属网格（框架、底盘、机柜）的牢固连接，例如，低阻抗连接，包括星形垫圈、焊接、锡焊等。 根据当地和国家法规，电网需要连接到保护接地。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;保护接地需要为接地连接提供足够的导体横截面&lt;/li&gt;
+&lt;li&gt;柜门应当接地根据当地法律法规&lt;/li&gt;
+&lt;li&gt;需要验证接地是否紧密牢靠，且耐震动和腐蚀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;功能性接地&lt;/strong&gt;, 需要信号参考线连接到一个低阻抗网络， 这个低阻抗网络应该是一个与保护接地分开的网络。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通常功能性接地参考仅在单点接地。当进行多个接地连接时，应注意避免接地回路干扰。这种多点接地连接必须连接到等电位电网。&lt;/li&gt;
+&lt;li&gt;保护性接地导体可能适用于功能接地。这种做法可以通过在 50 Hz/60 Hz 和高于信号频率的频率下进行测量来确定。这种质量可以通过专门安装的电极或可能的接地导电建筑结构来提高。&lt;/li&gt;
+&lt;li&gt;如果无法将 PLC 的信号接地直接连接到参考地，则可以通过合适的电容器进行连接。电容器应与PLC电路的额定绝缘电压相对应，并应具有良好的高频特性。使用高阻值的电阻放电可以防止静电充电。&lt;/li&gt;
+&lt;li&gt;接地电路不应出现中断，例如可能由端子和插座引入的中断。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注意：保护接地旨在降低触电危险。 在任何情况下都不应将保护接地与 PLC 断开。 可根据需要暂时断开功能性接地连接以进行维修和/或维护。&lt;/p&gt;
+&lt;h3 id=&#34;33-电磁兼容&#34;&gt;3.3 电磁兼容&lt;/h3&gt;
+&lt;p&gt;已发现许多常见的安装做法可以最大限度地减少与 EMC 相关的问题。 其中一些下面列出。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;电源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电源接线应与其他 PLC 接线分开安装，如电源线与信号线的间距为 10 厘米或更多。&lt;/li&gt;
+&lt;li&gt;不可避免的交叉点应该是直角。&lt;/li&gt;
+&lt;li&gt;如果需要，在机柜用电馈入处使用电源滤波器。&lt;/li&gt;
+&lt;li&gt;电源入口处可能需要瞬态抑制器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;输入输出&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将现场接线与内部 I/O 电缆以及总线线路分开。&lt;/li&gt;
+&lt;li&gt;必须注意不要损害 I/O 现场接线和内部 PLC 系统之间的电路隔离（例如，通过光学隔离）。&lt;/li&gt;
+&lt;li&gt;可能需要过滤易受影响的 I/O 电缆&lt;/li&gt;
+&lt;li&gt;使用带有低电感电缆屏蔽层的屏蔽电缆&lt;/li&gt;
+&lt;li&gt;现场必须接地测量&lt;/li&gt;
+&lt;li&gt;屏蔽层可以连接到功能接地或保护接地&lt;/li&gt;
+&lt;li&gt;与感性负载串联的电触点需要特别注意电压浪涌和存储能量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;噪声源，使用噪声抑制器在噪声源处增加噪声阻尼&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用于输入、输出和电源电路的单独电缆。&lt;/li&gt;
+&lt;li&gt;尽量减少接线的总长度&lt;/li&gt;
+&lt;li&gt;使用制造商推荐的电缆和引线。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;模拟量及其他噪声敏感电路&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用屏蔽电缆&lt;/li&gt;
+&lt;li&gt;使用双绞电缆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;线路&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;干扰电压或电流噪声会通过连接信号或电源电缆进入连接的 PLC。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 PLC 和这些控制设备之间延伸的接线应正确布线，以尽量减少这些线缆上的感应噪声。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;34-用户标记系统&#34;&gt;3.4 用户标记系统&lt;/h3&gt;
+&lt;p&gt;应当按照安装图纸和适用规范，对用户系统组件进行标记，如传感器、执行器、电缆、配电板、外壳、模块等。需要特别注意接线的标记，每根场线都应标有与图纸相对应的标记， 对图纸的更改应立即在同一图纸上注明。&lt;/p&gt;
+&lt;p&gt;标记需要注意一下事项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标记必须有足够的耐磨性&lt;/li&gt;
+&lt;li&gt;足够大小的字母和标志&lt;/li&gt;
+&lt;li&gt;保险丝位置、类型、额定值需要清楚地标明&lt;/li&gt;
+&lt;li&gt;标记必须具有可见性&lt;/li&gt;
+&lt;li&gt;根据最终安装修订安装图纸&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-安全应用中的plc&#34;&gt;4 安全应用中的PLC&lt;/h2&gt;
+&lt;p&gt;当要求 PLC 执行安全功能时，需要采取特殊措施来避免和限制相关系统中的危险故障。安全相关系统 (SRS) 的详细要求包含在 IEC 61508 和新兴行业实施标准（例如 IEC 61511 系列）中。 本篇规范的目的是提供一些需要解决的功能安全问题的概述，它并非旨在为实施提供明确或详细的指导。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>About</title>
         <link>https://nylzhy.github.io/about/</link>
         <pubDate>Thu, 05 May 2022 19:01:52 +0800</pubDate>
@@ -15,95 +169,6 @@
         <description>&lt;h1 id=&#34;个人简介&#34;&gt;个人简介&lt;/h1&gt;
 &lt;p&gt;90后的一个暖通空调工程师，工作内容为暖通空调系统自动化——PLC编程，做暖通空调领域的标准化编程、控制策略、控制算法；半路出家的编程爱好者，喜欢自动化、喜欢编程，能够自写一些Python、Go、C# 小工具化简处理数据、编码等工作；目前在做学习，尝试写一些边缘自动化、IOT融合的工作，希望将空调自动化惠及每个工厂及建筑运维人员，让天下再没有难以运维的空调，让我们的生活变成更加健康、舒适。&lt;/p&gt;
 &lt;p&gt;有一个可爱的媳妇，能照顾生活能力欠佳的我，无以为报，只能多赚钱，多陪你，希望多一点快乐给你。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Chinese Test</title>
-        <link>https://nylzhy.github.io/p/test-chinese/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://nylzhy.github.io/p/test-chinese/</guid>
-        <description>&lt;img src="https://nylzhy.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试&lt;/h2&gt;
-&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
-&lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
-&lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;思念是最暖的忧伤像一双翅膀&lt;br&gt;
-让我停不了飞不远在过往游荡&lt;br&gt;
-不告而别的你 就算为了我着想&lt;br&gt;
-这么沉痛的呵护 我怎么能翱翔&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
-	width=&#34;667&#34;
-	height=&#34;1000&#34;
-	srcset=&#34;https://nylzhy.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://nylzhy.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;66&#34;
-		data-flex-basis=&#34;160px&#34;
-	
-&gt;  &lt;img src=&#34;https://nylzhy.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
-	width=&#34;1000&#34;
-	height=&#34;667&#34;
-	srcset=&#34;https://nylzhy.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://nylzhy.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;149&#34;
-		data-flex-basis=&#34;359px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
-	width=&#34;1000&#34;
-	height=&#34;750&#34;
-	srcset=&#34;https://nylzhy.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, https://nylzhy.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
-&gt;  &lt;img src=&#34;https://nylzhy.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
-	width=&#34;667&#34;
-	height=&#34;1000&#34;
-	srcset=&#34;https://nylzhy.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://nylzhy.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;66&#34;
-		data-flex-basis=&#34;160px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Photo by Florian Klauer on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;florian-klauer-nptLmg6jqDo-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Luca Bravo on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;luca-bravo-alS7ewQ41M8-unsplash.jpg&lt;/span&gt;) 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Photo by Helena Hertz on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;helena-hertz-wWZzXlDpMog-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Hudai Gayiran on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;相册语法来自 &lt;a class=&#34;link&#34; href=&#34;https://typlog.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Typlog&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -345,106 +410,157 @@
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>مثال نص</title>
-        <link>https://nylzhy.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://nylzhy.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/</guid>
-        <description>&lt;img src="https://nylzhy.github.io/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post مثال نص" /&gt;&lt;h2 id=&#34;فقرة-1&#34;&gt;فقرة 1&lt;/h2&gt;
-&lt;p&gt;هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من &lt;a class=&#34;link&#34; href=&#34;https://colorslab.com/textgator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;مولد النص العربى&lt;/a&gt;، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
-هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.&lt;/p&gt;
-&lt;h2 id=&#34;فقرة-2&#34;&gt;فقرة 2&lt;/h2&gt;
-&lt;p&gt;هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من &lt;a class=&#34;link&#34; href=&#34;https://colorslab.com/textgator/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;مولد النص العربى&lt;/a&gt;، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
-ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
-هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.&lt;/p&gt;
-&lt;h2 id=&#34;تجربة-rtl&#34;&gt;تجربة RTL&lt;/h2&gt;
-&lt;p&gt;كلمة 1 Text كلمة 2&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Math Typesetting</title>
-        <link>https://nylzhy.github.io/p/math-typesetting/</link>
-        <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://nylzhy.github.io/p/math-typesetting/</guid>
-        <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
-&lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a partial under &lt;code&gt;/layouts/partials/math.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Within this partial reference the &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/autorender.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Auto-render Extension&lt;/a&gt; or host these scripts locally.&lt;/li&gt;
-&lt;li&gt;Include the partial in your templates like so:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; partial &lt;span class=&#34;s2&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;math&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in a project&amp;rsquo;s configuration&lt;/li&gt;
-&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;math: true&lt;/code&gt; in content files&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the online reference of &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/supported.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Supported TeX Functions&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
-
-&lt;p&gt;Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
-$$&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>Emoji Support</title>
-        <link>https://nylzhy.github.io/p/emoji-support/</link>
-        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://nylzhy.github.io/p/emoji-support/</guid>
-        <description>&lt;img src="https://nylzhy.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;http://www.emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.emoji {
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        </item>
-        <item>
         <title></title>
-        <link>https://nylzhy.github.io/p/</link>
+        <link>https://nylzhy.github.io/categories/plc/iec-61131-4-programmable-controllers-part-4-user-guidelines/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://nylzhy.github.io/p/</guid>
-        <description>&lt;h1 id=&#34;技术帝&#34;&gt;技术帝&lt;/h1&gt;
-&lt;p&gt;Hello, Good Moning!&lt;/p&gt;
+        <guid>https://nylzhy.github.io/categories/plc/iec-61131-4-programmable-controllers-part-4-user-guidelines/</guid>
+        <description>&lt;h1 id=&#34;iec-61131-4-可编程控制器--第4部分-用户导则&#34;&gt;IEC 61131-4 可编程控制器  第4部分 用户导则&lt;/h1&gt;
+&lt;h2 id=&#34;1-通用&#34;&gt;1 通用&lt;/h2&gt;
+&lt;p&gt;《IEC 61131-4  第4部分 用户导则》， 这篇规范的目的是向可编程控制器 (PLC) 的终端用户介绍 IEC 61131 系列标准，并根据 IEC 61131 标准帮助用户进行 PLC 选型和规划。 该篇规范的主要受众是 PLC 最终用户。&lt;/p&gt;
+&lt;p&gt;PLC、PLC内应用程序和它们相关的外围设备通常被视为控制系统的组成部分，本标准并不能涉及整个自动化系统， 但在应用此用户指南时，建议进行整体系统架构评估。 这篇规范还有一个目标就是促进 PLC 用户和 PLC 供应商之间的沟通交流。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nylzhy.github.io/image-20220706083911439.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;受众用户&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-关键概念&#34;&gt;2 关键概念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;应用程序（用户程序）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;是指机器控制或过程控制过程中的信息处理所需的所有编程语言元素和结构逻辑的组合&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自动化系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;并不局限于 IEC 61131 范围的控制系统，PLC 系统由用户集成，包括PLC及其他外围组件，也包括应用程序&lt;/p&gt;
+&lt;h2 id=&#34;3-安装的一般建议&#34;&gt;3 安装的一般建议&lt;/h2&gt;
+&lt;p&gt;安装程序应满足系统选型/设计/应用阶段产生文件中给定的要求，并非所有现场条件都可以在 PLC 选型阶段被识别注意。 在安装过程中，根据现场组装或修改 PLC 设备的情况，更新所有工程和应用文件非常重要。&lt;/p&gt;
+&lt;h3 id=&#34;31-环境条件&#34;&gt;3.1 环境条件&lt;/h3&gt;
+&lt;p&gt;用户应用PLC自动化系统时，应当特别注意环境温度、污染物、冲击、振动和电磁影响等周边应用环境。 有关特定环境要求，请参阅 IEC 61131-2， 下表描述了安装期间要评估的环境条件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;温度，检查可能影响的任意稳定或临时热源：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;空间内热源&lt;/li&gt;
+&lt;li&gt;太阳辐射热源&lt;/li&gt;
+&lt;li&gt;周边经过热的器件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;污染物，水分、腐蚀性气体、液体和导电灰尘会影响 PLC 系统的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用符合国际/国家规范的适当外壳&lt;/li&gt;
+&lt;li&gt;符合制造商的安装说明&lt;/li&gt;
+&lt;li&gt;灰尘引起的热效率下降&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;振动和冲击，检查周边的可能大型机器或设备&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;引擎&lt;/li&gt;
+&lt;li&gt;压缩机&lt;/li&gt;
+&lt;li&gt;传输线&lt;/li&gt;
+&lt;li&gt;压力机、锤子&lt;/li&gt;
+&lt;li&gt;车辆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;电磁影响，检查周边的电磁影响&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电机&lt;/li&gt;
+&lt;li&gt;开关齿轮，晶闸管&lt;/li&gt;
+&lt;li&gt;无线电控制设备&lt;/li&gt;
+&lt;li&gt;焊接设备 - 电弧&lt;/li&gt;
+&lt;li&gt;开关电源&lt;/li&gt;
+&lt;li&gt;电源转换器/逆变器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;32-现场接线&#34;&gt;3.2 现场接线&lt;/h3&gt;
+&lt;p&gt;正确的现场接线实践对于 PLC 应用至关重要, 安装人员需要遵循制造商的接线说明和适用的当地法规。&lt;/p&gt;
+&lt;p&gt;在安装过程两种接地需要被考虑到：（1）保护性接地，安全接地 （2）功能性接地，信号参考地&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;保护性接地&lt;/strong&gt;，要求非活动金属部件与等电位金属网格（框架、底盘、机柜）的牢固连接，例如，低阻抗连接，包括星形垫圈、焊接、锡焊等。 根据当地和国家法规，电网需要连接到保护接地。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;保护接地需要为接地连接提供足够的导体横截面&lt;/li&gt;
+&lt;li&gt;柜门应当接地根据当地法律法规&lt;/li&gt;
+&lt;li&gt;需要验证接地是否紧密牢靠，且耐震动和腐蚀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;功能性接地&lt;/strong&gt;, 需要信号参考线连接到一个低阻抗网络， 这个低阻抗网络应该是一个与保护接地分开的网络。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通常功能性接地参考仅在单点接地。当进行多个接地连接时，应注意避免接地回路干扰。这种多点接地连接必须连接到等电位电网。&lt;/li&gt;
+&lt;li&gt;保护性接地导体可能适用于功能接地。这种做法可以通过在 50 Hz/60 Hz 和高于信号频率的频率下进行测量来确定。这种质量可以通过专门安装的电极或可能的接地导电建筑结构来提高。&lt;/li&gt;
+&lt;li&gt;如果无法将 PLC 的信号接地直接连接到参考地，则可以通过合适的电容器进行连接。电容器应与PLC电路的额定绝缘电压相对应，并应具有良好的高频特性。使用高阻值的电阻放电可以防止静电充电。&lt;/li&gt;
+&lt;li&gt;接地电路不应出现中断，例如可能由端子和插座引入的中断。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注意：保护接地旨在降低触电危险。 在任何情况下都不应将保护接地与 PLC 断开。 可根据需要暂时断开功能性接地连接以进行维修和/或维护。&lt;/p&gt;
+&lt;h3 id=&#34;33-电磁兼容&#34;&gt;3.3 电磁兼容&lt;/h3&gt;
+&lt;p&gt;已发现许多常见的安装做法可以最大限度地减少与 EMC 相关的问题。 其中一些下面列出。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;电源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电源接线应与其他 PLC 接线分开安装，如电源线与信号线的间距为 10 厘米或更多。&lt;/li&gt;
+&lt;li&gt;不可避免的交叉点应该是直角。&lt;/li&gt;
+&lt;li&gt;如果需要，在机柜用电馈入处使用电源滤波器。&lt;/li&gt;
+&lt;li&gt;电源入口处可能需要瞬态抑制器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;输入输出&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将现场接线与内部 I/O 电缆以及总线线路分开。&lt;/li&gt;
+&lt;li&gt;必须注意不要损害 I/O 现场接线和内部 PLC 系统之间的电路隔离（例如，通过光学隔离）。&lt;/li&gt;
+&lt;li&gt;可能需要过滤易受影响的 I/O 电缆&lt;/li&gt;
+&lt;li&gt;使用带有低电感电缆屏蔽层的屏蔽电缆&lt;/li&gt;
+&lt;li&gt;现场必须接地测量&lt;/li&gt;
+&lt;li&gt;屏蔽层可以连接到功能接地或保护接地&lt;/li&gt;
+&lt;li&gt;与感性负载串联的电触点需要特别注意电压浪涌和存储能量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;噪声源，使用噪声抑制器在噪声源处增加噪声阻尼&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用于输入、输出和电源电路的单独电缆。&lt;/li&gt;
+&lt;li&gt;尽量减少接线的总长度&lt;/li&gt;
+&lt;li&gt;使用制造商推荐的电缆和引线。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;模拟量及其他噪声敏感电路&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用屏蔽电缆&lt;/li&gt;
+&lt;li&gt;使用双绞电缆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;线路&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;干扰电压或电流噪声会通过连接信号或电源电缆进入连接的 PLC。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 PLC 和这些控制设备之间延伸的接线应正确布线，以尽量减少这些线缆上的感应噪声。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;34-用户标记系统&#34;&gt;3.4 用户标记系统&lt;/h3&gt;
+&lt;p&gt;应当按照安装图纸和适用规范，对用户系统组件进行标记，如传感器、执行器、电缆、配电板、外壳、模块等。需要特别注意接线的标记，每根场线都应标有与图纸相对应的标记， 对图纸的更改应立即在同一图纸上注明。&lt;/p&gt;
+&lt;p&gt;标记需要注意一下事项：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;标记必须有足够的耐磨性&lt;/li&gt;
+&lt;li&gt;足够大小的字母和标志&lt;/li&gt;
+&lt;li&gt;保险丝位置、类型、额定值需要清楚地标明&lt;/li&gt;
+&lt;li&gt;标记必须具有可见性&lt;/li&gt;
+&lt;li&gt;根据最终安装修订安装图纸&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-安全应用中的plc&#34;&gt;4 安全应用中的PLC&lt;/h2&gt;
+&lt;p&gt;当要求 PLC 执行安全功能时，需要采取特殊措施来避免和限制相关系统中的危险故障。安全相关系统 (SRS) 的详细要求包含在 IEC 61508 和新兴行业实施标准（例如 IEC 61511 系列）中。 本篇规范的目的是提供一些需要解决的功能安全问题的概述，它并非旨在为实施提供明确或详细的指导。&lt;/p&gt;
 </description>
         </item>
         <item>
