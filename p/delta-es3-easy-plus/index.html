@@ -1,0 +1,3996 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Delta ES3 Easy Plus 手册，旨在为广大技术朋友提供一本快速入门、简明扼要的技术参考，依据官方 《DVP-ES3 系列程序手册》，《DVP-ES3 系列硬件及操作手冊》等相关整理完成，**不能代替或部分代替官方的任何正式出版物**，如产品宣传样本，产品目录，产品手册，随同产品、软件发布的说明性文档和在线帮助文件等等。在所有正式场合，一切应以官方的正式出版物为准。'><title>Delta ES3 Easy PLus</title>
+
+<link rel='canonical' href='https://nylzhy.github.io/p/delta-es3-easy-plus/'>
+
+<link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content='Delta ES3 Easy PLus'>
+<meta property='og:description' content='Delta ES3 Easy Plus 手册，旨在为广大技术朋友提供一本快速入门、简明扼要的技术参考，依据官方 《DVP-ES3 系列程序手册》，《DVP-ES3 系列硬件及操作手冊》等相关整理完成，**不能代替或部分代替官方的任何正式出版物**，如产品宣传样本，产品目录，产品手册，随同产品、软件发布的说明性文档和在线帮助文件等等。在所有正式场合，一切应以官方的正式出版物为准。'>
+<meta property='og:url' content='https://nylzhy.github.io/p/delta-es3-easy-plus/'>
+<meta property='og:site_name' content='世间阁'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Delta PLC' /><meta property='article:tag' content='DVP ES3' /><meta property='article:published_time' content='2022-05-08T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-05-08T00:00:00&#43;00:00'/><meta property='og:image' content='https://nylzhy.github.io/p/delta-es3-easy-plus/AS_SERIES_M.jpg' />
+<meta name="twitter:title" content="Delta ES3 Easy PLus">
+<meta name="twitter:description" content="Delta ES3 Easy Plus 手册，旨在为广大技术朋友提供一本快速入门、简明扼要的技术参考，依据官方 《DVP-ES3 系列程序手册》，《DVP-ES3 系列硬件及操作手冊》等相关整理完成，**不能代替或部分代替官方的任何正式出版物**，如产品宣传样本，产品目录，产品手册，随同产品、软件发布的说明性文档和在线帮助文件等等。在所有正式场合，一切应以官方的正式出版物为准。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://nylzhy.github.io/p/delta-es3-easy-plus/AS_SERIES_M.jpg' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu0a1a6314491b969149e6dd23dbd6320c_218610_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">世间阁</a></h1>
+            <h2 class="site-description">家是讲爱而不是讲理的地方</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E%E8%BF%99%E9%87%8C/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于这里</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>历史归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>大海捞针</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E4%B8%8D%E8%BF%B7%E8%B7%AF%E7%9A%84%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>不迷路的链接</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/delta-es3-easy-plus/">
+                <img src="/p/delta-es3-easy-plus/AS_SERIES_M_hu272bba47a042e2bd33cfa2f2ba56baff_177940_800x0_resize_q75_box.jpg"
+                        srcset="/p/delta-es3-easy-plus/AS_SERIES_M_hu272bba47a042e2bd33cfa2f2ba56baff_177940_800x0_resize_q75_box.jpg 800w, /p/delta-es3-easy-plus/AS_SERIES_M_hu272bba47a042e2bd33cfa2f2ba56baff_177940_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="310" 
+                        loading="lazy"
+                        alt="Featured image of post Delta ES3 Easy PLus" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8/" >
+                可编程控制器
+            </a>
+        
+            <a href="/categories/plc-%E6%A0%87%E5%87%86%E5%8C%96/" >
+                PLC 标准化
+            </a>
+        
+            <a href="/categories/delta-plc/" >
+                Delta PLC
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/delta-es3-easy-plus/">Delta ES3 Easy PLus</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Delta ES3 Easy Plus 手册，旨在为广大技术朋友提供一本快速入门、简明扼要的技术参考，依据官方 《DVP-ES3 系列程序手册》，《DVP-ES3 系列硬件及操作手冊》等相关整理完成，**不能代替或部分代替官方的任何正式出版物**，如产品宣传样本，产品目录，产品手册，随同产品、软件发布的说明性文档和在线帮助文件等等。在所有正式场合，一切应以官方的正式出版物为准。
+        </h3>
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2022-05-08</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 51 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="delta-es3-easy-plus">Delta ES3 Easy PLus</h1>
+<p>台达 DVP-ES3 PLC 技术参考手册 Version 2022.03</p>
+<blockquote>
+<p>技术资料，仅供参考；由此引起的一切后果，概不负责，保留所有权利；</p>
+</blockquote>
+<p><img src="/p/delta-es3-easy-plus/assets/DELTA_PLC_ES3.png"
+	width="287"
+	height="206"
+	srcset="/p/delta-es3-easy-plus/assets/DELTA_PLC_ES3_huc53d1f1fee21d9614162a741e560c5b4_66989_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/DELTA_PLC_ES3_huc53d1f1fee21d9614162a741e560c5b4_66989_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="DELTA PLC ES3"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="139"
+		data-flex-basis="334px"
+	
+></p>
+<p>本文档依据官方 《DVP-ES3 系列程序手册》，《DVP-ES3 系列硬件及操作手冊》等相关整理完成，<strong>不能代替或部分代替官方的任何正式出版物</strong>，如产品宣传样本，产品目录，产品手册，随同产品、软件发布的说明性文档和在线帮助文件等等。在所有正式场合，一切应以官方的正式出版物为准。</p>
+<p>本文档包括 Delta ES3 系列的使用、通信、技术工艺等的编程配置的详细步骤，并对用户经常，甚至是必然遇到的问题、疑问的解答，以及隐含着其他许多问题答案的叙述性文字，还有一些作者认为有助于读者理解、解决问题的背景知识。Delta  PLC ES3 Easy Plus 力争做到精简实用，帮助技术人员快速上手，解决使用中的常见问题。</p>
+<hr>
+<h2 id="版本修订记录">版本修订记录</h2>
+<p><strong>V2022.03</strong></p>
+<ul>
+<li>创建该文档，确定基本框架</li>
+</ul>
+<hr>
+<h2 id="delta-plc-官方网络资源">Delta PLC 官方网络资源</h2>
+<p><strong>官方主页</strong>
+<a class="link" href="https://www.delta-china.com.cn/zh-CN/products/PLC-Programmable-Logic-Controllers/5554/"  target="_blank" rel="noopener"
+    >产品导航 - PLC可编程控制器- (delta-china.com.cn)</a></p>
+<p><strong>官方下载中心</strong>
+<a class="link" href="https://downloadcenter.delta-china.com.cn/"  target="_blank" rel="noopener"
+    >下载中心 - (delta-china.com.cn)</a></p>
+<p><strong>官方云课堂</strong>
+<a class="link" href="https://class.delta-china.com.cn/"  target="_blank" rel="noopener"
+    >台达云课堂 (delta-china.com.cn)</a></p>
+<p><strong>官方培训中心</strong>
+<a class="link" href="https://training.delta-china.com.cn/"  target="_blank" rel="noopener"
+    >培训中心 (delta-china.com.cn)</a></p>
+<p><strong>PLC 编程软件下载</strong> 
+<a class="link" href="https://downloadcenter.delta-china.com.cn/DownloadCenter?v=1&amp;CID=06&amp;itemID=060301&amp;dataType=8&amp;sort_expr=cdate&amp;sort_dir=DESC"  target="_blank" rel="noopener"
+    >ISPSoft 及 CommGR 等相关软件 </a></p>
+<p><strong>HMI 编程软件下载</strong>
+<a class="link" href="https://downloadcenter.delta-china.com.cn/DownloadCenter?v=1&amp;CID=06&amp;itemID=060302&amp;dataType=8&amp;sort_expr=cdate&amp;sort_dir=DESC"  target="_blank" rel="noopener"
+    >DOPSoft WPLSoft 等相关软件</a></p>
+<p><strong>DIAStudio 编程</strong>
+<a class="link" href="https://diastudio.deltaww.com/"  target="_blank" rel="noopener"
+    >DIAStudio</a></p>
+<p><strong>CodeSys 运动控制</strong>
+<a class="link" href="https://downloadcenter.delta-china.com.cn/DownloadCenter?v=1&amp;CID=06&amp;itemID=060213&amp;dataType=8&amp;sort_expr=cdate&amp;sort_dir=DESC"  target="_blank" rel="noopener"
+    >CodeSys 相关软件</a></p>
+<p><strong>DVP 系列技术应用手册（程序篇）</strong>
+<a class="link" href="https://filecenter.delta-china.com.cn/Products/download/06/060301/Manual/DELTA_IA-PLC_DVP-PLC_PM_SC_20220112.pdf"  target="_blank" rel="noopener"
+    >DVP-PLC 应用技术手冊 PDF (delta-china.com.cn)</a></p>
+<p><strong>ES3 硬件及程序手册等</strong>
+<a class="link" href="https://downloadcenter.delta-china.com.cn/DownloadCenter?v=1&amp;CID=06&amp;itemID=060301&amp;downloadID=DVP-ES3/ES2%e7%b3%bb%e5%88%97&amp;dataType=3,4&amp;sort_expr=cdate&amp;sort_dir=DESC"  target="_blank" rel="noopener"
+    >ES3 相关手册</a></p>
+<hr>
+<h1 id="dvp-es3-产品介绍">DVP-ES3 产品介绍</h1>
+<h2 id="dvp-es3-产品介绍-1">DVP-ES3 产品介绍</h2>
+<p>DVP-ES3 系列为台达 DVP 系列 PLC 高阶应用可编程控制器， CPU 最大支持256点输入输出以及最多8台模拟量模块，提供多样性的网络通讯选择，提供用户强大的网络功能，透过便利的软件设置，快速建立各式网络装置链接。</p>
+<p><strong>主要技术规格</strong></p>
+<ol>
+<li>CPU 采用高速32 位处理器</li>
+<li>主机点数：32 / 48 / 64 / 80</li>
+<li>程序容量：64k steps</li>
+<li>内置通讯端口： RS-485 * 2、Ethernet * 1、CANopen * 1</li>
+<li>内置SD 卡插槽 (Micro SD)</li>
+<li>最大IO点数： 256点（输入+输出）或8台模拟量模块</li>
+<li>内置4组高速计数器，每组最高可支持200 kHz</li>
+<li>内置4组（或8 点）高速200 kHz 定位输出</li>
+<li>可搭配8 轴总线（CANopen）通讯型定位输出</li>
+<li>CPU 模块支持IEC61131-3 软件编程（LD、ST、SFC 及CFC）</li>
+</ol>
+<p><strong>应用领域</strong></p>
+<ul>
+<li>机械加工、射出成型机、包装机、精密纺织机、大型仓储管理、物流系统</li>
+</ul>
+<p><strong>应用环境</strong></p>
+<ul>
+<li>操作环境温度 0~55°C</li>
+<li>储存环境温度 -40~70°C</li>
+<li>操作环境湿度 5~95%，无结露</li>
+<li>储存环境湿度 5~95%，无结露</li>
+<li>工作环境 无腐蚀性气体存在</li>
+<li>安装位置 控制箱内</li>
+<li>污染等级 2</li>
+<li>防护等级 IP20（非 UL 认证）</li>
+</ul>
+<p><strong>安规证书</strong></p>
+<ul>
+<li>ES3 CPU 支持 IEC 61131-2、UL 61010-2-201，其他模块支持 IEC 61131-2、UL 508，具体证书请从官网下载 <a class="link" href="https://downloadcenter.delta-china.com.cn/DownloadCenter?v=1&amp;CID=06&amp;itemID=060301&amp;downloadID=DVP-ES3/ES2%E7%B3%BB%E5%88%97&amp;dataType=10&amp;sort_expr=cdate&amp;sort_dir=DESC"  target="_blank" rel="noopener"
+    >安规证书检索- 台达官网 (delta-china.com.cn)</a></li>
+</ul>
+<p><strong>编程及应用例程</strong></p>
+<ul>
+<li><a class="link" href="https://filecenter.delta-china.com.cn/Products/download/06/060301/Manual/DELTA_IA-PLC_DVP-PLC_PM_SC_20220112.pdf"  target="_blank" rel="noopener"
+    >DVP-PLC 应用技术手冊 PDF (delta-china.com.cn)</a></li>
+</ul>
+<hr>
+<h2 id="dvp-es3-订货号">DVP-ES3 订货号</h2>
+<h3 id="cpu">CPU</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>代号</th>
+<th>订货号</th>
+<th>电气及输入输出点位</th>
+<th>输出类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ES3_L32T</td>
+<td>DVP32ES311T</td>
+<td>24VDC 16DI 16DQ</td>
+<td>晶体型（NPN）输出</td>
+</tr>
+<tr>
+<td>ES3_32T</td>
+<td>DVP32ES300T</td>
+<td>100~220VAC 16DI 16DQ</td>
+<td>晶体型（NPN）输出</td>
+</tr>
+<tr>
+<td>ES3_32TR</td>
+<td>DVP32ES300R</td>
+<td>100~220VAC 16DI 16DQ</td>
+<td>继电器（Relay）输出</td>
+</tr>
+<tr>
+<td>ES3_48T</td>
+<td>DVP48ES300T</td>
+<td>100~220VAC 24DI 24DQ</td>
+<td>晶体型（NPN）输出</td>
+</tr>
+<tr>
+<td>ES3_48TR</td>
+<td>DVP48ES300R</td>
+<td>100~220VAC 24DI 24DQ</td>
+<td>继电器（Relay）输出</td>
+</tr>
+<tr>
+<td>ES3_64T</td>
+<td>DVP64ES300T</td>
+<td>100~220VAC 32DI 32DQ</td>
+<td>晶体型（NPN）输出</td>
+</tr>
+<tr>
+<td>ES3_64TR</td>
+<td>DVP64ES300R</td>
+<td>100~220VAC 32DI 32DQ</td>
+<td>继电器（Relay）输出</td>
+</tr>
+<tr>
+<td>ES3_80T</td>
+<td>DVP80ES300T</td>
+<td>100~220VAC 40DI 40DQ</td>
+<td>晶体型（NPN）输出</td>
+</tr>
+<tr>
+<td>ES3_80TR</td>
+<td>DVP80ES300R</td>
+<td>100~220VAC 40DI 40DQ</td>
+<td>继电器（Relay）输出</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="数字量模块">数字量模块</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>代号</th>
+<th>订货号</th>
+<th>输入点位</th>
+<th>输出类型及点位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8DI</td>
+<td>DVP08XM211N</td>
+<td>8 点输入</td>
+<td></td>
+</tr>
+<tr>
+<td>4DI4DQR</td>
+<td>DVP08XP211R</td>
+<td>4 点输入</td>
+<td>4 点继电器输出</td>
+</tr>
+<tr>
+<td>4DI4DQN</td>
+<td>DVP08XP211T</td>
+<td>4 点输入</td>
+<td>4 点晶体管（漏型）输出</td>
+</tr>
+<tr>
+<td>8DQR</td>
+<td>DVP08XN211R</td>
+<td></td>
+<td>8 点继电器输出</td>
+</tr>
+<tr>
+<td>8DQN</td>
+<td>DVP08XN211T</td>
+<td></td>
+<td>8 点晶体管（漏型）输出</td>
+</tr>
+<tr>
+<td>16DI</td>
+<td>DVP16XM211N</td>
+<td>16 点输入</td>
+<td></td>
+</tr>
+<tr>
+<td>8DI8DQR</td>
+<td>DVP16XP211R</td>
+<td>8 点输入</td>
+<td>8 点继电器输出</td>
+</tr>
+<tr>
+<td>8DI8DQN</td>
+<td>DVP16XP211T</td>
+<td>8 点输入</td>
+<td>8 点晶体管（漏型）输出</td>
+</tr>
+<tr>
+<td>16DQR</td>
+<td>DVP16XN211R</td>
+<td></td>
+<td>16 点继电器输出</td>
+</tr>
+<tr>
+<td>16DQN</td>
+<td>DVP16XN211T</td>
+<td></td>
+<td>16 点晶体管（漏型）输出</td>
+</tr>
+<tr>
+<td>16DI8DQR</td>
+<td>DVP24XP200R</td>
+<td>16 点输入</td>
+<td>8 点继电器输出</td>
+</tr>
+<tr>
+<td>16DI8DQN</td>
+<td>DVP24XP200T</td>
+<td>16 点输入</td>
+<td>8 点晶体管（漏型）输出</td>
+</tr>
+<tr>
+<td>24DQR</td>
+<td>DVP24XN200R</td>
+<td></td>
+<td>24 点继电器输出</td>
+</tr>
+<tr>
+<td>24DQN</td>
+<td>DVP24XN200T</td>
+<td></td>
+<td>24 点晶体管（漏型）输出</td>
+</tr>
+<tr>
+<td>16DI16DQR</td>
+<td>DVP32XP200R</td>
+<td>16 点输入</td>
+<td>16 点继电器输出</td>
+</tr>
+<tr>
+<td>16DI16DQN</td>
+<td>DVP32XP200T</td>
+<td>16 点输入</td>
+<td>16 点晶体管（漏型）输出</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="模拟量模块">模拟量模块</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>代号</th>
+<th>订货号</th>
+<th>输入点位</th>
+<th>输出类型及点位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4AI</td>
+<td>DVP04AD-E2</td>
+<td>4点输入</td>
+<td></td>
+</tr>
+<tr>
+<td>2AQ</td>
+<td>DVP02DA-E2</td>
+<td></td>
+<td>2点输出</td>
+</tr>
+<tr>
+<td>4AQ</td>
+<td>DVP04DA-E2</td>
+<td></td>
+<td>4点输出</td>
+</tr>
+<tr>
+<td>4AI2AQ</td>
+<td>DVP06XA-E2</td>
+<td>4点输入</td>
+<td>2点输出</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="温度测量模块">温度测量模块</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>代号</th>
+<th>订货号</th>
+<th>点位</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4RTD</td>
+<td>DVP04PT-E2</td>
+<td>4 通道</td>
+<td>RTD</td>
+</tr>
+<tr>
+<td>6RTD</td>
+<td>DVP06PT-E2</td>
+<td>6 通道</td>
+<td>RTD</td>
+</tr>
+<tr>
+<td>4HJK</td>
+<td>DVP04TC-E2</td>
+<td>4 通道</td>
+<td>热电偶</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="定位模块">定位模块</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>代号</th>
+<th>订货号</th>
+<th>点位</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2Z</td>
+<td>DVP02PU-E2</td>
+<td>2轴</td>
+<td>2 轴运动控制；5~24VDC，1 组（A/B/Z 相）差动输入，硬件输入带宽最高 200KHz；24VDC，5mA，5 点输入，硬件输入带宽最高 1KHz；5VDC，2 轴（4 点）差动输出，最高输出频率 200KHz</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="延长线模块">延长线模块</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>代号</th>
+<th>订货号</th>
+<th>点位</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YCX</td>
+<td>DVPAEXT01-E2</td>
+<td>-</td>
+<td>DVP-ES2/ES3 系列 I/O 模块延长使用</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="技术规格及硬件接线">技术规格及硬件接线</h2>
+<h3 id="cpu-1">CPU</h3>
+<p><strong>CPU 实物图</strong>
+<!-- raw HTML omitted --></p>
+<p>ES3系列 PLC 采用脱落式端子</p>
+<p><strong>220VAC 继电器输出型 PLC 接线</strong>
+<!-- raw HTML omitted --></p>
+<p><strong>220VAC 晶体管 NPN 输出型 PLC 接线</strong>
+<!-- raw HTML omitted --></p>
+<p><strong>24VDC 晶体管 NPN 输出型 PLC 接线</strong> 
+<!-- raw HTML omitted --></p>
+<h3 id="数字量模块-1">数字量模块</h3>
+<ul>
+<li>数字量输入DI：24VDC，5mA</li>
+<li>继电器输出：250VAC，30VDC 以下，2A/点，5A/共点</li>
+<li>晶体管输出：漏型，5 ~ 30VDC，0.5A/点，4A/共点</li>
+</ul>
+<p><strong>数字量输入模块</strong>
+<img src="/p/delta-es3-easy-plus/assets/DI_%E6%8E%A5%E7%BA%BF%E5%8E%9F%E7%90%86%E5%9B%BE.png"
+	width="1033"
+	height="282"
+	srcset="/p/delta-es3-easy-plus/assets/DI_%E6%8E%A5%E7%BA%BF%E5%8E%9F%E7%90%86%E5%9B%BE_hu85cf9b510b9514f99da77b7d754439fc_33088_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/DI_%E6%8E%A5%E7%BA%BF%E5%8E%9F%E7%90%86%E5%9B%BE_hu85cf9b510b9514f99da77b7d754439fc_33088_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="366"
+		data-flex-basis="879px"
+	
+>
+数字量输入既支持源型也支持漏型，需要根据多个外置传感器判定；具体参考《DVP-ES3 系列硬件及操作手册-2021/07/21版》 4.6节。</p>
+<p><strong>数字量输出模块 继电器输出</strong>
+<img src="/p/delta-es3-easy-plus/assets/DO_R_%E6%8E%A5%E7%BA%BF%E5%9B%BE.png"
+	width="1012"
+	height="289"
+	srcset="/p/delta-es3-easy-plus/assets/DO_R_%E6%8E%A5%E7%BA%BF%E5%9B%BE_hu4640d91810f0e12bc9226fd7d741fd4f_30951_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/DO_R_%E6%8E%A5%E7%BA%BF%E5%9B%BE_hu4640d91810f0e12bc9226fd7d741fd4f_30951_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="继电器类型模块接线"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="350"
+		data-flex-basis="840px"
+	
+></p>
+<p><strong>数字量输出模块 晶体管NPN输出</strong>
+<img src="/p/delta-es3-easy-plus/assets/DO_T_%E6%8E%A5%E7%BA%BF%E5%9B%BE.png"
+	width="1021"
+	height="213"
+	srcset="/p/delta-es3-easy-plus/assets/DO_T_%E6%8E%A5%E7%BA%BF%E5%9B%BE_hu26b8845eb886b969b35f21dffc43288c_23230_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/DO_T_%E6%8E%A5%E7%BA%BF%E5%9B%BE_hu26b8845eb886b969b35f21dffc43288c_23230_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="晶体管NPN输出"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="479"
+		data-flex-basis="1150px"
+	
+></p>
+<h3 id="模拟量模块-1">模拟量模块</h3>
+<ul>
+<li>模拟量输入：5V ~ +5V，-10 ~ +10V，-20mA ~ +20mA 为14 位分辨率；0/4~20mA 为13 位分辨率；</li>
+<li>模拟量输出：10V~10V，0 ~ 20mA，4~20mA 均为14 位分辨率-</li>
+<li>热电阻：Pt100、Pt1000、Ni100、Ni1000、0~300Ω、0~3000Ω，分辨率：0.1℃/0.1℉（16 位）</li>
+<li>热电偶：J、K、R、S、T、E、N 或-80~+80mV；0.1℃/0.1℉（16 位转换器）</li>
+</ul>
+<p><strong>模拟量输入</strong>
+<!-- raw HTML omitted --></p>
+<p><strong>模拟量输出模块</strong>
+<!-- raw HTML omitted --></p>
+<p><strong>热电阻模块</strong>
+<!-- raw HTML omitted --></p>
+<p><strong>热电偶模块</strong>
+<!-- raw HTML omitted --></p>
+<h3 id="通讯接线">通讯接线</h3>
+<p><strong>RS485接线</strong>
+<img src="/p/delta-es3-easy-plus/assets/RS485%E6%8E%A5%E7%BA%BF.png"
+	width="1040"
+	height="348"
+	srcset="/p/delta-es3-easy-plus/assets/RS485%E6%8E%A5%E7%BA%BF_huff98b7b8f78dc493dce1eb0e7713efe0_58114_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/RS485%E6%8E%A5%E7%BA%BF_huff98b7b8f78dc493dce1eb0e7713efe0_58114_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="298"
+		data-flex-basis="717px"
+	
+></p>
+<p><strong>CAN总线</strong>
+<img src="/p/delta-es3-easy-plus/assets/CAN%E6%80%BB%E7%BA%BF.png"
+	width="1077"
+	height="383"
+	srcset="/p/delta-es3-easy-plus/assets/CAN%E6%80%BB%E7%BA%BF_hu54b11433168fb7edc14bfcdb82247c04_65076_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/CAN%E6%80%BB%E7%BA%BF_hu54b11433168fb7edc14bfcdb82247c04_65076_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="281"
+		data-flex-basis="674px"
+	
+></p>
+<p><strong>以太网接线</strong>
+<img src="/p/delta-es3-easy-plus/assets/%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%8E%A5%E7%BA%BF.png"
+	width="1229"
+	height="400"
+	srcset="/p/delta-es3-easy-plus/assets/%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%8E%A5%E7%BA%BF_huedf30f4431c122a543128662110f7dd3_56087_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/%E4%BB%A5%E5%A4%AA%E7%BD%91%E6%8E%A5%E7%BA%BF_huedf30f4431c122a543128662110f7dd3_56087_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="307"
+		data-flex-basis="737px"
+	
+></p>
+<h3 id="定位模块-1">定位模块</h3>
+<!-- raw HTML omitted -->
+<hr>
+<h1 id="编程">编程</h1>
+<h2 id="编程工具">编程工具</h2>
+<h3 id="编程软件-ispsoft">编程软件 ISPSoft</h3>
+<p>ISPSoft 为台达新一代的可编程控制器（PLC）开发工具。采用 IEC 61131-3 的编程架构，支持六种编程语言以及丰富的应用指令集。除了具备基本的程序编辑功能之外，ISPSoft 还包含了许多的辅助工具，加上多语系的环境与亲切的使用界面，提供给用戶的将会是一个便利且高效的开发环境。</p>
+<p><strong>软件特色</strong></p>
+<ul>
+<li>
+<p>采用国际标准 IEC 61131-3 的编程架构，并内建丰富的应用指令集。</p>
+</li>
+<li>
+<p>支持六种语言，包括梯形图（LD）、顺序功能图（SFC）、功能块图（FBD）、结构化语言（ST），以及连续功能图（CFC）与 C 语言（C），且在一个项目中并不限定只可使用一种语言。具体PLC 不一定全部支持上述所有编程语言，支持哪些语言要视PLC而定。</p>
+</li>
+<li>
+<p>提供许多的便利功能，如批注、书签、程序区段使能/失效、装置与符号管理、仿真器等。</p>
+</li>
+<li>
+<p>支持多种联机操作，如在线监控、在线编辑、符号表监控、除错模式、PLC 操作/设置等。</p>
+</li>
+<li>
+<p>提供多种密码及数据保护机制</p>
+</li>
+<li>
+<p>支持新一代的通讯管理员 COMMGR</p>
+</li>
+<li>
+<p>内建多种组态管理工具</p>
+<ul>
+<li>硬件规划工具（HWCONFIG）：用于对系统上的硬件架构进行组态与参数管理。</li>
+<li>网络规划工具（NWCONFIG）：用于管理及配置 PLC 系统的网络架构与数据交换机制。</li>
+<li>储存卡工具（CARD Utility）：透过管理向导与储存卡的操作，可对系统进行备份与还原。</li>
+</ul>
+</li>
+<li>
+<p>针对运动控制提供各种解决方案，包括 PLCopen MC 功能块、G-Code 编辑器、E-CAM 编辑器、定位规划表等工具。</p>
+</li>
+</ul>
+<p><strong>ISPSoft 系统需求</strong></p>
+<p>ISPSoft 目前版本是V3，可以从台达官方下载中文免费获取，参考官方资源链接。</p>
+<!-- raw HTML omitted -->
+<p><strong>支持的 PLC 及语言</strong></p>
+<p>ISPSoft 支持台达多款PLC设备，提供的功能也非常多，为了方便用户查询，这个章节将会介绍ISPSoft 对于 AS、AH5x0、AH5x1、AH560、AHxxEMC、DVP、DVPxxMC、AS5xx，这八种系列 PLC 机种所支持的功能做一个整理。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ISPSoft%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81.png"
+	width="882"
+	height="560"
+	srcset="/p/delta-es3-easy-plus/assets/ISPSoft%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81_hueb0f14678e99a0fb9955ee8a649838f4_54694_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ISPSoft%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81_hueb0f14678e99a0fb9955ee8a649838f4_54694_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="157"
+		data-flex-basis="378px"
+	
+></p>
+<p><strong>安装 ISPSoft</strong></p>
+<ol>
+<li>当计算机中已安装旧版的ISPSoft时，执行ISPSoft安装程序时，系统会自动检测有无安装旧的ISPSoft 版本，并提示要移除旧的 ISPSoft，移除完成之后会自动继续安装新的 ISPSoft。</li>
+<li>从官网或官方渠道获取安装文件，运行文件包中的 Setup.exe， 一路回车，中间会安装必要运行库、驱动、和必备组件，然后安装完成。</li>
+</ol>
+<p><strong>卸载 ISPSoft</strong></p>
+<p>在开始菜单 找到  ISPSoft Uninstall，双击运行，待  ISPSoft 移除程序窗口出现后点选 是 确认动作后即可开始进行移除，等待后完成，卸载软件不会删除程序及档案</p>
+<h3 id="通讯管理-commgr">通讯管理 COMMGR</h3>
+<p>COMMGR 是台达电子的通讯管理工具，可以从台达官方下载中文免费获取。其主要的功能在于扮演台达软件与硬件之间的通讯桥梁，而通过 COMMGR 的管理，联机的工作亦将变得更为便利也更有效率。通常 COMMGR 会随 ISOSoft 自动安装，但也可以从官方网站下载独立版更新。</p>
+<p>安装过程与 ISPSoft 相似，采取默认配置安装即可。 COMMGR 为独立于 ISPSoft 的工具软件，因此用户必须另外对其进行安装，而当计算机中已安装旧版的 COMMGR 时，执行 COMMGR 安装程序，系统会自动检测有无安装旧的 COMMGR 版本，并提示要移除旧的 COMMGR，移除完成后会自动继续安装新的 COMMGR。</p>
+<h3 id="ecat-builder">ECAT Builder</h3>
+<p>EtherCAT联机组态设定软件，需要从官方下载中心免费获取，用于实现EtherCat网络组态及符号变量获取</p>
+<h3 id="canopen-builder">CANOpen Builder</h3>
+<p>CANopen组态与运动控制设定软件，可能需要从官方下载中心免费获取，用于实现CANOpen网络组态及符号变量获取</p>
+<hr>
+<h2 id="程序架构">程序架构</h2>
+<p>DVP-ES3 PLC 借助 IEC 61131-3 程序管理理念，通过程序组织单元 (Program Organization Unit, POU) 进行程序架构组织。POU 应当是用户程序中最小的、独立的软件单元。 IEC 61131-3  定义了三种类型的POU，按其功能的递增顺序依次为函数（Function，FUN）、功能块（Function Block，FB）和程序（Program, PROG），但DVP-ES3仅支持后两者。</p>
+<ul>
+<li><strong>FUN</strong>（函数）  <strong>ES3并不支持该特性</strong>
+FUN是可以赋予参数但没有静态变量（没有记忆）的POU，当以相同的输入参数调用时，它总是生成相同的结果作为函数输出，例如算术运算指令。</li>
+<li>FB（功能块）ES3 支持
+FB是可以赋予参数并具有静态变量（有记忆）的POU，当以相同的输入参数调用时，它的输出状态取决于其内部和外部变量的状态，它能记忆状态信息，例如定时器和计数器等。</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-%E6%96%B0%E5%BB%BAFB.png"
+	width="526"
+	height="435"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-%E6%96%B0%E5%BB%BAFB_hu1f163a2fc047b41c78cb33f009b76ce8_9580_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-%E6%96%B0%E5%BB%BAFB_hu1f163a2fc047b41c78cb33f009b76ce8_9580_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="120"
+		data-flex-basis="290px"
+	
+></p>
+<ul>
+<li>PROG（程序）
+PROG代表PLC用户的最高层，即程序，它能存取PLC的IO变量，这些IO变量必须在POU或其变量表中予以说明。</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/Delta_%E7%A8%8B%E5%BA%8F%E6%9E%B6%E6%9E%84.png"
+	width="447"
+	height="187"
+	srcset="/p/delta-es3-easy-plus/assets/Delta_%E7%A8%8B%E5%BA%8F%E6%9E%B6%E6%9E%84_hu1624ce4840fc7e7c21b2cc0e9bacce75_9025_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/Delta_%E7%A8%8B%E5%BA%8F%E6%9E%B6%E6%9E%84_hu1624ce4840fc7e7c21b2cc0e9bacce75_9025_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="239"
+		data-flex-basis="573px"
+	
+></p>
+<p>其调用结构如图所示，Prog 程序可以随意调用FB和FC，FB可以调用FB和FC类型函数，但是FC不支持调用FB。</p>
+<h3 id="工作管理">工作管理</h3>
+<p>在上述组织下，可以通过项目管理区 | 工作(TASK) 为 Prog 分配任务，其任务主要为三种，</p>
+<ul>
+<li>周期性：被指派至周期性的程序 Prog，其执行方式便是单纯的重复扫描，按多个周期性Task则顺序执行</li>
+<li>定时中断：当定时中断工作的时间到达后，被分配至该定时中断工作的所有程序 Prog 便会依照排列顺序执行</li>
+<li>条件中断：当中断条件成立时，如外部触发中断的某个接点被触发，被分配至该 TASK 的所有 Prog 便会依照排列顺序执行一遍</li>
+</ul>
+<p><strong>ES3 每个 Prog 仅可以分配到一种任务之下，一个任务可以分配到多个Prog，可以有不分配到TASK的Prog。</strong></p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3_TASK_DIS.png"
+	width="669"
+	height="459"
+	srcset="/p/delta-es3-easy-plus/assets/ES3_TASK_DIS_hufcc98bc4f53752d7fc1f637cd1348a2c_11677_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3_TASK_DIS_hufcc98bc4f53752d7fc1f637cd1348a2c_11677_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="145"
+		data-flex-basis="349px"
+	
+></p>
+<p>三种 TASK 任务调用优先级关系如下：条件中断 &gt; 定时中断 &gt; 周期性循环
+<img src="/p/delta-es3-easy-plus/assets/ES3-TASK%E4%BC%98%E5%85%88%E7%BA%A7.png"
+	width="1268"
+	height="499"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-TASK%E4%BC%98%E5%85%88%E7%BA%A7_hu008f380a9bbf522d95ceb9ef3290f6ae_100693_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-TASK%E4%BC%98%E5%85%88%E7%BA%A7_hu008f380a9bbf522d95ceb9ef3290f6ae_100693_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="254"
+		data-flex-basis="609px"
+	
+></p>
+<h3 id="功能块-fb">功能块 FB</h3>
+<p>功能块FB是一种具有运算功能的程序组件，本身也属于 POU 的一种，但它无法自行运作，而是必须透过程序 POU 对它进行调用，并传递相关参数之后，才能执行功能块所定义的功能；而功能块在执行完毕后，也同样可将内部的运算结果再回传给上层 POU（调用者）所指定的装置或变量符号中。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/PB_VAR.png"
+	width="672"
+	height="290"
+	srcset="/p/delta-es3-easy-plus/assets/PB_VAR_hu41f6cb1617072d041eb9c6210bbcdf0f_8933_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/PB_VAR_hu41f6cb1617072d041eb9c6210bbcdf0f_8933_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="231"
+		data-flex-basis="556px"
+	
+></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>列别</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VAR</td>
+<td>仅供功能块内部运算用，且在运算结束后，变量符号的状态及数值会被保留下来。</td>
+</tr>
+<tr>
+<td>VAR_INPUT</td>
+<td>用做功能块的输入端点，只读，传值</td>
+</tr>
+<tr>
+<td>VAR_OUTPUT</td>
+<td>用做功能块的输出端点，只写，传值</td>
+</tr>
+<tr>
+<td>VAR_IN_OUT</td>
+<td>功能块的反馈型端点，既可以读取也可以写入，ES3传值</td>
+</tr>
+</tbody>
+</table></div>
+<p>当Prog或FB调用FB时，各个接口数据需要注意如下规则：</p>
+<ul>
+<li>调用方的变量符号（P_VAR）与功能块端点（FB_VAR）的数据类型须完全一致</li>
+<li>当有任何一方为 WORD 系列的数据类型时，另一方便允许是 WORD、INT、REAL 任一系列的数据类型，而满足此条件时，P_VAR 的数据长度便允许大于或等于 FB_VAR。</li>
+<li>若 P_VAR（调用方）的数据类型为 STEP，则 FB_VAR（功能块）的数据类型可为 BOOL，此操作代表调用方的步进点状态将会在功能块的内部使用。</li>
+</ul>
+<p>FB被Prog调用时，会生成实例，并被自动编号为P1，P2，&hellip;&hellip;. 等背景块，为区别FB调用，FB实际调用必须指定背景块以区别不同调用过程。</p>
+<h3 id="数据区及寄存器">数据区及寄存器</h3>
+<p>DVP-ES3 定义多种存储装置，用于访问输入输出IO及数据，其访问标识符和取值范围如下表所示</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>识别标识符</th>
+<th>数量</th>
+<th>范围</th>
+<th>备注</th>
+<th>位访问</th>
+<th>字访问</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数字量输入</td>
+<td>X</td>
+<td>256</td>
+<td>X0-X377</td>
+<td>X+8进制表示</td>
+<td>ok+F*</td>
+<td></td>
+</tr>
+<tr>
+<td>数字量输出</td>
+<td>Y</td>
+<td>256</td>
+<td>X0-X377</td>
+<td>Y+8进制表示</td>
+<td>ok+F*</td>
+<td></td>
+</tr>
+<tr>
+<td>辅助寄存器</td>
+<td>M</td>
+<td>8192</td>
+<td>M0-M8191</td>
+<td>M+10进制表示</td>
+<td>ok</td>
+<td></td>
+</tr>
+<tr>
+<td>特殊寄存器</td>
+<td>SM</td>
+<td>4096</td>
+<td>SM0-SM4095</td>
+<td>SM+10进制表示</td>
+<td>ok</td>
+<td></td>
+</tr>
+<tr>
+<td>一般标志</td>
+<td>S</td>
+<td>2048</td>
+<td>S0-S2047</td>
+<td>S+10进制表示</td>
+<td>ok</td>
+<td></td>
+</tr>
+<tr>
+<td>定时器</td>
+<td>T</td>
+<td>512</td>
+<td>T0-T511</td>
+<td>T+10进制表示</td>
+<td>ok</td>
+<td>ok</td>
+</tr>
+<tr>
+<td>计数器</td>
+<td>C</td>
+<td>512</td>
+<td>C0-C511</td>
+<td>C+10进制表示</td>
+<td>ok</td>
+<td>ok</td>
+</tr>
+<tr>
+<td>高速计数器</td>
+<td>HC</td>
+<td>256</td>
+<td>HC0-HC255</td>
+<td>HC+10进制表示</td>
+<td>ok</td>
+<td>ok</td>
+</tr>
+<tr>
+<td>数据寄存器</td>
+<td>D</td>
+<td>30000</td>
+<td>D0~D29999</td>
+<td>D+10进制表示</td>
+<td>ok+F*</td>
+<td>ok</td>
+</tr>
+<tr>
+<td>特殊数据寄存器</td>
+<td>SR</td>
+<td>2048</td>
+<td>SR0-SR2048</td>
+<td>SR+10进制表示</td>
+<td></td>
+<td>ok</td>
+</tr>
+<tr>
+<td>文件寄存器</td>
+<td>FR</td>
+<td>65536</td>
+<td>FR0~FR65535</td>
+<td>FR+10进制表示</td>
+<td></td>
+<td>ok</td>
+</tr>
+<tr>
+<td>变址寄存器</td>
+<td>E</td>
+<td>10</td>
+<td>E0-E9</td>
+<td>E+10进制表示</td>
+<td></td>
+<td>ok</td>
+</tr>
+</tbody>
+</table></div>
+<p>F* 表示可以强制修改</p>
+<p>ES3 各数据区属性</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>识别标识符</th>
+<th>读写属性</th>
+<th>断电保持属性</th>
+<th>保持范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数字量输入</td>
+<td>X</td>
+<td>一般只读，不建议写</td>
+<td>不保持</td>
+<td></td>
+</tr>
+<tr>
+<td>数字量输出</td>
+<td>Y</td>
+<td>一般只写，可读</td>
+<td>不保持</td>
+<td></td>
+</tr>
+<tr>
+<td>辅助寄存器</td>
+<td>M</td>
+<td>可读可写，不建议内部用，不建议非符号访问</td>
+<td>部分保持</td>
+<td>M6000-M8191</td>
+</tr>
+<tr>
+<td>特殊寄存器</td>
+<td>SM</td>
+<td>视情况而定</td>
+<td>部分保持</td>
+<td>系统管理</td>
+</tr>
+<tr>
+<td>一般标志</td>
+<td>S</td>
+<td>可读可写，不建议内部用，不建议非符号访问</td>
+<td>部分保持</td>
+<td>S512-S1023</td>
+</tr>
+<tr>
+<td>定时器</td>
+<td>T</td>
+<td>配合定时器专用</td>
+<td>不保持</td>
+<td></td>
+</tr>
+<tr>
+<td>计数器</td>
+<td>C</td>
+<td>配合计数器专用</td>
+<td>部分保持</td>
+<td>C448-C511</td>
+</tr>
+<tr>
+<td>高速计数器</td>
+<td>HC</td>
+<td>配合高速计数器专用</td>
+<td>部分保持</td>
+<td>HC128-HC255</td>
+</tr>
+<tr>
+<td>数据寄存器</td>
+<td>D</td>
+<td>可读可写，数据存储区</td>
+<td>部分保持</td>
+<td>D20000-D29999</td>
+</tr>
+<tr>
+<td>特殊数据寄存器</td>
+<td>SR</td>
+<td>可读可写</td>
+<td>部分保持</td>
+<td>系统管理</td>
+</tr>
+<tr>
+<td>文件寄存器</td>
+<td>FR</td>
+<td>可读可写</td>
+<td>保持</td>
+<td>FR0-FR65535</td>
+</tr>
+<tr>
+<td>变址寄存器</td>
+<td>E</td>
+<td>可读可写</td>
+<td>不保持</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="plc-程序运行过程">PLC 程序运行过程</h3>
+<p>DVP-ES3 系统运行总是按照一个固定流程运行的，包括诊断、更新输入输出、执行程序等</p>
+<!-- raw HTML omitted -->
+<hr>
+<h2 id="编程基础">编程基础</h2>
+<h3 id="数据类型">数据类型</h3>
+<h4 id="基本数据类型">基本数据类型</h4>
+<p>ES3 支持的数据类型包括如下的 7 种。</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>数据长度</th>
+<th>值范围</th>
+<th>支持的数据区</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BOOL</td>
+<td>1个位</td>
+<td>0,1</td>
+<td>所有的位数据区</td>
+</tr>
+<tr>
+<td>WORD</td>
+<td>16个位</td>
+<td>-32768 ~ 32767</td>
+<td>D/E</td>
+</tr>
+<tr>
+<td>DWORD</td>
+<td>32个位</td>
+<td>-2147483648 ~  2147483647</td>
+<td>D/E</td>
+</tr>
+<tr>
+<td>INT</td>
+<td>16个位</td>
+<td>0-16#FFFF</td>
+<td>D</td>
+</tr>
+<tr>
+<td>DINT</td>
+<td>32个位</td>
+<td>0-16#FFFF FFFF</td>
+<td>D</td>
+</tr>
+<tr>
+<td>REAL</td>
+<td>32个位</td>
+<td>-3.4e+38~ -1.1e-38,0 ,1.1e-38~ 3.4e+38</td>
+<td>D</td>
+</tr>
+<tr>
+<td>STRING</td>
+<td>字符数向上取偶/2  * WORD</td>
+<td>ASCII 字符</td>
+<td>D</td>
+</tr>
+</tbody>
+</table></div>
+<p>此外，还有两种Timer，Counter两种数据类型</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>用途</th>
+<th>支持的数据区</th>
+<th>范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TIMER</td>
+<td>定时器格式，用来代表定时器装置</td>
+<td>T</td>
+<td>0-512</td>
+</tr>
+<tr>
+<td>COUTER</td>
+<td>计数器格式，用来代表计数器装置。</td>
+<td>C</td>
+<td>0-512</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>数据字面量表示</strong></p>
+<p>当在PLC中输入常数时，必须按照数据类型对应的字面量格式输入，才会被PLC正确识别，并处理，基本字符串的字面量格式如下</p>
+<ul>
+<li>十进制，也是PLC默认的数字类型，在需要数字的地方，直接输入数字，则会被PLC识别，标识符为K（不能输入K），如30，则直接输入30</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/ispsoft-%E6%95%B4%E6%95%B0%E5%AD%97%E9%9D%A2%E9%87%8F.png"
+	width="816"
+	height="404"
+	srcset="/p/delta-es3-easy-plus/assets/ispsoft-%E6%95%B4%E6%95%B0%E5%AD%97%E9%9D%A2%E9%87%8F_hu49c2c7779f267b5e96d82918a65f02a8_6551_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ispsoft-%E6%95%B4%E6%95%B0%E5%AD%97%E9%9D%A2%E9%87%8F_hu49c2c7779f267b5e96d82918a65f02a8_6551_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="201"
+		data-flex-basis="484px"
+	
+></p>
+<ul>
+<li>十六进制数据，必须在十六进制数前面加 16#，如 K30 = 16#1E</li>
+<li>浮点数，浮点数可以直接使用小数点数字表，标识符号为 F、DF，但不能输入F，DF，直接输入带有小数点的数字即可，如30.0</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/ispsoft-%E6%B5%AE%E7%82%B9%E6%95%B0%E5%AD%97%E9%9D%A2%E9%87%8F.png"
+	width="783"
+	height="236"
+	srcset="/p/delta-es3-easy-plus/assets/ispsoft-%E6%B5%AE%E7%82%B9%E6%95%B0%E5%AD%97%E9%9D%A2%E9%87%8F_hubf5a829b0e2c68347f1464ed31299e68_3523_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ispsoft-%E6%B5%AE%E7%82%B9%E6%95%B0%E5%AD%97%E9%9D%A2%E9%87%8F_hubf5a829b0e2c68347f1464ed31299e68_3523_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="331"
+		data-flex-basis="796px"
+	
+></p>
+<ul>
+<li>字符串，字符串的字面量，就是将需要赋值的字符串加上双引号&quot;&quot;</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/ispsoft-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E9%9D%A2%E9%87%8F.png"
+	width="892"
+	height="234"
+	srcset="/p/delta-es3-easy-plus/assets/ispsoft-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E9%9D%A2%E9%87%8F_hu4758c64f82f1fcddbcd12f924b283981_3791_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ispsoft-%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E9%9D%A2%E9%87%8F_hu4758c64f82f1fcddbcd12f924b283981_3791_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="381"
+		data-flex-basis="914px"
+	
+></p>
+<ul>
+<li>时间字面量，DVP-ES3不存在时间字面量，时间计时器都是具有时间的寄存器，只要输入寄存器的倍数即可表示对应的时间</li>
+</ul>
+<h4 id="数组">数组</h4>
+<p>DVP-ES3 数组与其他高级程序语言的数组概念几乎等同，即若干相同数据类型的组合。</p>
+<p>其声明方法为 ARRAY_VAR := ARRAY [0..N] OF TYPE。 访问则通过 <code>数组名[索引]</code> 来访问对应下标的数组，索引值的内容必须由 0 开始，且不可大于或等于数组的大小。</p>
+<p>声明数组类型的变量符号时，除了须指定数组元素的数据类型之外，亦须一并指定数组的大小，范围N为 1~2048；且在自行指定数组符号的启始地址时，须根据数组的数据类型而指定对应的装置，但须注意不可指定为 SR、SM、E、F…等装置。</p>
+<p><code>ARRAY_0 := ARRAY [0..10] OF REAL， i int</code>  则i的范围必须是0..9 不能小于0或大于9，否则会造成非法访问导致异常。</p>
+<h4 id="自定义数据类型">自定义数据类型</h4>
+<p>自定义数据类型 UDT，包括结构体、枚举、联合体。</p>
+<ul>
+<li>结构体 STRUCT：结构体是由多个数据类型的成员组成，定义成员的数据类型，可为 BOOL、WORD、DWORD、INT、DINT、REAL、STRING、ARRAY 或另一 STRUCTURE 或 枚举。</li>
+</ul>
+<p>结构体成员房访问，通过结构体+点+成员名。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C" data-lang="C"><span class="line"><span class="cl"><span class="n">TYPE</span> <span class="o">&lt;</span><span class="err">自定义名称</span><span class="o">&gt;:</span>
+</span></span><span class="line"><span class="cl"><span class="n">STRUCT</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">成员</span> <span class="mi">1</span> <span class="err">名称</span><span class="o">&gt;:</span> <span class="o">&lt;</span><span class="err">数据类型</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">成员</span> <span class="mi">2</span> <span class="err">名称</span><span class="o">&gt;:</span> <span class="o">&lt;</span><span class="err">数据类型</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">成员</span> <span class="n">n</span> <span class="err">名称</span><span class="o">&gt;:</span> <span class="o">&lt;</span><span class="err">数据类型</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">END_STRUCT</span>
+</span></span><span class="line"><span class="cl"><span class="n">END_TYPE</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="c1">// 例子：一个电机
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">TYPE</span> <span class="nl">MOTOR</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">STRUCT</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">SW</span><span class="p">:</span> <span class="n">DWORD</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nl">CW</span><span class="p">:</span> <span class="n">WORD</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nl">FRE_FB</span><span class="p">:</span> <span class="n">WORD</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="nl">FRE_SET</span><span class="p">:</span> <span class="n">WORD</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">END_STRUCT</span>
+</span></span><span class="line"><span class="cl"><span class="n">END_TYPE</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>枚举 ENUM：枚举类型就是有限状态的穷举的集合，其意义在于定义一组字符串别名以及对应的数值，便于帮助用户记忆。枚举类型不能做数组。</p>
+<p>如果红绿灯表达可以如下。</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">type RGYL:
+</span></span><span class="line"><span class="cl">(
+</span></span><span class="line"><span class="cl">	red 	:= 0,
+</span></span><span class="line"><span class="cl">	yellow 	:= 1,
+</span></span><span class="line"><span class="cl">	green 	:= 2
+</span></span><span class="line"><span class="cl">);
+</span></span><span class="line"><span class="cl">end_type
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">// 则一组灯的状态可以写为
+</span></span><span class="line"><span class="cl">OneLight := ARRAY [3] OF int; // 一组红绿灯
+</span></span><span class="line"><span class="cl">OneLight[0] := RGYL.red;  // 左转红灯
+</span></span><span class="line"><span class="cl">OneLight[1] := RGYL.green;  // 直行和右转都是绿灯 
+</span></span><span class="line"><span class="cl">OneLight[2] := RGYL.green;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Union 联合体、共用体</li>
+</ul>
+<p>ES3 联合体是一种特殊的数据类型，允许在相同的内存位置存储不同的数据类型。可以定义一个带有多成员的共用体，但是任何时候只能有一个成员带有值。联合体提供了一种使用相同的内存位置的有效方式。联合体的长度取决于最大的那个数据类型，然后其他数据类型执行末端对齐原则。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="n">TYPE</span> <span class="o">&lt;</span><span class="err">自定义名称</span><span class="o">&gt;:</span>
+</span></span><span class="line"><span class="cl"><span class="n">UNION</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">成员</span> <span class="mi">1</span> <span class="err">名称</span><span class="o">&gt;</span> <span class="o">:=</span> <span class="o">&lt;</span><span class="err">数据类型</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">成员</span> <span class="mi">2</span> <span class="err">名称</span><span class="o">&gt;</span> <span class="o">:=</span> <span class="o">&lt;</span><span class="err">数据类型</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="err">成员</span> <span class="n">n</span> <span class="err">名称</span><span class="o">&gt;</span> <span class="o">:=</span> <span class="o">&lt;</span><span class="err">数据类型</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">END_UNION</span>
+</span></span><span class="line"><span class="cl"><span class="n">END_TYPE</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 例如，刚刚的motor结构，因为状态字SW和控制字CW都具有复杂的定义，
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 应用过程可能会频繁访问其某些位，则可以定义如下
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">TYPE</span> <span class="nl">D_UNION</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl"><span class="n">UNION</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">SW</span> <span class="p">:</span> <span class="n">DWORD</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">SWB</span> <span class="p">:</span> <span class="n">ARRAY</span> <span class="p">[</span><span class="mf">0..31</span><span class="p">]</span> <span class="n">OF</span> <span class="n">BOOL</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nl">LW</span> <span class="p">:</span> <span class="n">WORD</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">END_UNION</span>
+</span></span><span class="line"><span class="cl"><span class="n">END_TYPE</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//此时，该MOTO_SW就可以利用多种结构便利的访问需要位了，如下图所示
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/p/delta-es3-easy-plus/assets/ES3-Union.png"
+	width="706"
+	height="198"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-Union_hube18913764c15f8012fc28bef0f1e537_2794_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-Union_hube18913764c15f8012fc28bef0f1e537_2794_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt=" "
+	
+	
+		class="gallery-image" 
+		data-flex-grow="356"
+		data-flex-basis="855px"
+	
+></p>
+<h3 id="数据及io寻址">数据及IO寻址</h3>
+<p>DVP ES3 内存数据结构如下图所示，采用Little-endian byte swap 编码方式；</p>
+<!-- raw HTML omitted -->
+<p>对于无符号整数：201993258 =&gt; 16#0C0A 2C2A；其内部存储结构（B0 B1 B2 B3）: 2C 2A 0C 0A；</p>
+<p>浮点数采用 IEEE754 的标准，占用两个字，如果涉及双精度转换单精度（合理范围转换），那么重要的就是将符号位和指数部分保留，尾数高位保留，低位截断。</p>
+<!-- raw HTML omitted -->
+<h4 id="直接寻址">直接寻址</h4>
+<p>ES3直接寻址包括符号寻址和绝对值寻址两种</p>
+<ul>
+<li>符号寻址，即建立变量表通过符合变量来访问数据</li>
+<li>绝对寻址，则直接在接口处填写绝对值地址，如D200,SM401等等</li>
+</ul>
+<p>实际应用中，强烈建议使用符号寻址而非绝对寻址，符号寻址可以通过变量名称及定义得到待处理的变量类型、大小及其物理意义，避免各种奇怪的问题。</p>
+<ul>
+<li>无法按照字、双字访问位装置，但可以借用 MOVB 指令（按照位移动指令）；将多个位合并为一个字或者一个字复制到连续的多个位；</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-movb.png"
+	width="702"
+	height="321"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-movb_hu73628f37a3343bfab6e83dbadbb248c4_3540_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-movb_hu73628f37a3343bfab6e83dbadbb248c4_3540_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="218"
+		data-flex-basis="524px"
+	
+></p>
+<ul>
+<li>无法直接访问一个双字符号中的字，可以利用上述指令建立新的变量，或者通过共同体访问</li>
+<li>LD 常开指令无法使用符号的位访问，但可以使用装置位访问；但指令处均可以；（个人认为是个BUG）</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h4 id="间接寻址">间接寻址</h4>
+<ul>
+<li>通过变址寄存器访问</li>
+</ul>
+<p>变量符号的变址寄存器修饰，格式：符号名称@变址寄存器，变址寄存器也可以是变址寄存器符号。如</p>
+<p>定义：VAR_A WORD D100; OFFSET E0 = 3 , 则VAR_A@OFFSET-&gt; D103</p>
+<ul>
+<li>通过数组索引访问</li>
+</ul>
+<p>定义数组后，通过数组名称[索引]来访问变量。 如 ARRAY_0 = ARRAY [10 ] OF BOOL; INDEX INT D0 = 3;</p>
+<p>则ARRAY_0[INDEX] -&gt; ARRAY_0[3] 的数据</p>
+<h3 id="数字量访问与输出">数字量访问与输出</h3>
+<p>DVP-ES3 PLC 数字量访问非常直接简单，可以直接调用输入存储器种的数据，而更新存储器的任务交给PLC自动完成。</p>
+<ol>
+<li>对于数字量输入通道，将PLC IO从零开始计数，一直到右侧的最后一个IO，按照从左到右的顺序，逐次排列</li>
+<li>访问通道状态，则用 $XM_{8}$ （$M_8$表示进制数）</li>
+<li>由于PLC及IO模块带的IO点位数，几乎都是8的倍数，那么确定DI，则需确定是系统上的第几组DI，然后X + 组号 + 组内编号访问</li>
+</ol>
+<p>如果对访问实时性有要求，需要及时处理DI，则在正常访问符号前面+D，如DX23，则会程序执行器直接访问X23点状态</p>
+<p>数字量输出同理</p>
+<h3 id="模拟量调用">模拟量调用</h3>
+<p>DVP-ES3 将模拟量定义为特殊模块，其IO量无法直接从输入区获得，需要借助系统映射或指令</p>
+<ul>
+<li>系统映射</li>
+</ul>
+<p>ES3 主机连接特殊 I/O 模块时（不限于模拟量模块），寄存器 D9900 ~ D9999 将被占用，使用者可利用MOV 指令在程序中指定 D9900 ~ D9999 来获取通道数值，定义如下。</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th></th>
+<th>第1个IO</th>
+<th>第2个IO</th>
+<th>第3个IO</th>
+<th>第4个IO</th>
+<th>第5个IO</th>
+<th>第6个IO</th>
+<th>第7个IO</th>
+<th>第8个IO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>位置代码(供指令用)</td>
+<td>D1320</td>
+<td>D1321</td>
+<td>D1322</td>
+<td>D1323</td>
+<td>D1324</td>
+<td>D1325</td>
+<td>D1326</td>
+<td>D1327</td>
+</tr>
+<tr>
+<td>CH1信号值</td>
+<td>D9900</td>
+<td>D9910</td>
+<td>D9920</td>
+<td>D9930</td>
+<td>D9940</td>
+<td>D9950</td>
+<td>D9960</td>
+<td>D9970</td>
+</tr>
+<tr>
+<td>CH2信号值</td>
+<td>D9901</td>
+<td>D9911</td>
+<td>D9921</td>
+<td>D9931</td>
+<td>D9941</td>
+<td>D9951</td>
+<td>D9961</td>
+<td>D9971</td>
+</tr>
+<tr>
+<td>CH3信号值</td>
+<td>D9902</td>
+<td>D9912</td>
+<td>D9922</td>
+<td>D9932</td>
+<td>D9942</td>
+<td>D9952</td>
+<td>D9962</td>
+<td>D9972</td>
+</tr>
+<tr>
+<td>CH4信号值</td>
+<td>D9903</td>
+<td>D9913</td>
+<td>D9923</td>
+<td>D9933</td>
+<td>D9943</td>
+<td>D9953</td>
+<td>D9963</td>
+<td>D9973</td>
+</tr>
+<tr>
+<td>CH5信号值</td>
+<td>D9904</td>
+<td>D9914</td>
+<td>D9924</td>
+<td>D9934</td>
+<td>D9944</td>
+<td>D9954</td>
+<td>D9964</td>
+<td>D9974</td>
+</tr>
+<tr>
+<td>CH6信号值</td>
+<td>D9905</td>
+<td>D9915</td>
+<td>D9925</td>
+<td>D9935</td>
+<td>D9945</td>
+<td>D9955</td>
+<td>D9965</td>
+<td>D9975</td>
+</tr>
+</tbody>
+</table></div>
+<p>首先确定模拟量模块位置，然后根据模块位置及通道位置，确定当前信号值。如果是AO通道，那就是映射的通道输出值。</p>
+<ul>
+<li>指令获取</li>
+</ul>
+<p>ES3 有从特殊模块获取数值的两条指令，From、To 用于从特殊模块获取数值和写入数值，包括通道配置。每个特殊模块，都有自定义的控制寄存器 CR，From和To就是控制这些寄存器的，具体寄存器定义请参考各个模块手册。值得注意的是 上述通道映射值为 N次 （默认为10次）采样后的平均值，如果需要读取当前实时读取，请将平均次数设定为1.</p>
+<ul>
+<li>模拟量输入模块值计算</li>
+</ul>
+<p>DVP04AD 、 DVP06XA 模拟量输入通道，均支持关闭， ±10V，±5V，0-10V，0-5V，±20mA，0-20mA，4-20mA 8种模式，其中双向模式均为14bit精度，单向模式均为13bit精度，且其映射通道范围值均为 -32000 ~ 32000（双向模式），0 ~ 32000（单向模式）。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-%E6%A8%A1%E6%8B%9F%E9%87%8F%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F.png"
+	width="1265"
+	height="600"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-%E6%A8%A1%E6%8B%9F%E9%87%8F%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F_hufb52fbcfc0e6e6c3063392dd4f2d8500_90434_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-%E6%A8%A1%E6%8B%9F%E9%87%8F%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F_hufb52fbcfc0e6e6c3063392dd4f2d8500_90434_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="模拟量输入"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="210"
+		data-flex-basis="506px"
+	
+></p>
+<p>其转换公式为</p>
+<p>传感器感知数值 = 传感器量程下限 + (通道输入值- 通道下限值) x (传感器量程上限 - 传感器量程下限 ) / (通道上限值 - 通道下限值)</p>
+<p>对于双向输入的模拟量，则计算公式为：
+$$
+V = R_L + [X-(-32000)]\times\frac{R_H-R_L}{32000-(-32000)} = R_L + (R_H-R_L) \times\frac{X+32000}{64000}
+$$
+对于单向输入的模拟量，则计算公式为：
+$$
+V = R_L + X\times\frac{R_H-R_L}{32000-0} = R_L + (R_H-R_L) \times\frac{X}{32000}
+$$
+例：如果有一个有源温度传感器，量程为 -50~50 ℃，输出信号值为 -10V~10V，如果通道值当前为 17652，则当前温度计算如下
+$$
+t=-50+[50-(-50)]\times\frac{17652+32000}{64000} = 27.58 ^{\circ}C
+$$</p>
+<p>如果有一个有源温度传感器，量程为 0~100 ℃，输出信号值为 4-20mA，如果通道值当前为 17652，则当前温度计算如下
+$$
+t = 0 + 100 \times \frac{17652}{32000} = 55.16 ^{\circ}C
+$$</p>
+<ul>
+<li>模拟量输出计算</li>
+</ul>
+<p>DVP02DA-E2、DVP04DA-E2、DVP06XA  模拟量输出模块，均支持 关闭、-10V~10V，0-20mA，4-20mA 4种工作模式，转换精度均为14bit。且其映射通道范围值均为 -32000 ~ 32000（双向模式），0 ~ 32000（单向模式）。</p>
+<p>模拟量输出过程与模拟量输入过程刚好相逆，其转换公式为</p>
+<p>通道输出值 = 通道下限值 + (拟执行输出值 - 执行下限值) x (通道上限值 - 通道下限值)/ (执行上限值 - 执行下限值)</p>
+<p>对双向输出模拟量为
+$$
+O = -32000 + (Y-R_L)\times \frac{32000-(-32000)}{R_H-R_L}= \frac{64000}{R_H-R_L} \times (Y-R_L) -32000
+$$
+单向输出模拟量为
+$$
+O =  \frac{32000}{R_H-R_L} \times (Y-R_L)
+$$
+例：如果有一个调节阀 调节范围 0-100%，信号范围 4-20 mA，要控制阀门开度为25%，则通道赋值计算过程如下：
+$$
+O = \frac{32000}{100-0}\times(25-0) = 8000
+$$
+如果有一个双向转动的电机，被调节范围 -50~50Hz，信号范围为 -10~10V，要控制电机频率为 -35，则通道赋值计算过程如下
+$$
+O = \frac{64000}{50-(-50)}\times(-35-(-50))-32000 = -22400
+$$</p>
+<ul>
+<li>热电阻及热电偶计算</li>
+</ul>
+<p>DVP04PT-E2，DVP06PT-E2 热电阻测量模块，支持 关闭、PT100(-180 ~ 800℃)、Ni100(-80 ~ 170 ℃)、PT1000(-180 ~ 800℃)、Ni1000(-80 ~ 170℃)、0-300Ω，0-3000Ω，JPt(-180 ~ 500℃)、Cu50(-50 ~ 150℃)、Cu100(-50 ~ 150℃)，LG-Ni1000(-50 ~ 180℃) 共10种运行模式，其中后4种只有DVP06PT-E2支持，分辨率为0.1℃，通道值为实际温度值的10倍整数。</p>
+<p>DVP04TC-E2 热电偶测量模块，支持关闭、 J-type (-100°C ~ 1150°C)， K-type (-100°C ~ 1350°C)， R-type (0°C ~ 1,750°C)， S-type (0°C ~ 1,750°C)， T-type (-150°C ~ 390°C)， E-type (-150°C ~ 980°C)， N-type (-150°C ~ 1,280°C)， -80mV ~ +80mV 共8种模式，分辨率为0.1℃或0.18℉，通道值为实际温度值或电阻值或电压值的10倍整数。</p>
+<p>温度计算公式为
+$$
+V = X / 10
+$$</p>
+<h3 id="io更新">IO更新</h3>
+<p>当外界IO更新较快，循环周期比较长时，可以使用REF指令，在程序中实时访问外机IO.</p>
+<ul>
+<li>REF(D,N) D可选为 XM或YM，N必须为8的倍数或特定值</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>N输入值</th>
+<th>装置</th>
+<th>REF动作说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N=8倍数</td>
+<td>Y0,X0</td>
+<td>立即刷新IO数据</td>
+</tr>
+<tr>
+<td>N=1</td>
+<td>高速输出点</td>
+<td>立即刷新脉冲位置</td>
+</tr>
+<tr>
+<td>N=0</td>
+<td>高速输出点</td>
+<td>立即暂停该高速输出点、设定暂停输出标志，以及刷新当前位</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>DHSRF 指令 刷新高速计数器</li>
+</ul>
+<hr>
+<h2 id="编程指令">编程指令</h2>
+<p>DVP-ES3 包含很多指令，而且分布较为复杂，这里对常用指令及使用方法进行简单整理和说明。</p>
+<h3 id="基本指令及指令用法">基本指令及指令用法</h3>
+<p>LD AND OR 载入、串联、并联装置常开接点，LDI ANI ORI 载入、串联、并联装置常闭接点；支持接入装置包括常见的位装置X/Y/M/SM/S，以及T/C/HC/DX.N等装置</p>
+<ul>
+<li>在任意指令区段（可以为任意指令符号上或红黑线框处），直接键盘输入指令（不须输入回车符等符号，而且必须以字母开头）及其指令参数。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="err">指令名称</span> <span class="err">指令参数</span><span class="mi">1</span><span class="err">，参数</span><span class="mi">2</span><span class="err">，</span><span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 如 ld SM400 插入一个系统常开触点
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 如 ld&gt; d100 d101 插入一个大于的比较指令 d100内的数字 &gt; d101 则后面的指令生效否则不生效
+</span></span></span><span class="line"><span class="cl"><span class="c1">// mov dw101 dw2248 则将dw102 的数据移动到dw2248  
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>新输入的指令的作用范围是以当前指令为参考的，如果是and 则并联在当前指令后面，否则作用在当前指令前面。</li>
+<li>梯形图中，and 是并联一个常开点，or 是串联一个常开点，所有的分支都是基于此关系建立</li>
+<li>用鼠标双击指令图标本身，可以选择同类常用指令 如常开、常闭、上升沿、下降沿就属于同一个类型的点</li>
+<li>选中指令，直接点击回车，则是改变当前指令的作用参数，可以直接输入新的参数</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>如图 键入指令的顺序应当为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">#开始</span>
+</span></span><span class="line"><span class="cl"><span class="n">ld</span> <span class="n">m0</span>
+</span></span><span class="line"><span class="cl"><span class="n">ld</span> <span class="n">sm400</span>
+</span></span><span class="line"><span class="cl"><span class="nb">set</span> <span class="n">y0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#移动选中 m0 常开点</span>
+</span></span><span class="line"><span class="cl"><span class="ow">or</span> <span class="n">m1</span>
+</span></span><span class="line"><span class="cl"><span class="ow">and</span> <span class="n">m2</span>
+</span></span><span class="line"><span class="cl"><span class="ow">and</span> <span class="n">m6</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 移动选中 m2 常开点</span>
+</span></span><span class="line"><span class="cl"><span class="ow">or</span> <span class="n">m4</span>
+</span></span><span class="line"><span class="cl"><span class="ow">and</span> <span class="n">m5</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#移动选中 m2 常开点</span>
+</span></span><span class="line"><span class="cl"><span class="ow">and</span> <span class="n">m3</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#移动选中 y0 线圈</span>
+</span></span><span class="line"><span class="cl"><span class="n">mov</span> <span class="mi">100</span> <span class="n">D0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#完成</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>一般情况下，与16位指令功能相同的32位指令，在16位指令之前加D，则为32位指令，包括DWord和Real</li>
+<li>一般情况下，与16位指令功能相同的字符串指令，在16位指令之前加$，则为字符串指令</li>
+<li>有Pulse指令的，则会只有在上升沿时执行，在普通指令基础上，后面加P，则只有上升沿才会执行</li>
+<li>注意：本篇指令大多数指令可应用程序块Prog和子程序FB中，但带有P的指令几乎都不可应用于FB，只能自定义上升沿触发器，执行不带P的指令。对于必须使用的上升沿和下降沿，台达给出专用替代指令。只能借助这些指令，产生需要上升沿和下降沿</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>FB中可不用指令</th>
+<th>替代指令</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LDP ANDP ORP</td>
+<td>PED APED OPED</td>
+</tr>
+<tr>
+<td>LDF ANDF ORF</td>
+<td>NED AND ONED</td>
+</tr>
+<tr>
+<td>PLS PLF</td>
+<td>无</td>
+</tr>
+<tr>
+<td>NP PN</td>
+<td>FB_NP FB+PN</td>
+</tr>
+<tr>
+<td>MC MCR</td>
+<td>无</td>
+</tr>
+<tr>
+<td>脉冲型指令（P指令）</td>
+<td>无，使用上述指令触发本身执行</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="赋值-moveset">赋值 MOVE/Set</h3>
+<p>DVP-ES3 赋值指令有很多，包括MOV MOVB BMOV NMOV SMOV OUT等</p>
+<ul>
+<li>MOV</li>
+</ul>
+<p>最基本赋值指令，即将一个数据从 Source 复制到另一个位置 Destination，默认为16位版本，即仅能操作一个Word，DMOVE 则复制一个Dword，带P则 上升沿时有效，且带P的指令仅可以用于程序块，不支持功能块。如图所示。S和D能支持除位变量的所有装置。</p>
+<p>MOV要求S和D必须是相同的数据类型，如果不相同（绝对地址其实不存在上述问题，如果是符号访问，则必须要相同），16数据到32位数据，请使用MMOV，系统会自动处理符号；32位数据到16位数据，请使用RMOV。</p>
+<p>将多个连续数据的传送到对应位置的多个装置时，请使用BMOV，支持D,P；BMOV 的神奇变型NSFL、NSFR，左移动（向0靠近）右移动（向大数靠近）</p>
+<p>将一个数据传送到多个位置，请使用NMOV，支持D,P</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>MOVB</li>
+</ul>
+<p>位复制指令，从 S (必须是位地址) 开始，复制N个位到D目的位地址（）。支持P。仅支持位移动。</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>CML，高低位反转传送，输出到另一个字；支持D和P，</p>
+</li>
+<li>
+<p>XCH，对于 S1, S2 数据进行交换，支持D和P，多个连续位置的交换，使用 BXCH</p>
+</li>
+<li>
+<p>ZRST 零填充 区域清除 清除 D1、D2（包括D1D2在内）所有寄存器数值，归零。D1-D2必须类型相同，且D2指向大于D1。</p>
+</li>
+<li>
+<p>DIS 拆分赋值，16 位数据的 4 位分组到4个寄存器</p>
+</li>
+<li>
+<p>UNI 合并赋值，DIS 的反向操作，将4个4位组数据合并为连接为16 位数据</p>
+</li>
+<li>
+<p>位赋值，位赋值包括 OUT SET RESET ALTP 四种</p>
+<ul>
+<li>OUT即为线圈，当前方能流高电平则输出ON，否则输出为OFF，两者必居其一。</li>
+<li>Set和Reset 类型相同，Set 当前方能流高电平则置位，否则不动作；Reset相反，高电平复位，否则不动作；</li>
+<li>位反转，ALTP（D），每一次上升沿，D状态反转一次</li>
+</ul>
+</li>
+<li>
+<p>ZSET 连续位赋值1</p>
+</li>
+<li>
+<p>数据转换与赋值</p>
+<ul>
+<li>
+<p>FLT DFLT 将整数转换为浮点数</p>
+</li>
+<li>
+<p>INT DINT 将浮点数转换位整数</p>
+</li>
+<li>
+<p>MMOV 将16位整数转换为 32 位</p>
+</li>
+<li>
+<p>RMOV 将32位整数转换为 16 位</p>
+</li>
+<li>
+<p>NEG DNEG FNEG 对整数或浮点数取相反数</p>
+</li>
+</ul>
+</li>
+<li>
+<p>BCD 、BIN 二进制与BCD编码转换</p>
+<ul>
+<li>
+<p>BCD 指令 将 BIN 编码数字转为BCD，32 位编码转换用 DBCD。BIN 指令则相反</p>
+</li>
+<li>
+<p>FBCD 二进浮点数转换为十进浮点数，FBIN 十进浮点数转换为二进浮点数</p>
+</li>
+</ul>
+</li>
+<li>
+<p>DTM 数据转换与搬移</p>
+</li>
+</ul>
+<h3 id="比较与逻辑运算">比较与逻辑运算</h3>
+<h4 id="比较运算">比较运算</h4>
+<p>一般用LD+符号(&gt;,&gt;=,=,&lt;,&lt;=,&lt;&gt;)生成，32位使用DLD+符号，浮点数用 FLD+符号，绝对值比较 LDZ+符号，</p>
+<p>所有比较都是S1与S2做比较</p>
+<!-- raw HTML omitted -->
+<p>为了实现串并联关系，还可以使用如下变种：</p>
+<p>AND+符号 DAND+符号 OR+符号 DOR+符号 对16、32位整数进行比较</p>
+<p>FAND+符号 FOR+符号对浮点数比较，</p>
+<p>ANDZ+符号  DANDZ+符号 ORZ+符号 DORZ+符号 对其绝对值做比较</p>
+<h4 id="位运算与位逻辑">位运算与位逻辑</h4>
+<p><img src="/p/delta-es3-easy-plus/assets/rise-down.gif"
+	width="449"
+	height="166"
+	srcset="/p/delta-es3-easy-plus/assets/rise-down_hu6f3aec1bdf0b2ca20714e76f8936ce31_1307_480x0_resize_box.gif 480w, /p/delta-es3-easy-plus/assets/rise-down_hu6f3aec1bdf0b2ca20714e76f8936ce31_1307_1024x0_resize_box.gif 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="270"
+		data-flex-basis="649px"
+	
+></p>
+<ul>
+<li>
+<p>上升沿，上升沿是一种状态，即该变量上一个周期是False，当前周期是True，则为上升沿</p>
+<ul>
+<li>
+<p>LDP, ANDP, ORP 载入、串联、并联上升沿继电器，支持 DX、X、Y、M、SM、S、T、C、HC、D 操作数，只需要添加检测的值。</p>
+</li>
+<li>
+<p>PLS 检测上升沿，并生成一个周期为True的脉冲；</p>
+</li>
+<li>
+<p>NP 线路上升沿检测，</p>
+</li>
+</ul>
+</li>
+<li>
+<p>下降沿，下降沿是一种状态，即该变量上一个周期是TRUE，当前周期是FALSE，则为下降沿</p>
+<ul>
+<li>LDF, ANDF,ORF 载入、串联、并联下降沿，支持 DX、X、Y、M、SM、S、T、C、HC、D 操作数，只需要添加检测的值</li>
+<li>PLF 检测下降沿，并生成一个周期为True的脉冲</li>
+<li>PN 线缆下降沿检测</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>WAND DAND 按位与，LD&amp; 、DLD&amp; 、AND&amp; 、DAND&amp; 、OR&amp; 、OR&amp;指令可直接与母线连接使用，不等于0接通，否则不接通 【13B】</li>
+<li>WOR DOR 按位或，LD| 、 DLD|、AND| 、DAND|、OR| 、DOR| 指令可直接与母线连接使用，不等于0接通，否则不接通【13B】</li>
+<li>WXOR DXOR 按位异或，LD^ 、 DLD^ 、AND^ 、DAND^、OR^ 、DOR^ 指令可直接与母线连接使用，不等于0接通，否则不接通【13B】</li>
+<li>WINV DINV 按位取反，LD&amp; 、 DLD&amp; 、AND&amp; 、DAND&amp;指令可直接与母线连接使用 【13B】</li>
+<li>SUM 具有D、P版本，对指定寄存器内位为True的数量进行求和</li>
+<li>BON 具有D、P版本，判断 S 内容值的第 n 个位的状态，并将其状态存放到 D 指定位</li>
+<li>SFR 带D、P，向右移位，空位补零；</li>
+<li>SFL 带D、P，向左移位，空位补零；</li>
+<li>ROR 向右循环位移n位，带有D、P版本</li>
+<li>ROL 向左循环位移n位，带有D、P版本</li>
+<li>SWAP 按照Byte进行字内对调交换，支持D和P；16位指令，对上下8位进行交换；对32位指令，对各个字内进行交换；</li>
+</ul>
+<h3 id="数学计算">数学计算</h3>
+<ul>
+<li>加法 + 、减法-、乘法*、除法/ ，32位整数用D+、D-、D*、D/，浮点数 F+、F-、F*、F/，均有带P的版本</li>
+</ul>
+<p>值得注意：乘法*，除法/，的输出操作数都会占用双倍的输入操作数空间；两个16位乘法的输出结果是一个32位数；两个16位除法的输出结果是1个16位的商和一个16位的余数。32位整数与16位整数相同。</p>
+<p>如果不需要上述隐式扩展数据类型转换，请用MUL16、MUL32，DIV16，DIV32 则输入输出空间相同，浮点数的F+、F-、F*、F/ 也不会造成隐藏扩展</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ul>
+<li>
+<p>INC DEC ，自加1，自减1，32位数前面加D</p>
+</li>
+<li>
+<p>ABS 具有D、P 版本，对操作数取绝对值</p>
+</li>
+<li>
+<p>仅支持浮点数的三角运算</p>
+<p>FSIN FCOS FTAN FASIN FACOS FATAN FSINH FCOSH FTANH 均有带P版本，上述指令 S 所指定的来源可为弧度或角度，由标志 SM695 决定，当 SM695=OFF 时，指定为弧度模式，弧度值=角度×π/180；当 SM695=ON 时，指定为角度模式，角度值=弧度×180/π，角度范围：$0^{\circ}$ ≦角度值≦$360 ^{\circ}$ 。</p>
+<p>FRAD 角度转弧度，FDEG弧度转角度</p>
+</li>
+<li>
+<p>SQR DSQR 求整数平方根，只能精确到整数，FSQR求浮点数平方根</p>
+</li>
+<li>
+<p>FEXPT 求e指数， FLOG求任意底数的对数，FLN求e对数，FPow 求任意指数</p>
+</li>
+<li>
+<p>RAND 随机数，对给定上下限的S1，S2求随机数，</p>
+</li>
+</ul>
+<h3 id="过滤统计排序">过滤统计排序</h3>
+<p>MAX MIN LIMIT  SEL MUX</p>
+<ul>
+<li>
+<p>WSUM 具有D、P版本,  FSUM，将 S~S+n-1 所指定寄存器内容值，以有号数十进制作相加，存放于 D 所指定的寄存器中。</p>
+</li>
+<li>
+<p>MEAN 求平均值，具有D、P、F版本</p>
+</li>
+</ul>
+<p>将 S 起始之 n 个装置内容值相加后取平均值存入 D 中。如果计算中出现余数时，余数会被舍去。</p>
+<ul>
+<li>LIMIT 带有限定范围的输出</li>
+</ul>
+<p>LIMIT(下限值，上限值，输入值，输出值)，输出值被限定在上下限范围内。可用于D，P。仅用于16位指令</p>
+<ul>
+<li>BAND 输入死区判定，具有D、P版本</li>
+</ul>
+<p>判定输入值S3，是否在下限S1和上限S2之间，是则返回0，否则输出偏差，偏差具有正负</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>ZONE 输出死区判定，具有D、P版本</li>
+</ul>
+<p>判定输入值S3为否位零，是则输出0；大于0时，输出 S3+S2；小于0则输出S3+S1</p>
+<!-- raw HTML omitted -->
+<ul>
+<li>SORT 排序 将特定序列按照某维度排序，带有D、P、F 版本 【非稳定排序】</li>
+</ul>
+<p>SORT(起始地址S，待排序行m1，待排序列m2，排序参考列n，D输出结果区起始值)，该指令输入数据为起始区S的 m1xm2个寄存器，输出占用空间与输入相同。注意数据填充规则为先行后列</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ZL-SORT.png"
+	width="1376"
+	height="483"
+	srcset="/p/delta-es3-easy-plus/assets/ZL-SORT_hu1a9d89176fe9a9e6ef4746ed77aa4ebf_118672_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ZL-SORT_hu1a9d89176fe9a9e6ef4746ed77aa4ebf_118672_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="284"
+		data-flex-basis="683px"
+	
+></p>
+<ul>
+<li>SER 多点查找，带有D，P</li>
+</ul>
+<p>SER(S1,S2,N,=&gt; D)  S1 指定被比较起始寄存器，n 为被指定起始寄存器后的寄存器数量，S2 所指定的数据，以有号数十进制作比较，比较结果被存放于 D~D+4 寄存器当中，D 存放具有相等数值的数量，D+1是第一个相同值相对偏移，D+2 最后一个相等值的相对偏移，D+3 整个S1+N序列中最小值的编号，D+4 整个S1+N序列中最大值的编号</p>
+<!-- raw HTML omitted -->
+<h3 id="定时器">定时器</h3>
+<ul>
+<li>RST 接点或寄存器清除</li>
+</ul>
+<p>RST 会将D装置所有状态复位归零，包括计时器、计数器、线圈、接点、Word、Dword、HC、Real。</p>
+<ul>
+<li>TMR 16位定时器 100ms，TMRM 16位定时器 10ms， TMRH 16位定时器 1ms</li>
+</ul>
+<p>S1提供一个定时器，S2 提供定时器设定值（32767）；该定时默认为连续计量，即触发器信号丢失则重新开始计量，如果需要触发信号丢失后，连续计量，则需要定时器T前面加S，积分型计量</p>
+<!-- raw HTML omitted -->
+<p>范例三，表示使用T5定时器，计量1000*1ms，后T5触点接通，如果在此期间M0转变为False，则等待M0 变成ON时，重新开始计算，直到达到1000ms；范例4，则会在M0接通时计量，M0断开时停止计量，但会保留T5已计量数值，知道1000ms，接通T5触点。</p>
+<p>需要注意的是，当条件接点从 ON-&gt;OFF 时，T 计时值将自动归零；积分型 ST 定时器，若需清除计时值，请搭配使用 RST 指令；一般情况下，每个定时寄存器，只能用于1个TMRH或TMR。</p>
+<ul>
+<li>STMR 遇到下降沿，延迟 m 个 S 基准时间，输出D信号的关闭信号，D及D+3会被全部占用</li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>请参考 10.01 ES3 功能装置</p>
+<h3 id="计数器">计数器</h3>
+<ul>
+<li>CNT 16计数器</li>
+</ul>
+<p>当 CNT 指令由 OFF-&gt;ON 执行，表示所指定的计数器线圈由失电→受电，则该计数器计数值加 1，当计数
+到达所指定的数值（计数值=设定值），其 C 接点（BOOL）动作将为 ON。当计数到达之后，若再有计数脉冲输入，其接点及计数值均保持不变，若要重新计数或作清除的动作，请利用 RST 指令。</p>
+<p>S1 为计数器编号，S2 为计数器设定值</p>
+<h3 id="字符串操作">字符串操作</h3>
+<ul>
+<li>$MOV 字符串移动</li>
+</ul>
+<p>$MOV 字符串传送专用，仅可以处理字符串，处理时会将 S 算子的字符串直接移到 D 算子内，并且结尾会自动补上结尾码（16#00）。</p>
+<ul>
+<li>
+<p>$LEN 计算字符串长度</p>
+</li>
+<li>
+<p>字符串比较只有等于和不等于检查，LD$= LD$&lt;&gt; 两种</p>
+</li>
+<li>
+<p>$+ 字符串拼接</p>
+</li>
+<li>
+<p>$DEL 字符串删除</p>
+</li>
+<li>
+<p>$INS 字符串插入</p>
+</li>
+<li>
+<p>SPLIT 字符串拆分</p>
+</li>
+<li>
+<p>MERGE 将两个字符串按照分隔符合并</p>
+</li>
+<li>
+<p>字符串转换</p>
+<ul>
+<li>BINDA DBINDA ：有号数十进制→ASCII 变换</li>
+<li>BINHA DBINHA ：BIN 十六进制→十六进制 ASCII 变换</li>
+<li>BCDDA DBCDDA：BCD→ASCII 变换</li>
+<li>DABIN DDABIN：有号数十进制 ASCII→有号数十进制 BIN 变换</li>
+<li>HABIN DHABIN：十六进制 ASCII→十六进制 BIN 变换</li>
+<li>DABCD DDABCD：BCD ASCII→BCD 变换</li>
+<li>$FSTR ：Float→String</li>
+<li>$FVAL：String→Float</li>
+</ul>
+</li>
+<li>
+<p>字符串子串</p>
+<ul>
+<li>$RIGHT 从右边获取n字符串</li>
+<li>$LEFT 从左边获取n字符串</li>
+<li>$MIDR 从S1字符串，S2位置开始，获取S2+1个字</li>
+</ul>
+</li>
+<li>
+<p>$Ser 字符串查找</p>
+</li>
+<li>
+<p>$RPLC 字符串替换</p>
+</li>
+</ul>
+<h3 id="时间运算万年历">时间运算（万年历）</h3>
+<ul>
+<li>TRD 读取系统时间，并存放到D（D0~D+6，一共7个字， ARRAY [7] of WORD/INT），提供年、星期、月、日、时、分、秒数据，其读取的数据位于SR391到SR397当中，TRD 指令的功能就是让程序设计者直接将万年历当前时间读出至指定的 7 个寄存器当中。</li>
+</ul>
+<p>SR391 只保存公元年份的后 2 位。星期是按照1-7表示周一到周日；时间为24小时制</p>
+<ul>
+<li>TWR 写入系统时间，并存到系统内部，写入位置必须为7个连续的字，写入需要上升沿触发，写入出错，SM0=ON</li>
+<li>T+ 时间加法，将操作数S1 和S2的时分秒进行相加，如果小时超过24小时，则溢出取24小时余数，并SM602 = 1</li>
+<li>T- 时间减法，将操作数S1 和S2的时分秒进行相减，减算结果若为负数时，借位标号 SM601=ON、该负数再加上 24 小时所得的结果显示 D 所指定的寄存器当中。</li>
+<li>Hour 小时计数并到达指定时间后导通，S为导通时间（h），D+0为当前测量小时数，D+1为未满1小时的秒数，D+2系统保留用，当输出装置导通后，定时器会继续计时。</li>
+<li>时间比较，可以用TCMP和TZCP，但都局限于时间比较，无法比较日期</li>
+</ul>
+<h3 id="程序结构控制">程序结构控制</h3>
+<ul>
+<li>CJ 条件跳转，当程序执行到CJ时，跳转到预先定义的LABEL处，多个 CJ 指令可重复指定同一指定标签</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><del>JMP 无条件跳转指令</del></li>
+<li>GOEND 跳转到END，条件成立时直接跳转到程序中的 END，类似于RETURN 功能块不支持</li>
+<li>FOR 循环回路起始，需要指定回路重复执行的次数S</li>
+<li>NEXT 循环回路结束，重复执行的程序即为For 到 Next 之间的程序段 ，如果没有遇到Break，则执行S次</li>
+<li>BREAK 强制结束 FOR-NEXT 循环，强制结束 FOR-NEXT 的循环，将尚未执行完的循环数存放到 D，并跳至最近 NEXT 指令的下一个指令执行。</li>
+</ul>
+<h3 id="通讯指令">通讯指令</h3>
+<ul>
+<li>Modbus 通讯请参考Modbus通讯一章</li>
+<li>以太网通讯请参考以太网通讯一章</li>
+<li>CANOpen 通讯请参考CANOpen一章</li>
+</ul>
+<p>还有本文中未介绍到指令，请参考程序手册或ISPSoft软件帮助</p>
+<hr>
+<h2 id="结构化编程">结构化编程</h2>
+<p>结构化语言（Structured Text，ST）是一种类似 C 语言或 PASCAL 等高级语言的编程方式，其最大的特色在于整个程序是由许多的文字叙述所建构而成，而相较于指令列表（IL），ST 则具有较高的可读性，且可透过类似数学方程式的文法来表达一个复杂的表达式，因此对于一个需要进行繁复运算的程序来说，ST 是较适合此种应用场合的开发语言。</p>
+<h3 id="st-程序结构">ST 程序结构</h3>
+<p>一般情况，按照从上到下，从左到右的顺序，逐次执行所有语句，直到遇到条件结构、循环结构。</p>
+<h4 id="条件结构">条件结构</h4>
+<ul>
+<li>IF</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">if conditon_1 then
+</span></span><span class="line"><span class="cl">	exec_sentance_1;
+</span></span><span class="line"><span class="cl">elsif conditon_2 then
+</span></span><span class="line"><span class="cl">	exec_sentance_2;
+</span></span><span class="line"><span class="cl">elsif ... then
+</span></span><span class="line"><span class="cl">	,,,
+</span></span><span class="line"><span class="cl">else
+</span></span><span class="line"><span class="cl">	exec_sentence;
+</span></span><span class="line"><span class="cl">end_if;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>CASE</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">CASE 整型表达式 OF
+</span></span><span class="line"><span class="cl">	condition_V1: 
+</span></span><span class="line"><span class="cl">		sentance_1;
+</span></span><span class="line"><span class="cl">	condition_V1: 
+</span></span><span class="line"><span class="cl">		sentance_1;
+</span></span><span class="line"><span class="cl">	....
+</span></span><span class="line"><span class="cl">ELSE
+</span></span><span class="line"><span class="cl">	sentance;
+</span></span><span class="line"><span class="cl">END_CASE;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>整数表达式可为装置、变量符号或是任何表达式，但不可为常数，且其代表数值的数据类型必须为 INT（-32768 ~ 32767）或 DINT（-2147483648 ~ 2147483647）类型的整数，而若直接使用装置编号，如 D0，系统则会自动将该装置的内容值视为 INT 类型的数据；列表中的条件数值不可有重复且必须为整数，其范围则须视 CASE 关键词后的整数表达式类型，即 INT 类型为 -32768 ~ 32767，而 DINT 则是 -2147483648 ~ 2147483647。</p>
+<p>当有不同的条件数值却执行相同的叙述句时，编辑时便可将其合并为一列。</p>
+<p>（a） 若各条件为不连续数值，则各数值间须以逗号隔开，例如 1, 3, 5 : 子叙述句，而此例则代表当整数表达式的数值满足 1、3、5 中的任何一个时，系统便会执行同一个子叙述句。</p>
+<p>（b） 若各条件数值是某个连续的区块，则编辑时可使用『 .. 』符号来表示条件数值的范围，例如 3..6 : 子叙述句 便代表当整数表达式的数值落在 3 到 6 的范围内（包含 3 与 6）时，系统便会执行同一个子叙述句。且当用『 .. 』符号表示条件数值时，左侧数值必须小于右侧，如 6..3 : 的范围叙述便是不合法的。</p>
+<h4 id="循环结构">循环结构</h4>
+<ul>
+<li>Repeat  循环直到满足条件</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">repeat
+</span></span><span class="line"><span class="cl">	sentence;
+</span></span><span class="line"><span class="cl">until condition
+</span></span><span class="line"><span class="cl">end_repeat; 
+</span></span><span class="line"><span class="cl">//先执行子叙述句后再判断「布尔表达式」的值是否为真（True），若其值为真，则程序会直接离开此结构；若为否（False），则结构内部的程序便会重复执行，直到该值为真（True）之后才会离开。 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>while 循环知道条件不满足</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">while condition do 
+</span></span><span class="line"><span class="cl">	sentence;
+</span></span><span class="line"><span class="cl">end_while
+</span></span><span class="line"><span class="cl">// 先判断「布尔表达式」的值是否为真（True），若为真（True），则程序便会继续执行子叙述句，且只要该值持续为真（True）时，结构内部的程序便会重复执行，直到该值为否（False）之后才会离开。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>X 装置的值必须在程序的扫描周期完成后才会被更新，因此若要以 X 装置的状态做为离开循环的条件时，请务必在结构内部加上 IO 更新指令的叙述句，或是在中断程序中更新 X 装置的值。</p>
+<ul>
+<li>FOR 确定循环，从起始值到终点值的固定循环</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">FOR 条件变量 := 起始值 to 终点值 by 增量表达式 do
+</span></span><span class="line"><span class="cl">	sentence；
+</span></span><span class="line"><span class="cl">end_for
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>上述的起点值、终点值与递增量表达式可以是装置、变量符号、表达式或常数，且其代表数值的数据类型必须为 INT（-32768 ~ 32767）或 DINT（-2147483648 ~ 2147483647）类型的整数，而若直接使用装置编号，如 D0，系统则会自动将该装置的内容值视为 INT 类型的数据</p>
+<p>当起点值小于终点值时，所设定的递增量便必须为负数，否则将会造成无限循环。</p>
+<p>条件变量的数据类型亦必须是 INT 或 DINT，且当条件变量或装置在循环的程序当中有参与运算时，请小心避免因变更到它的值而造成无限循环。</p>
+<p>实际运作时，系统会先将条件变量或装置的内容值加上递增量后，再判断是否可以离开循环，但若加上递增量之后的值会产生溢位时，程序便会因为离开的条件无法成立而造成无限循环。</p>
+<h4 id="return-exit">RETURN 、EXIT</h4>
+<ul>
+<li>程序执行到任何带有return语句的地方，都会停止继续子函数，直接返回</li>
+<li>EXIT 在Repeat while for 循环中生效，遇到exit则退出循环</li>
+</ul>
+<h4 id="api调用结构">API调用结构</h4>
+<ul>
+<li>API ( 操作数1，操作数2，操作数3，&hellip;&hellip;，操作数N）；</li>
+</ul>
+<p>ST 程序中执行 API 指令时，本身并不须要指定 En 端点的状态，只要程序执行到该叙述句时，对应的 API 指令就会被执行。、</p>
+<p>只要不破坏操作数与关键词的完整性，任何的换行都是被允许的。</p>
+<p>在 ST 语法中的 API 应用指令也是一个叙述句，因此最后的结尾一样要加上分号『;』。</p>
+<p>内部操作数的排列顺序不可变动，其顺序请参考各机种的指令手册。</p>
+<p>API 应用指令并不支持回传值的功能，因此 M0 := CMP（D0, D10, M0）; 的叙述句便是不合法的。</p>
+<p>因在 ST 程序中的 API 应用指令无法操作 En 端点，因此若使用了定时器指令（TMR）时，请务必于程序中加入重置定时器的叙述句，如下例的行号 4，否则该定时器将无法归零。</p>
+<h4 id="fb-调用结构">FB 调用结构</h4>
+<p>调用FB时，实际为： 功能块实例名称（输入接口名称1 := 输入操作数1，输入接口名称 2 := 输入操作数2，&hellip;&hellip;，输出接口名称 =&gt; 输出操作数1，输出接口名称2 =&gt; 输出操作数2，&hellip;..）</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ST-FB%E8%B0%83%E7%94%A8.png"
+	width="861"
+	height="206"
+	srcset="/p/delta-es3-easy-plus/assets/ST-FB%E8%B0%83%E7%94%A8_hu5bd5b2fd181602f60f299c4513bedc2f_32207_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ST-FB%E8%B0%83%E7%94%A8_hu5bd5b2fd181602f60f299c4513bedc2f_32207_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="417"
+		data-flex-basis="1003px"
+	
+></p>
+<p>括号之前的名称应为功能块实例而非功能块定义，亦即应输入被宣告成功能块类型的变量符号名称。</p>
+<p>输入侧端点所使用的指定符号为「:=」，而输出侧端点所使用的指定符号则是「=&gt;」。</p>
+<p>结构内的端点与操作数顺序必须依照功能块的定义，而不可任意变动，其顺序则为排除 En/Eno 端点后，先由上而下列出所有输入侧端点，其中 VAR_IN_OUT 类别的端点则被归类为输入侧；接着再由上而下列出所有输出侧的端点。</p>
+<h4 id="注释">注释</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">// 行注释，只能单行，双斜杠后都是注释
+</span></span><span class="line"><span class="cl">(* 块注释，可以单行，
+</span></span><span class="line"><span class="cl"> 跨行，行间 *)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="运算符">运算符</h3>
+<!-- raw HTML omitted -->
+<h1 id="功能">功能</h1>
+<h2 id="系统功能">系统功能</h2>
+<h3 id="系统时钟">系统时钟</h3>
+<p>DVP-ES3 PLC 内建有万年历时钟，断电可保持，保持时间随电池而定。系统时间的设定通过ISPSoft 菜单工具|万年历设置，可以查看PLC当前时间及计算机时间，支持自定义修改。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-%E4%B8%87%E5%B9%B4%E5%8E%86.png"
+	width="812"
+	height="282"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-%E4%B8%87%E5%B9%B4%E5%8E%86_hu967337e49e6bcb20d10d753eaba8cc29_59166_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-%E4%B8%87%E5%B9%B4%E5%8E%86_hu967337e49e6bcb20d10d753eaba8cc29_59166_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="287"
+		data-flex-basis="691px"
+	
+></p>
+<p>万年历数据存放在系统特殊寄存器 SR391-397中，支持读写，存储为年、星期、月、日、时、分、秒数据。除此以外，DVP-ES3还提供一些有用的时钟触发寄存器，方便编程。</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>特殊寄存器</th>
+<th>寄存器含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SM400</td>
+<td>PLC RUN 为1，否则为0</td>
+</tr>
+<tr>
+<td>SM401</td>
+<td>PLC RUN 为0，否则为1</td>
+</tr>
+<tr>
+<td>SM402</td>
+<td>PLC RUN 的上升沿</td>
+</tr>
+<tr>
+<td>SM403</td>
+<td>PLC RUN 的下降沿</td>
+</tr>
+<tr>
+<td>SM404</td>
+<td>RUN时有效，10ms 时钟脉冲，5ms ON/5ms OFF</td>
+</tr>
+<tr>
+<td>SM405</td>
+<td>RUN时有效，100ms 时钟脉冲，50ms ON/50ms OFF</td>
+</tr>
+<tr>
+<td>SM406</td>
+<td>RUN时有效，200ms 时钟脉冲，100ms ON/100ms OFF</td>
+</tr>
+<tr>
+<td>SM407</td>
+<td>RUN时有效，1s 时钟脉冲，0.5s ON/0.5s OFF</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="存储区">存储区</h3>
+<p>ES3 M、D、S、C、HC、D、FR 均支持停电保持功能，但是各个区储存范围受系统限制及配置影响，停电保持区的设定通过HWConfig 参数设定 | 一般设定 | 系统设置 | 装置元件范围设定 中，设定的范围必须是连续的区域</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="加密与保护">加密与保护</h3>
+<p>Delta DVP-ES3 加密保护，</p>
+<ul>
+<li>项目密码</li>
+</ul>
+<p>项目密码的主要功能在于保护整体的项目程序，若用户开启某个设有「项目密码」的项目后，当使用者欲开启该项目中的 POU 时，系统便会要求输入正确的密码之后才允许开启，且「项目密码」可设定输入的限制次数，当用户输入密码的错误次数超过最大限制时，该项目便会自动关闭。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ISPsoft-%E9%A1%B9%E7%9B%AE%E5%AF%86%E7%A0%81.png"
+	width="507"
+	height="282"
+	srcset="/p/delta-es3-easy-plus/assets/ISPsoft-%E9%A1%B9%E7%9B%AE%E5%AF%86%E7%A0%81_hua30be4a1bdde137636605f9b9ed3311d_5697_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ISPsoft-%E9%A1%B9%E7%9B%AE%E5%AF%86%E7%A0%81_hua30be4a1bdde137636605f9b9ed3311d_5697_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="431px"
+	
+></p>
+<ul>
+<li>程序识别码： 保护 PLC 运行程序，只有PLC识别码与项目识别码相同，才可以下载或上传。</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-PLC%E8%AF%86%E5%88%AB%E7%A0%81.png"
+	width="593"
+	height="279"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-PLC%E8%AF%86%E5%88%AB%E7%A0%81_hucbbd7b0a200a38a1ae7374ea59533bbb_5068_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-PLC%E8%AF%86%E5%88%AB%E7%A0%81_hucbbd7b0a200a38a1ae7374ea59533bbb_5068_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="212"
+		data-flex-basis="510px"
+	
+></p>
+<ul>
+<li>POU 密码</li>
+</ul>
+<p>POU密码用于保护 Prog 和 FB 密码，被加密的POU密码如果没有密码，可以支持下载调用只有输入密码才可以被打开、查看、修改；但是需注意的是下载过程只会下载编译码，因此当程序被上载时，编译后的POU则不会被密码保护</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-POU%E5%AF%86%E7%A0%81.png"
+	width="771"
+	height="450"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-POU%E5%AF%86%E7%A0%81_hu3fbdb563156ac086de243e1ddac27058_9948_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-POU%E5%AF%86%E7%A0%81_hu3fbdb563156ac086de243e1ddac27058_9948_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="171"
+		data-flex-basis="411px"
+	
+></p>
+<ul>
+<li>子程序密码</li>
+</ul>
+<p>子程序密码就是针对上述密码而设计的，通过 工具 | 程序设置 | 子程序密码设置（可能不支持）</p>
+<h3 id="扫描时间">扫描时间</h3>
+<p>DVP-ES3的扫描时间与程序容量及复杂度相关，当PLC的扫描时间过长，超过用户设定的看门狗时间，则会触发PLC故障停机。DVP-ES3默认扫描时间为200ms，可以在HWCONFIG工具 | 系统参数 | 设置扫描超时时间来修改（1-30000ms）。也可以通过启用固定扫描周期来实现最小扫描周期设定。</p>
+<p>当PLC在运行中发生扫描超时，可以通过WDT指令来重置看门狗时间，以避免系统停机（不建议，最好确定正常的扫描周期，并配置）。</p>
+<p>查看PLC当前的扫描周期，可以通过ISPSoft PLC主机 |  系统信息确定。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-%E6%89%AB%E6%8F%8F%E5%91%A8%E6%9C%9F.png"
+	width="474"
+	height="363"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-%E6%89%AB%E6%8F%8F%E5%91%A8%E6%9C%9F_hu6b23f2c76945da3fd679fa605ffb65e4_6610_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-%E6%89%AB%E6%8F%8F%E5%91%A8%E6%9C%9F_hu6b23f2c76945da3fd679fa605ffb65e4_6610_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="130"
+		data-flex-basis="313px"
+	
+></p>
+<h3 id="模拟仿真">模拟仿真</h3>
+<p>安装COMMGR通讯管理软件后，则已安装PLC模拟仿真器，在通道选择时，选择相应的PLC-Simulator即可模拟实际的PLC运行，由于仿真器受限，通讯及IO访问并不能正常执行。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/CONNMGR-%E6%A8%A1%E6%8B%9F%E5%99%A8.png"
+	width="402"
+	height="374"
+	srcset="/p/delta-es3-easy-plus/assets/CONNMGR-%E6%A8%A1%E6%8B%9F%E5%99%A8_huc8af53541b75daef5c71254f078a9c50_8164_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/CONNMGR-%E6%A8%A1%E6%8B%9F%E5%99%A8_huc8af53541b75daef5c71254f078a9c50_8164_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="107"
+		data-flex-basis="257px"
+	
+></p>
+<h3 id="库">库</h3>
+<p>此版本掠过</p>
+<hr>
+<h2 id="pid-控制">PID 控制</h2>
+<p>DVP-ES3 PLC 集成 PID 控制指令，不仅体现在具有PIDE控制指令，同时在硬件温度模块DVP04PT/06PT/04TC上集成温度PID控制，可以方便调用。</p>
+<h3 id="pid算法介绍">PID算法介绍</h3>
+<p>PID 表示比例积分微分控制，是最为常见的通用闭环控制算法。PID 三项P（比例）、I（积分）、D（微分），不一定全部启用，可以有P控制，PI控制，PD控制，PID控制（对应比例系数为零即可）。PID的核心思想是抑制偏差，消除偏差。
+$$
+u = K_p \times e + K_i\times\int edt + K_d\times\frac{de}{dt}
+$$</p>
+<p>$$
+e = SV-PV
+$$</p>
+<p>u 为PID输出，e为控制偏差，SV为目标设定值，PV为当前反馈值</p>
+<p>$K_p$  比例系数，主要作用抑制偏差，值越大抑制效果越明显，但太大容易导致系统振荡；应首先确定。</p>
+<p>$K_i$  积分系数，主要作用消除静态误差，数值太大容易导致系统超调、响应缓慢；应第二确定</p>
+<p>$K_d$ 微分系统，主要增加响应速度，容易消除扰动，也容易造成系统振荡。最后确定</p>
+<p>PID 算法针对线性、即时系统理论上可以实现良好的效果，实践时仍需要合理的 $K_p,K_i, K_d$ 数值才可以看到。对于非线性系统，则无论三项系数如果调节，其效果堪忧，尤其在非线性较大作用范围内。</p>
+<h3 id="pide-控制指令">PIDE 控制指令</h3>
+<p>PIDE 是一个复杂的控制指令。需要系数包括：</p>
+<p>EN启用或关闭，PID_RUN 启动PID运算，SV目标设定值，PV被控目标当前反馈值</p>
+<p>MV 输出值，无论任何状态，MV输出都在[MV_MIN, MVMAX]之间，MV_MAX 输出值（MV）饱和上限，MV_MIN 输出值（MV）饱和
+下限</p>
+<p>PID_MODE PID控制器控制模式，0，2 自动模式，1 整定模式</p>
+<p>PID_MAN  PID Auto/Manual 模式 ，当处于手动模式TRUE时，MV 值会依 MOUT 值输出；自动False，MV 值会依 PID 公式计算
+后输出</p>
+<p>MOUT_AUTO，MOUT 自动更新模式，TRUE：Auto，MOUT 的值会随着 MV 值改变。FALSE：Normal，MOUT 的值不会随着
+MV 值改变。</p>
+<p>CYCLE，采样时间，1-40000 ms，当指令用于时间中断时，主机会自动以时间中断的中断时间来计算PID，此时 CYCLE 的设定无效。</p>
+<p>Kc_Kp 比例系数值；Ti_Ki 积分系数值；Td_Kd 微分系数值，Tf 时间常数</p>
+<p>PID_EQ PID计算公式，TRUE：Dependent Formula，FALSE：Independent Formula ，默认False</p>
+<p>PID_DE PID 微分项误差计算选择，TRUE：使用当前值PV的变化量来计算微分项的控制值，FALSE：使用偏差量E的变化量来计算微分项的控制值，默认False</p>
+<p>PID_DIR PID 正反向，TRUE：正向动作（E=SV-PV）FALSE：反向动作（E=PV-SV）</p>
+<p>ERR_DBW  偏差量（E）不作用范围，即控制死区</p>
+<p>MOUT MV 手动值，配合 PID_MAN 模式使用，当 PID 设定在手动模式时，则输出值MV会依照手动设定值输出；也可以通过MOUT_AUTO实时将MV输出反馈到该值，则表示输出最后值</p>
+<p>BIAS 前馈控制输出值</p>
+<p>I_MV 误差累积值，会连续占用15 个 DWord 装置</p>
+<h3 id="pttc模块pid">PT/TC模块PID</h3>
+<p>硬件模块PID仅对温度控制考虑，可以通过From、To指令获取</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-PID%E7%A1%AC%E4%BB%B6.png"
+	width="783"
+	height="964"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-PID%E7%A1%AC%E4%BB%B6_hu9297ee6d9d2a4460bfe9cb13abaee6a2_251082_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-PID%E7%A1%AC%E4%BB%B6_hu9297ee6d9d2a4460bfe9cb13abaee6a2_251082_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="81"
+		data-flex-basis="194px"
+	
+></p>
+<p>O 表示为保持型；X 表示为非保持型；R 表示为可使用 FROM 指令读取数据；W 表示为可使用 TO 指令写入数据。</p>
+<h2 id="高速计数器">高速计数器</h2>
+<p>此版本掠过</p>
+<h2 id="运动控制">运动控制</h2>
+<p>此版本掠过</p>
+<h1 id="通讯">通讯</h1>
+<h2 id="modbus-通讯">Modbus 通讯</h2>
+<p>由于其免费、易用等特点，Modbus 是一种被广泛应用的工业通讯协议，Modbus一共有4个变种版本：</p>
+<ul>
+<li>Modbus RTU：二进制表示数据，主要用于串行通信。使用CRC循环冗余校验验证机制确保数据的可靠性。主从协议，一主多从</li>
+<li>Modbus ASCII：使用ASCII字符表示数据，主要用于串行通信。使用LRC 纵向冗余校验以验证数据可靠性。主从协议，一主多从</li>
+<li>Modbus TCP/UDP：是RTU应用与以太网的版本，去掉了协议校验，由TCP/IP协议保证</li>
+<li>Modbus Plus： 具有专利的令牌环网高速Modbus协议，可以多主多从</li>
+<li>Modbus RTU/ASCII over TCP/UDP：非官方版本，将ModbusRTU通讯帧直接封装到具有TCP/IP头的报文中。</li>
+</ul>
+<h3 id="modbus-从站或服务端">Modbus 从站或服务端</h3>
+<p>台达系PLC均对Modbus协议有良好支持，也是官方默认支持的协议，用于PLC之间通讯和外部通讯。一般PLC本体均带有RS485/232接口，以实现Modbus通讯功能，并且在非主站端口提供Slave或Server通讯。</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h3 id="modbus-主站或客户端">Modbus 主站或客户端</h3>
+<p>DVP ES3 支持2种模式的Modbus主站或客户端通讯：系统托管及自由编程。前者依托系统功能建立通讯，并将通讯结果映射到装置地址，只需要使用配置和熟悉的装置地址来读写需要的数据即可，由系统通过轮询的方式实现通讯，满足绝大多数应用需求，配置快捷方便；自由编程则需要自己手动建立Modbus通讯指令，进行对外访问，对编程者要求较高，高度自由，可实现自定义读写；</p>
+<ol>
+<li>系统托管——通讯口数据交换区</li>
+</ol>
+<p>通讯口数据交换区，采用的是系统托管或半托管方式，通过在数据交换区配置外部设备以及要通讯交换的数据空间映射地址，实现DVP-ES3 的Modbus通讯。在HWConfig中，数据交换区COM1，COM2，Ethernet。</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>不同端口通讯有自己的数据交换区，只有配置到指定端口下的数据交换区，通讯才可以在当前端口建立；每个通讯可以配置启动方式：</p>
+<ul>
+<li>程控：通过SM寄存器控制通讯端口启停，COM1启用 SM750 COM2 SM682 Ethernet SM1167</li>
+<li>PLC执行：完全由系统控制通讯，并且在PLC运行时，启动通讯（建议）</li>
+<li>永远执行：完全由系统控制通讯，并且不管PLC是否在运行，通讯都执行（一般不建议）</li>
+</ul>
+<p>当选择后两种时，系统会根据配置顺序（包括读取和写入），按照通讯周期逐个收发，直到全部完成；然后重新开始；</p>
+<p>命令配置：每个项目中可以配置2条指令，一条读一条写，以实现设备读写映射。启动表示启用该执行；通讯更新周期和超时时间以控制命令执行的周期和设备不响应时错误判定的时间，根据实际情况填写。远程站号即从站号地址；远程装置种类，如果是台达系列PLC，则可以获取对应的X、Y、M、D等特殊装置数据；对于一般Modbus设备，可以选择Standard Modbus Device。</p>
+<p>每条指令的构成，必须满足Modbus协议规范要求，寄存器地址配置满足数据存放要求，Modbus规范要求篇幅较大，此处并不展开。</p>
+<p>程控方式特殊寄存器功能表</p>
+<ol start="2">
+<li>自行编程</li>
+</ol>
+<p>DVP-ES3 提供的 Modbus RTU/ASCII 读写指令有 COMDF，MODRWE</p>
+<ul>
+<li>
+<p>COMDF MODBUS 串口通讯格式配置指令，S1 通讯速率(100倍数)：24 、48、96、196、384等；S2 通讯数据长度：7，8；S3 校验类型：0 无校验、1奇校验、2偶校验；S4 结束位长度：1，2；S5：0 ASCII模式，1RTU模式；D 通讯端口号：1 Com1，2 Com2；</p>
+</li>
+<li>
+<p>MODRW，MODRWE：两者都是MODBUS读写指令，前者无法指定通讯接口，需要搭配特殊寄存器使用；推荐使用后者。S1 通讯端口编号，S2 从站地址； S3 Modbus功能码，S4 读写起始地址 ，S 数据存放地址， n 数据长度，支持的功能码包括16#01~06，16#0F，16#10；D：通讯指令完成通讯时，指定设定之通讯状态标志。此通讯状态标志将占用 3 个连续装置，且须由用户
+自行清除，D 接收成功标志；D+1接收错误标志；D+2接收超时标志。该指令需要上升沿启动。</p>
+</li>
+</ul>
+<p>DVP-ES3 不提供 Modbus TCP 控制指令，只有MCONF指令，可以用来修改 Ethernet 数据交换区的内容，配合特殊寄存器读写Modbu TCP数据。具体参考手册MCONF API</p>
+<h3 id="modbus-数据解析">Modbus 数据解析</h3>
+<p>标准Modbus协议采用大端模式(Big-endian)表示地址和数据项，即高位在前低位在后，字节小的地方(小地址)存放大数，字节大的地方(大地址)存放小数；而 DVP-ES3 采用带有交换的小端模式(<strong>Mid-Little Endian</strong>)表示地址和数据。当从外部获取一组数据解析发生问题时，建议参考修改。</p>
+<p>举例如下，无符号整数 10#720894 =&gt; 16#0000AFFFE，则不同模式下存储结果如表格</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>10进制</th>
+<th>720894</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16进制表示</td>
+<td>000AFFFE</td>
+</tr>
+<tr>
+<td>A B C D</td>
+<td>B0 B1 B2 B3 地址从低到高</td>
+</tr>
+<tr>
+<td>大端编码ABCD</td>
+<td>000AFFFE</td>
+</tr>
+<tr>
+<td>小端编码DCBA</td>
+<td>FEFF0A00</td>
+</tr>
+<tr>
+<td>BADC</td>
+<td>0A00FEFF</td>
+</tr>
+<tr>
+<td>中达 CDAB</td>
+<td>FFFE000A</td>
+</tr>
+</tbody>
+</table></div>
+<p>一个在线HEX转换工具如下：<a class="link" href="https://www.scadacore.com/tools/programming-calculators/online-hex-converter/"  target="_blank" rel="noopener"
+    >Online Hex Converter</a></p>
+<hr>
+<h2 id="canopen-通讯">CANOpen 通讯</h2>
+<p>此版本掠过</p>
+<h2 id="ethercat-通讯">EtherCAT 通讯</h2>
+<p>此版本掠过</p>
+<h2 id="以太网通讯">以太网通讯</h2>
+<p>此版本掠过</p>
+<h2 id="串口通讯">串口通讯</h2>
+<p>此版本掠过</p>
+<h2 id="opc通讯">OPC通讯</h2>
+<p>此版本掠过</p>
+<h2 id="hmi通讯">HMI通讯</h2>
+<p>此版本掠过</p>
+<hr>
+<h1 id="附录">附录</h1>
+<h2 id="es3功能装置">ES3功能装置</h2>
+<h3 id="sm-特殊辅助继电器">SM 特殊辅助继电器</h3>
+<p>SM特殊寄存器，其实PLC系统内部用的寄存器，用于获取系统状态，或者调用系统功能。每一个特殊辅助继电器均有其特定之功用，未定义的特殊标志请勿使用。常用的特殊继电器如下，其他请参考《DVP-ES3 系列程序手册》</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>SM</th>
+<th>功能说明</th>
+<th>FirstScan</th>
+<th>Run</th>
+<th>Stop</th>
+<th>RW</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SM9</td>
+<td>系统错误</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM10</td>
+<td>扩展模块发生错误</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM22</td>
+<td>清除错误记录</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM96</td>
+<td>COM1 送信标志</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM97</td>
+<td>COM2 送信标志</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM98</td>
+<td>COM1 接收等待</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM99</td>
+<td>COM2 接收等待</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM100</td>
+<td>COM1 接收完毕</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM101</td>
+<td>COM2 接收完毕</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM102</td>
+<td>COM1 通讯指令接收数据错误</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM103</td>
+<td>COM2 通讯指令接收数据错误</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM104</td>
+<td>COM1 接收逾时标志</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM105</td>
+<td>COM2 接收逾时标志</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM106</td>
+<td>COM1 8/16 位处理模式选择，ON：8 位，OFF：16 位</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM107</td>
+<td>COM2 8/16 位处理模式选择，ON：8 位，OFF：16 位</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM203</td>
+<td>Run=&gt;Stop 时，非停电保持区域全部清除一次</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM204</td>
+<td>非停电保持区域全部清除</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM205</td>
+<td>停电保持区域全部清除</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM206</td>
+<td>输出全部禁止</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM209</td>
+<td>COM1 通讯协议变更用</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM210</td>
+<td>COM1 ASCII/RTU 模式选择，ON 时为 RTU 模式</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM211</td>
+<td>COM2 通讯协议变更用</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM212</td>
+<td>COM2 ASCII/RTU 模式选择，ON 时为 RTU 模式</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM215</td>
+<td>启动 PLC RUN</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM218</td>
+<td>万年历无法计时警告标志</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM219</td>
+<td>万年历电池低电压标志</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM400</td>
+<td>PLC OnRun</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM401</td>
+<td>PLC OnStop</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM402</td>
+<td>启始正向（RUN 的瞬间“ON”）脉冲</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM403</td>
+<td>启始负向（RUN 的瞬间“OFF”）脉冲</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM404</td>
+<td>10ms 时钟脉冲，5ms ON/5ms OFF</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM405</td>
+<td>100ms 时钟脉冲，50ms ON/50ms OFF</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM406</td>
+<td>200ms 时钟脉冲，100ms ON/100ms OFF</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM407</td>
+<td>1s 时钟脉冲，0.5s ON/0.5s OFF</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM604</td>
+<td>SORT  排序指令工作模式设定（ON–降序排序，OFF–升     幂排序）</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM605</td>
+<td>SMOV 工作模式指定</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM606</td>
+<td>8/16 位工作模式选择</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM1000</td>
+<td>以太网络设定标志。ON 时，将 SR1000~SR1006 的数据     写入闪存。</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM1001</td>
+<td>以太网络联机状态</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM1090</td>
+<td>TCP 联机忙碌（Connection Busy）</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SM1091</td>
+<td>UDP 联机忙碌（Connection Busy）</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td>R</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="sr-特殊数据寄存器">SR 特殊数据寄存器</h3>
+<p>每个特殊数据寄存器均有其特殊定义与用途，主要作为存放系统状态、错误信息、监视状态之用。特殊数据寄存器（SR），它的种类及功能如下所示。其他请参考《DVP-ES3 系列程序手册》</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>SR</th>
+<th>功能说明</th>
+<th>RW</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SR201</td>
+<td>COM1 通讯站号</td>
+<td>RW</td>
+<td>1</td>
+</tr>
+<tr>
+<td>SR202</td>
+<td>COM2 通讯站号</td>
+<td>RW</td>
+<td>1</td>
+</tr>
+<tr>
+<td>SR209</td>
+<td>COM1 通讯协议</td>
+<td>RW</td>
+<td>16#0024</td>
+</tr>
+<tr>
+<td>SR210</td>
+<td>COM1 通讯逾时时间（单位：ms），设定为 0 表不逾时</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SR212</td>
+<td>COM2 通讯协议</td>
+<td>RW</td>
+<td>16#0024</td>
+</tr>
+<tr>
+<td>SR213</td>
+<td>COM2 通讯逾时时间（单位：ms），设定为 0 表不逾时</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SR217</td>
+<td>COM1 自定义鲍率数值（单位：100 bps）</td>
+<td>RW</td>
+<td>96</td>
+</tr>
+<tr>
+<td>SR218</td>
+<td>COM2 自定义鲍率数值（单位：100 bps）</td>
+<td>RW</td>
+<td>96</td>
+</tr>
+<tr>
+<td>SR220</td>
+<td>万年历（RTC）年（公元）00~99（BCD）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR221</td>
+<td>万年历（RTC）月  01~12（BCD）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR222</td>
+<td>万年历（RTC）日  01~31（BCD）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR223</td>
+<td>万年历（RTC）时  00~23（BCD）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR224</td>
+<td>万年历（RTC）分  00~59（BCD）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR225</td>
+<td>万年历（RTC）秒  00~59（BCD）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR226</td>
+<td>万年历（RTC）星期  1~7</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR391</td>
+<td>万年历（RTC）年（公元）00~99（十进制）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR392</td>
+<td>万年历（RTC）月  01~12（十进制）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR393</td>
+<td>万年历（RTC）日  01~31（十进制）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR394</td>
+<td>万年历（RTC）时  00~23（十进制）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR395</td>
+<td>万年历（RTC）分  00~59（十进制）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR396</td>
+<td>万年历（RTC）秒  00~59（十进制）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR397</td>
+<td>万年历（RTC）星期  1~7</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR407</td>
+<td>RUN 后，每秒加 1，重复计数由 0~32767 再由-32768~0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SR408</td>
+<td>RUN  后，每完成一次扫描后加 1，重复计数由 0~32767     再由-32768~0</td>
+<td>RW</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SR1000</td>
+<td>以太网络 IP 地址（32  位）</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1001</td>
+<td>以太网络 IP 地址（32  位）</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1002</td>
+<td>子网掩码 32</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1003</td>
+<td>子网掩码 32</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1004</td>
+<td>以太网络网关地址（32 位）</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1005</td>
+<td>以太网络网关地址（32 位）</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1006</td>
+<td>TCP 保持连接时间（sec.）</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1009</td>
+<td>TCP 目前联机数</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1010</td>
+<td>TCP 重传时间（ms）</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1011</td>
+<td>MODBUS/TCP Server 联机数</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1012</td>
+<td>MODBUS/TCP Client 联机数</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1013</td>
+<td>EtherNet/IP Adapter 联机数</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1014</td>
+<td>EtherNet/IP Scanner 联机数</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1015</td>
+<td>MODBUS/TCP Server 报文接收等待逾时时间（ms）</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1016</td>
+<td>MODBUS/TCP  Client 成功建立联机后，延迟开始发送的     等待时间（ms）（0~1000）</td>
+<td>RW</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1312</td>
+<td>RTU-EN01 联机 1 通讯代码</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1313</td>
+<td>RTU-EN01 联机 2 通讯代码</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1314</td>
+<td>RTU-EN01 联机 3 通讯代码</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>SR1315</td>
+<td>RTU-EN01 联机 4 通讯代码</td>
+<td>R</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="定时器-t">定时器 T</h3>
+<p>编号 T0~T411 预设为一般型定时器，编号 T412~T511 默认为子程序型定时器。一般型定时器于 TMR 指令扫描时比较，适用于每次皆会扫描到 TMR 指令的状况。子程序型定时器则于END 指令被执行之后，由系统自行计时与比较，故建议设计于不能每次扫描都执行的 TMR 指令，但又需要持续计时与比较时间的应用。</p>
+<ol>
+<li>100ms 定时器：TMR 指令所指定之 T 定时器以 100ms 为单位计时</li>
+<li>10ms 定时器：TMRM 指令所指定之 T 定时器以 10ms 为单位计时</li>
+<li>1ms 定时器：TMRH 指令所指定之 T 定时器以 1ms 为单位计时。</li>
+<li>运算型 T 定时器为 ST0~ST511，但若要使用装置监控监看时，请监看 T0~T511。</li>
+</ol>
+<ul>
+<li>一般定时器，在 TMR 指令执行时计时一次，在 TMR 指令执行时，若计时到达，则输出线圈导通。</li>
+</ul>
+<p>当 M0=ON 时，定时器 T0 之当前值以 100ms 采上数计时，当定时器当前值=设定值 100 时，输出线圈 T0=ON。当 M0=OFF 或停电时，定时器 T0 之当前值清为 0，输出线圈 T0 变为 OFF。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-%E5%AE%9A%E6%97%B6%E5%99%A8T.png"
+	width="1008"
+	height="303"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-%E5%AE%9A%E6%97%B6%E5%99%A8T_hu536c015c7c6e49390d04f3177590c884_20107_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-%E5%AE%9A%E6%97%B6%E5%99%A8T_hu536c015c7c6e49390d04f3177590c884_20107_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="332"
+		data-flex-basis="798px"
+	
+></p>
+<ul>
+<li>累计型定时器 ST，累计型定时器在 TMR 指令执行时计时一次，在 TMR 指令执行时，若计时到达，则输出线圈导通。只要在装置T 之前加上一个 S，就会变成运算型定时器 ST 装置，表示目前的 T 变成运算型定时器，则条件接点 OFF 时运算型 T 的值不会被清除，条件接点=ON 的时候，T 由目前的值开始累积计时。</li>
+</ul>
+<p>当 M0=ON 时，定时器 T250 之当前值以 100ms 采上数计时，当定时器当前值=设定值 100 时，输出线圈T250=ON。当计时中若 M0=OFF 或停电时，定时器 T250 暂停计时，当前值不变，待 M0 再 ON 时，继续计时，其当前值往上累加直到定时器当前值=设定值 100 时，输出线圈 T250=ON。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-%E5%AE%9A%E6%97%B6%E5%99%A8ST.png"
+	width="1050"
+	height="316"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-%E5%AE%9A%E6%97%B6%E5%99%A8ST_hu6dc1fb4b18056a99b817cc6f75931c39_22231_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-%E5%AE%9A%E6%97%B6%E5%99%A8ST_hu6dc1fb4b18056a99b817cc6f75931c39_22231_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="332"
+		data-flex-basis="797px"
+	
+></p>
+<ul>
+<li>功能块或中断插入服务程序中若使用到定时器时，请使用定时器 T412~T511。功能块用定时器于 END 指令执行时计时一次，在 END 指令执行时，若定时器当前值等于设定值，则输出线圈导通。一般用之定时器，若是使用在功能块或中断插入中而该功能块不被执行时，定时器就无法正确的被计时。</li>
+</ul>
+<h3 id="计数器-c">计数器 C</h3>
+<p>一般计数器，计数脉冲输入信号由 OFF→ON 时，计数器产生计数，直到到达计数上限。计数到达设定值，接点导通并保持，RST 指令被执行时当前值归零，接点被复位成 OFF。</p>
+<p>计数器之计数脉冲输入信号由 OFF→ON 时，计数器当前值等于设定值时输出线圈导通，设定值为十进制常数值，亦可使用数据寄存器 D 当成设定值。16 位计数器的设定范围：0~32,767，设定值可使用常数或使用数据寄存器 D 作为设定值可以是正负数。计数器当前值由 32,767 再往上累计时则变为 0。</p>
+<p>当 M0=ON 时 RST 指令被执行，C0 的当前值归零，输出接点被复位为 OFF。接着 M0=OFF，结束清除。当 M1 由 OFF→ON 时，计数器之当前值将执行上数（加一）的动作。当计数器 C0 计数到达设定值 5 时，C0 接点导通，C0 当前值＝设定值=5。之后的 M1 触发信号 C0 完全不接受，C0 当前值保持在 5 处。</p>
+<p><img src="/p/delta-es3-easy-plus/assets/ES3-%E8%AE%A1%E6%95%B0%E5%99%A8C.png"
+	width="1296"
+	height="520"
+	srcset="/p/delta-es3-easy-plus/assets/ES3-%E8%AE%A1%E6%95%B0%E5%99%A8C_huabcdde47d3afe4e60aaef7cb390a5136_36162_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/ES3-%E8%AE%A1%E6%95%B0%E5%99%A8C_huabcdde47d3afe4e60aaef7cb390a5136_36162_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="249"
+		data-flex-basis="598px"
+	
+></p>
+<h3 id="高速计数器-hc">高速计数器 HC</h3>
+<p>高速计数器为32 位计数器，其计数范围为：-2,147,483,648~2,147,483,647，</p>
+<p>上下数计数器 HC0~HC63，当 DCNT 指令条件接点由 OFF→ON 时，其计数器的数值将依 SM621~SM684
+的状态 OFF 执行上数（加一）的动作或状态 ON 下数（减一）的动作。</p>
+<p>上数计数器 HC64~HC199，当 DCNT 指令条件接点由 OFF→ON 时，其计数器的数值将固定执行上数（加
+一）的动作。</p>
+<p>当 DCNT 指令 OFF 时，该计数器停止计数，但原有计数值不会被清除，可使用指令 RST 清除计数值及其
+接点。</p>
+<p>高速计数器比较计算等操作，需要配合 DHSCS DHSCR DHSZ DSPD 等指令配合使用，</p>
+<h3 id="变址寄存器-e">变址寄存器 E</h3>
+<p>变址寄存器E是16位的数据寄存器，跟一般的寄存器一样可以被读、写，但主要功能是做变址寄存器使用，使用范围为E0~E9。ES3 系列支持 D0.1@E0 变址修饰，但不支持 <a class="link" href="mailto:D0@E1.1" >D0@E1.1</a>@E0 这类双层变址修饰。</p>
+<ul>
+<li>当 M0=ON 时，E0=10，则 D0@E0=D（0+10）=D10，D1=D10。</li>
+<li>当 M0=ON 时，E0=10，则计变址的计算方式为 D0.1@E0=D0.（1+10）=D0.11，因此 D0.11 会 ON。</li>
+<li>若 E0=17，则计变址的计算方式为 D0.1@E0=D0.（1+17）=D1.2，因此 D1.2 会 ON。Bit 的部份 1@E0=（1+17）=18，但 Bit 的部份最大数为 15，因此 18 除 16=1 余 2，表示进位 1 并余 2，所以最后修饰的结果为 D（0+1）.2=D1.2，则结果 D1.2 会 ON。</li>
+<li>当 M0=ON 时，E0=10，M1@E0=M（1+10）=M11，则 M11=ON。</li>
+</ul>
+<h3 id="指针寄存器-pr">指针寄存器 PR</h3>
+<p>当功能块的变量类别声明为 VAR_IN_OUT，数据类型为 POINTER（指针）时，此变量将配置 PR 装置，PR 可以传入的装置为（X，Y，D）。每个功能块中可以声明的 PR 个数为 16 个：PR0 ~ PR15，或是使用位 PR0.0 ~ PR15.15。声明后的指令可以搭配E指令进行变址寻址。</p>
+<h3 id="定时器指针寄存器-tr">定时器指针寄存器 TR</h3>
+<p>如果要在功能块中使用定时器时，必需在功能块中声明一个 TR 装置来并在调用功能块时传入 T 装置的指针；当功能块的变量类别声明为 VAR_IN_OUT，数据类型为 T_POINTER 时，此变量将配置 TR 装置，TR 可以传入的装置为（T）以及 ISPSoft 配置为定时器的变量。每个功能块中可以宣告 TR 的个数为 8 个：TR0~TR7。如果要在功能块中使用指令时，操作数区域中有支持装置 T，则必须使用 TR 指针寄存器来运算。</p>
+<h3 id="计数器指针寄存器-cr-hcr">计数器指针寄存器 CR HCR</h3>
+<p>如果要在功能块中使用 16 位计数器时，必需在功能块中宣告一个 CR 装置，并在调用功能块时传入 C装置的指针。当功能块的变量类别声明为 VAR_IN_OUT，数据类型为 C_POINTER 时，此变量将配置 CR 装置，CR 可以传入的装置为（C）以及 ISPSoft 配置为计数器的变量。每个功能块中可以宣告 CR 的个数为 8 个：CR0~CR7。如果要在功能块中使用指令时，操作数区域中有支持装置 C，则必须使用 CR 指针寄存器来运算。</p>
+<p>32 位计数器，与之相同</p>
+<h2 id="常用函数补充实现">常用函数补充实现</h2>
+<h3 id="双精度与单精度浮点数转换">双精度与单精度浮点数转换</h3>
+<p><img src="/p/delta-es3-easy-plus/assets/v2-32e425cdb908c47586267e59228fcd22_b.jpg"
+	width="674"
+	height="116"
+	srcset="/p/delta-es3-easy-plus/assets/v2-32e425cdb908c47586267e59228fcd22_b_hu0797cd32e19e1a62783d6fcdf57b937b_31759_480x0_resize_q75_box.jpg 480w, /p/delta-es3-easy-plus/assets/v2-32e425cdb908c47586267e59228fcd22_b_hu0797cd32e19e1a62783d6fcdf57b937b_31759_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+		alt="单精度"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="581"
+		data-flex-basis="1394px"
+	
+></p>
+<p>IEEE754 单精度浮点数内存格式，偏移值+127</p>
+<p><img src="/p/delta-es3-easy-plus/assets/v2-8479dec5d2bdeaedb098b08dd34d5ea9_b.jpg"
+	width="762"
+	height="164"
+	srcset="/p/delta-es3-easy-plus/assets/v2-8479dec5d2bdeaedb098b08dd34d5ea9_b_hu986be65cccd998bc0e5c863401c54dfb_21476_480x0_resize_q75_box.jpg 480w, /p/delta-es3-easy-plus/assets/v2-8479dec5d2bdeaedb098b08dd34d5ea9_b_hu986be65cccd998bc0e5c863401c54dfb_21476_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+		alt="双精度"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="464"
+		data-flex-basis="1115px"
+	
+></p>
+<p>IEEE754 双精度浮点数内存格式，偏移值+1023</p>
+<p>取值范围</p>
+<p><img src="/p/delta-es3-easy-plus/assets/v2-63bf64dd03a14e22e04e300aaeee871d_b.jpg"
+	width="877"
+	height="129"
+	srcset="/p/delta-es3-easy-plus/assets/v2-63bf64dd03a14e22e04e300aaeee871d_b_hu23b6122d97fb050c3ed22791d3819d77_28919_480x0_resize_q75_box.jpg 480w, /p/delta-es3-easy-plus/assets/v2-63bf64dd03a14e22e04e300aaeee871d_b_hu23b6122d97fb050c3ed22791d3819d77_28919_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+		alt="img"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="679"
+		data-flex-basis="1631px"
+	
+></p>
+<p>转换方案：符号、指数、小数三部分</p>
+<p>符号与小数部分复制即可；双精度指数【52-62，4-15】-1023 = 单精度指数【23-30,15-8】-127，存入新的数据范围</p>
+<h3 id="台达32位整数或浮点数与标准modbus互转">台达32位整数或浮点数与标准Modbus互转</h3>
+<p>Modbus ABCD 互转 台达 CDAB: DROR S1 16，适用于整数和浮点数.</p>
+<p>比较与换算</p>
+<ul>
+<li>InRange</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li>OutRange</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/outrange.png"
+	width="936"
+	height="290"
+	srcset="/p/delta-es3-easy-plus/assets/outrange_hu9fbb2eceeb4bfdff29eab687edf7b689_4403_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/outrange_hu9fbb2eceeb4bfdff29eab687edf7b689_4403_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="322"
+		data-flex-basis="774px"
+	
+></p>
+<p>数学运算</p>
+<ul>
+<li>NORM</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/norm.png"
+	width="984"
+	height="310"
+	srcset="/p/delta-es3-easy-plus/assets/norm_hu5c79577e3a88f0bf707af5b0e7813983_13601_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/norm_hu5c79577e3a88f0bf707af5b0e7813983_13601_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="317"
+		data-flex-basis="761px"
+	
+></p>
+<ul>
+<li>SCALE</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/scale.png"
+	width="1049"
+	height="200"
+	srcset="/p/delta-es3-easy-plus/assets/scale_hue9874ebd27df236555e522e927fea811_9003_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/scale_hue9874ebd27df236555e522e927fea811_9003_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="524"
+		data-flex-basis="1258px"
+	
+></p>
+<p>位运算</p>
+<ul>
+<li>Scatter</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/Scatter.png"
+	width="788"
+	height="175"
+	srcset="/p/delta-es3-easy-plus/assets/Scatter_huba04a099595d614cab8ac1738c303d3c_2365_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/Scatter_huba04a099595d614cab8ac1738c303d3c_2365_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="450"
+		data-flex-basis="1080px"
+	
+></p>
+<ul>
+<li>Gather</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/gather.png"
+	width="922"
+	height="160"
+	srcset="/p/delta-es3-easy-plus/assets/gather_hu0f80acaef5e7cf5ff57252dbec512b36_2753_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/gather_hu0f80acaef5e7cf5ff57252dbec512b36_2753_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="576"
+		data-flex-basis="1383px"
+	
+></p>
+<ul>
+<li>MoveBit</li>
+</ul>
+<p><img src="/p/delta-es3-easy-plus/assets/movebit.png"
+	width="1091"
+	height="451"
+	srcset="/p/delta-es3-easy-plus/assets/movebit_huf0cba1000e4c997980b11904bba814a6_6437_480x0_resize_box_3.png 480w, /p/delta-es3-easy-plus/assets/movebit_huf0cba1000e4c997980b11904bba814a6_6437_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="241"
+		data-flex-basis="580px"
+	
+></p>
+<p>延迟接通或关断</p>
+<p>TON TOF TF</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/delta-plc/">Delta PLC</a>
+        
+            <a href="/tags/dvp-es3/">DVP ES3</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-contents--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-contents">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/">
+        
+        
+            <div class="article-image">
+                <img src="/p/iec-61131-4-%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8-%E7%AC%AC4%E9%83%A8%E5%88%86-%E7%94%A8%E6%88%B7%E5%AF%BC%E5%88%99/cover.d489bf66f39c154d3aaf9e82dd0bf499_hud7220391deff253ed99d4858f8ebb143_121214_250x150_fill_q75_box_smart1.JPG" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post IEC 61131-4 可编程控制器  第4部分 用户导则"
+                        
+                        data-hash="md5-1Im/ZvOcFU06r56C3Qv0mQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">IEC 61131-4 可编程控制器  第4部分 用户导则</h2>
+        </div>
+    </a>
+</article>
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2022 世间阁
+    </section>
+    
+    <section class="powerby">
+        
+
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">ZHY</a> <br />
+        
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#版本修订记录">版本修订记录</a></li>
+    <li><a href="#delta-plc-官方网络资源">Delta PLC 官方网络资源</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#dvp-es3-产品介绍-1">DVP-ES3 产品介绍</a></li>
+    <li><a href="#dvp-es3-订货号">DVP-ES3 订货号</a>
+      <ol>
+        <li><a href="#cpu">CPU</a></li>
+        <li><a href="#数字量模块">数字量模块</a></li>
+        <li><a href="#模拟量模块">模拟量模块</a></li>
+        <li><a href="#温度测量模块">温度测量模块</a></li>
+        <li><a href="#定位模块">定位模块</a></li>
+        <li><a href="#延长线模块">延长线模块</a></li>
+      </ol>
+    </li>
+    <li><a href="#技术规格及硬件接线">技术规格及硬件接线</a>
+      <ol>
+        <li><a href="#cpu-1">CPU</a></li>
+        <li><a href="#数字量模块-1">数字量模块</a></li>
+        <li><a href="#模拟量模块-1">模拟量模块</a></li>
+        <li><a href="#通讯接线">通讯接线</a></li>
+        <li><a href="#定位模块-1">定位模块</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#编程工具">编程工具</a>
+      <ol>
+        <li><a href="#编程软件-ispsoft">编程软件 ISPSoft</a></li>
+        <li><a href="#通讯管理-commgr">通讯管理 COMMGR</a></li>
+        <li><a href="#ecat-builder">ECAT Builder</a></li>
+        <li><a href="#canopen-builder">CANOpen Builder</a></li>
+      </ol>
+    </li>
+    <li><a href="#程序架构">程序架构</a>
+      <ol>
+        <li><a href="#工作管理">工作管理</a></li>
+        <li><a href="#功能块-fb">功能块 FB</a></li>
+        <li><a href="#数据区及寄存器">数据区及寄存器</a></li>
+        <li><a href="#plc-程序运行过程">PLC 程序运行过程</a></li>
+      </ol>
+    </li>
+    <li><a href="#编程基础">编程基础</a>
+      <ol>
+        <li><a href="#数据类型">数据类型</a>
+          <ol>
+            <li><a href="#基本数据类型">基本数据类型</a></li>
+            <li><a href="#数组">数组</a></li>
+            <li><a href="#自定义数据类型">自定义数据类型</a></li>
+          </ol>
+        </li>
+        <li><a href="#数据及io寻址">数据及IO寻址</a>
+          <ol>
+            <li><a href="#直接寻址">直接寻址</a></li>
+            <li><a href="#间接寻址">间接寻址</a></li>
+          </ol>
+        </li>
+        <li><a href="#数字量访问与输出">数字量访问与输出</a></li>
+        <li><a href="#模拟量调用">模拟量调用</a></li>
+        <li><a href="#io更新">IO更新</a></li>
+      </ol>
+    </li>
+    <li><a href="#编程指令">编程指令</a>
+      <ol>
+        <li><a href="#基本指令及指令用法">基本指令及指令用法</a></li>
+        <li><a href="#赋值-moveset">赋值 MOVE/Set</a></li>
+        <li><a href="#比较与逻辑运算">比较与逻辑运算</a>
+          <ol>
+            <li><a href="#比较运算">比较运算</a></li>
+            <li><a href="#位运算与位逻辑">位运算与位逻辑</a></li>
+          </ol>
+        </li>
+        <li><a href="#数学计算">数学计算</a></li>
+        <li><a href="#过滤统计排序">过滤统计排序</a></li>
+        <li><a href="#定时器">定时器</a></li>
+        <li><a href="#计数器">计数器</a></li>
+        <li><a href="#字符串操作">字符串操作</a></li>
+        <li><a href="#时间运算万年历">时间运算（万年历）</a></li>
+        <li><a href="#程序结构控制">程序结构控制</a></li>
+        <li><a href="#通讯指令">通讯指令</a></li>
+      </ol>
+    </li>
+    <li><a href="#结构化编程">结构化编程</a>
+      <ol>
+        <li><a href="#st-程序结构">ST 程序结构</a>
+          <ol>
+            <li><a href="#条件结构">条件结构</a></li>
+            <li><a href="#循环结构">循环结构</a></li>
+            <li><a href="#return-exit">RETURN 、EXIT</a></li>
+            <li><a href="#api调用结构">API调用结构</a></li>
+            <li><a href="#fb-调用结构">FB 调用结构</a></li>
+            <li><a href="#注释">注释</a></li>
+          </ol>
+        </li>
+        <li><a href="#运算符">运算符</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#系统功能">系统功能</a>
+      <ol>
+        <li><a href="#系统时钟">系统时钟</a></li>
+        <li><a href="#存储区">存储区</a></li>
+        <li><a href="#加密与保护">加密与保护</a></li>
+        <li><a href="#扫描时间">扫描时间</a></li>
+        <li><a href="#模拟仿真">模拟仿真</a></li>
+        <li><a href="#库">库</a></li>
+      </ol>
+    </li>
+    <li><a href="#pid-控制">PID 控制</a>
+      <ol>
+        <li><a href="#pid算法介绍">PID算法介绍</a></li>
+        <li><a href="#pide-控制指令">PIDE 控制指令</a></li>
+        <li><a href="#pttc模块pid">PT/TC模块PID</a></li>
+      </ol>
+    </li>
+    <li><a href="#高速计数器">高速计数器</a></li>
+    <li><a href="#运动控制">运动控制</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#modbus-通讯">Modbus 通讯</a>
+      <ol>
+        <li><a href="#modbus-从站或服务端">Modbus 从站或服务端</a></li>
+        <li><a href="#modbus-主站或客户端">Modbus 主站或客户端</a></li>
+        <li><a href="#modbus-数据解析">Modbus 数据解析</a></li>
+      </ol>
+    </li>
+    <li><a href="#canopen-通讯">CANOpen 通讯</a></li>
+    <li><a href="#ethercat-通讯">EtherCAT 通讯</a></li>
+    <li><a href="#以太网通讯">以太网通讯</a></li>
+    <li><a href="#串口通讯">串口通讯</a></li>
+    <li><a href="#opc通讯">OPC通讯</a></li>
+    <li><a href="#hmi通讯">HMI通讯</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#es3功能装置">ES3功能装置</a>
+      <ol>
+        <li><a href="#sm-特殊辅助继电器">SM 特殊辅助继电器</a></li>
+        <li><a href="#sr-特殊数据寄存器">SR 特殊数据寄存器</a></li>
+        <li><a href="#定时器-t">定时器 T</a></li>
+        <li><a href="#计数器-c">计数器 C</a></li>
+        <li><a href="#高速计数器-hc">高速计数器 HC</a></li>
+        <li><a href="#变址寄存器-e">变址寄存器 E</a></li>
+        <li><a href="#指针寄存器-pr">指针寄存器 PR</a></li>
+        <li><a href="#定时器指针寄存器-tr">定时器指针寄存器 TR</a></li>
+        <li><a href="#计数器指针寄存器-cr-hcr">计数器指针寄存器 CR HCR</a></li>
+      </ol>
+    </li>
+    <li><a href="#常用函数补充实现">常用函数补充实现</a>
+      <ol>
+        <li><a href="#双精度与单精度浮点数转换">双精度与单精度浮点数转换</a></li>
+        <li><a href="#台达32位整数或浮点数与标准modbus互转">台达32位整数或浮点数与标准Modbus互转</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
