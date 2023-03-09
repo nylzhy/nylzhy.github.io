@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='基于 西门子1847 学习平台所整理的 PLC HMI WINCC 等相关学习视频，希望方便你查找你想学习的视频，早日获取所需技能，由于时间有限，不定时但持续更新 @[toc] 观看'><title></title>
+
+<link rel='canonical' href='https://nylzhy.github.io/p/'>
+
+<link rel="stylesheet" href="/scss/style.min.450926226e724574a6b936335ea06111f8aeb253d932c86cb2cc807341cd2889.css"><meta property='og:title' content=''>
+<meta property='og:description' content='基于 西门子1847 学习平台所整理的 PLC HMI WINCC 等相关学习视频，希望方便你查找你想学习的视频，早日获取所需技能，由于时间有限，不定时但持续更新 @[toc] 观看'>
+<meta property='og:url' content='https://nylzhy.github.io/p/'>
+<meta property='og:site_name' content='世间阁'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' />
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="基于 西门子1847 学习平台所整理的 PLC HMI WINCC 等相关学习视频，希望方便你查找你想学习的视频，早日获取所需技能，由于时间有限，不定时但持续更新 @[toc] 观看">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu0a1a6314491b969149e6dd23dbd6320c_218610_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">世间阁</a></h1>
+            <h2 class="site-description">家是讲爱而不是讲理的地方</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://twitter.com'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E%E8%BF%99%E9%87%8C/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于这里</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>历史归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>大海捞针</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E4%B8%8D%E8%BF%B7%E8%B7%AF%E7%9A%84%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>不迷路的链接</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>暗色模式</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/"></a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 31 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>基于 西门子1847 学习平台所整理的 PLC HMI WINCC 等相关学习视频，希望方便你查找你想学习的视频，早日获取所需技能，由于时间有限，不定时但持续更新</p>
+<p>@[toc]</p>
+<p>观看建议，仅为个人理解，不代表官方理解</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align:center">星星数量</th>
+<th style="text-align:center">需求水平</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">⭐</td>
+<td style="text-align:center">基础中的基础</td>
+</tr>
+<tr>
+<td style="text-align:center">⭐⭐</td>
+<td style="text-align:center">基础</td>
+</tr>
+<tr>
+<td style="text-align:center">⭐⭐⭐</td>
+<td style="text-align:center">基础有拔高</td>
+</tr>
+<tr>
+<td style="text-align:center">⭐⭐⭐⭐</td>
+<td style="text-align:center">触类旁通</td>
+</tr>
+<tr>
+<td style="text-align:center">⭐⭐⭐⭐⭐</td>
+<td style="text-align:center">走向专家</td>
+</tr>
+<tr>
+<td style="text-align:center">🌙</td>
+<td style="text-align:center">专家之上请随意</td>
+</tr>
+</tbody>
+</table></div>
+<h1 id="1-基础知识与技能">1. 基础知识与技能</h1>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3301"  target="_blank" rel="noopener"
+    >标准化全自动执行工程任务流程</a> ⭐⭐⭐⭐⭐</p>
+<blockquote>
+<p>1.整体了解标准化自动工程任务流程，2.通过自动化产线的演示项目，让您了解数字化项目实施的点与面。3.全面了解标准化任务流程中涉及的SiVArc、Openness、ProDiag、OPCUA、多人协同工作、PLCSIMAdvanced、云端部署、ProfinetModularMachine 等产品的功能亮点。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="11-编程">1.1 编程</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2342"  target="_blank" rel="noopener"
+    >PLC 数据基础课堂</a> ⭐</p>
+<blockquote>
+<p>理解数制的概念，理解数码、基数和位权，掌握二进制和无符号整数的转换，掌握二进制和有符号整数的转换</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2352"  target="_blank" rel="noopener"
+    >一数一世界</a>   ⭐</p>
+<blockquote>
+<p>理解数制的概念，理解数码、基数和位权，掌握二进制和无符号整数的转换，掌握二进制和有符号整数的转换</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4648"  target="_blank" rel="noopener"
+    >PLC逻辑控制程序编程的基本规范</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1.对PLC的编程基础有一个整体性，全面性的认识，提出一些前提的知识。2.学习PLC编程的形式上的逻辑程序全扫描和逻辑变量只赋值一次。3.掌握表达因果关和解耦与耦合 。4.清楚PLC的编程案例的具体处理思路和方法。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4437"  target="_blank" rel="noopener"
+    >编程指南详细解读</a> ⭐⭐⭐⭐</p>
+<blockquote>
+<p>您将通过本专题了解西门子推荐的规范编程思路，有助于您和您的团队风格统一，便于前期的项目管理以及后期的维护开发工作。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3565"  target="_blank" rel="noopener"
+    >PLC标准化应用之面向对象编程方法-基础篇</a> ⭐⭐⭐⭐⭐</p>
+<blockquote>
+<p>1.标准化编程的理念和相关方法，2.深入理解OMAC和CPG使用，3.基于CPG自行开发符合实际工艺需要的程序，4.提升专业技能，达到业内领先水平</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="12-网络知识">1.2 网络知识</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2360"  target="_blank" rel="noopener"
+    >通信基础课程</a> ⭐</p>
+<blockquote>
+<p>理解 以太网的发展历程，理解 以太网协议栈、MAC 地址、IP地址的概念</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5234"  target="_blank" rel="noopener"
+    >SIMATIC PLC常用以太网通信协议解析</a> ⭐⭐⭐</p>
+<blockquote>
+<p>以太网通讯中各个协议的通讯原理，以及性能和参数的对比，S7通讯的连接方式和指令使用和编程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2332"  target="_blank" rel="noopener"
+    >PROFINET基础</a> ⭐⭐⭐</p>
+<blockquote>
+<p>能够学习到PROFINET基本功能和组态，了解PROFINET 扩展服务的组态，了解PROFINET 无线网络的构建和调试；</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=232"  target="_blank" rel="noopener"
+    >PROFINET基础在线教程</a> ⭐⭐</p>
+<blockquote>
+<p>全面系统的了解PROFINET，清晰PROFINET的各种功能，知道PROFINET的应用场景</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=233"  target="_blank" rel="noopener"
+    >西门子 PROFINET IO在线教程</a> ⭐⭐</p>
+<blockquote>
+<p>PROFINET 主要技术亮点，PROFINET 基础知识，PROFINET 硬件布置、网络服务</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2562"  target="_blank" rel="noopener"
+    >PROFINET必修课堂</a> ⭐⭐⭐⭐</p>
+<blockquote>
+<p>清晰以太网实现的过程，了解PROFINET的工作和运行原理， 理解在配置、组态和管理PROFINET网络的方法和原理，根据所学理论对PROFINET网络进行优化和诊断</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1259"  target="_blank" rel="noopener"
+    >PROFINET抗干扰系列</a> ⭐⭐⭐</p>
+<blockquote>
+<p>PROFINET和PROFIBUS 通信干扰的测试方式  PROFINET和PROFIBUS 通信干扰的对照情况  PROFINET 西门子网线和普通网线通信抗干扰的对照情况  了解网络通信性能，网络通信选型</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=713"  target="_blank" rel="noopener"
+    >PROFINET新功能在线学习教程</a> ⭐⭐⭐</p>
+<blockquote>
+<p>PROFINET 新功能的基本功能，PROFINET 新功能灵活的应用场景，PROFINET 新功能在实际工程中的应用</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=235"  target="_blank" rel="noopener"
+    >PLC以及PROFINET诊断在线教程</a> ⭐⭐⭐⭐</p>
+<blockquote>
+<p>学会PROFINET RSE诊断，学会PROFINET Web诊断，学会PROFINET FB126 诊断</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3502"  target="_blank" rel="noopener"
+    >工程师带您玩转工业以太网诊断</a> ⭐⭐⭐⭐⭐</p>
+<blockquote>
+<p>1.带您了解物理层的基础知识、注意事项、物理链路质量的判断方法和工具，2.分享常用的Windows  和通讯相关的判断指令、常用的西门子、第三方工具软件的应用 3.介绍交换机有用的功能和知识点。4.深入介绍PLC  通讯相关指令的诊断功能和网络流量的分析方法，例如  Wireshark、SINETPLAN、Bany  等，以及网络管理工具的应用。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3341"  target="_blank" rel="noopener"
+    >工程师带您玩转工业以太网诊断 案例篇</a> ⭐⭐⭐⭐⭐</p>
+<blockquote>
+<p>有线网络下的通用工具使用方法，分析过程等，通过无线信号记录等方法，发现无线通信的现场故障点，通过网络工具分析PROFINET 无规律的掉站原因。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4980"  target="_blank" rel="noopener"
+    >OPC UA 原理解析</a> ⭐⭐⭐⭐</p>
+<blockquote>
+<p>您将全方面了解，什么是 OPC UA，OPC UA 相对传统 OPC 的优势，OPC UA 的整体架构，什么是加密什么是签名， OPC UA 支持的服务</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="13-运动相关">1.3 运动相关</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2298"  target="_blank" rel="noopener"
+    >变频器小课堂</a> ⭐⭐</p>
+<blockquote>
+<p>1：充分了解速度及调速系统的分类，2：熟悉变频系统常用的行业应用，深层次剖析变频器的工作原理。3：对变频器如何实现速度的调整有清晰的认识。4：基于变频器设计的了解，更好的明白变频器内部相关回路的控制原理。5：系统性的学习变频控制系统的基本组件构成。6：针对常见的变频器故障，从原理上深入的了解，可以更高效的，更有针对性的解决实际问题。7：实际应用中，能够合理的选择并配合机械负载，实现更好的控制性能。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2788"  target="_blank" rel="noopener"
+    >轴的基本运动控制</a> ⭐⭐</p>
+<blockquote>
+<p>1.了解轴基本运动控制的指令，2.了解轴基本运动控制的编程，测试和调试过程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4521"  target="_blank" rel="noopener"
+    >运动控制工程师谈凸轮和转矩调试</a> ⭐⭐</p>
+<blockquote>
+<ol>
+<li>可以学习转矩控制的各种模式以及具体的实现方法。2. 可以学习多种Cam的设计和动态生成功能。3.针对应用中出现的故障进行经验分享和重点讲解。</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h2 id="14-其他知识">1.4 其他知识</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4939"  target="_blank" rel="noopener"
+    >自动化工程师防爆理论必修课</a> ⭐⭐</p>
+<blockquote>
+<p>您将系统化地学习防爆理论，从防爆原理，法律法规，标准与认证，防爆区域划分，爆炸性物质的分类，分级，分组，到气体和粉尘防爆的各种型式及防爆标志的解读。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1358"  target="_blank" rel="noopener"
+    >工业自动化行业的故障安全</a> ⭐⭐</p>
+<blockquote>
+<p>1.故障安全系统的原理以及相关规范，2.西门子安全系统的特点和相关要素，3.全系列的安全相关产品知识</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4934"  target="_blank" rel="noopener"
+    >跟我学电气产品(工业)技术之保护篇</a> ⭐⭐</p>
+<blockquote>
+<p>工程人员可以通过本视频快速了解电机保护及配电保护相关概念。对电机保护，配电保护的学习、应用、设计很有帮助。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4533"  target="_blank" rel="noopener"
+    >跟我学电气产品(工业)技术之安全篇</a> ⭐⭐</p>
+<blockquote>
+<p>工程人员可以通过本视频快速了解工业安全相关概念。对工业安全学习、应用、设计都很有帮助。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4640"  target="_blank" rel="noopener"
+    >跟我学电气产品(工业)技术之接触器篇</a> ⭐⭐</p>
+<blockquote>
+<p>技术人员可以通过本视频快速了解工业控制元件的相关概念及西门子低压接触器。对于回路设计、选型配置都有很大帮助。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4637"  target="_blank" rel="noopener"
+    >跟我学电气产品(工业)技术之软起动器篇</a> ⭐⭐</p>
+<blockquote>
+<p>技术人员及工程师可以通过本视频了解快速熔断器对软起动器保护的原理；接线方式和负载类型的了解可以使选型配置、电路设计以及起动调试更加容易。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3813"  target="_blank" rel="noopener"
+    >八分钟电机大师</a> ⭐⭐⭐</p>
+<blockquote>
+<p>您将从变频器常见故障解读与分析的视频获得如下益处：了解电机的基本概念，基本运行原理，提高电机选型配置及故障处理的经验与技能，提高用户解决问题的效率，缩短用户停机的时间，减少用户的成本 ，从入门到熟练掌握相关的基本操作，奠定产品配置、调试与维护的基础</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4421"  target="_blank" rel="noopener"
+    >关于EMC问题的探讨与应对</a> ⭐⭐⭐</p>
+<blockquote>
+<p>了解EMC的基础知识，通过对变频器的分析，掌握EMC干扰产生的途径，结合多种实际对象，如通信、IO信号等介绍“全电流”处理EMC问题方法</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=789"  target="_blank" rel="noopener"
+    >EMC电磁兼容高级技术讲座</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1.对EMC的基础概念有一个整体性，全面性的认识。2.了解EMC问题的产生原因和电磁干扰的基本要素。3.熟悉电源和PLC的EMC在实际干扰中的现象和处理方法。4.清楚模拟量、开关量等信号的EMC问题具体处理思路和方法。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="2-硬件">2. 硬件</h1>
+<h2 id="21-plc">2.1 PLC</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5208"  target="_blank" rel="noopener"
+    >探秘S7-1500RH冗余系统</a> ⭐⭐</p>
+<blockquote>
+<p>了解S7-1500R/H冗余系统的基本信息，了解S7-1500R/H冗余系统网络配置的基本要求，了解S7-1500R/H冗余系统的通信功能和方法</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="22-变频驱动及伺服">2.2 变频驱动及伺服</h2>
+<h3 id="g120">G120</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/study/product/G120.aspx?&amp;ProductID=AK01"  target="_blank" rel="noopener"
+    >G120变频器 精英训练营</a> ⭐⭐⭐</p>
+<blockquote>
+<p>官方课程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3295"  target="_blank" rel="noopener"
+    >G120 EPOS基本定位功能关键点系列</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1.从基础知识、实际组态到故障排除，快速掌握关键点知识，2.针对核心的反馈编码器以及其配置学习得到整体的概念介绍和配置方法，3.学习和了解基本定位使用过程中常见报警解决方案，以及应用时加速卡顿的特定常见问题的具体解决方法</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=866"  target="_blank" rel="noopener"
+    >G120学习教程：产品介绍</a> ⭐⭐</p>
+</li>
+</ul>
+<blockquote>
+<p>1.详细介绍从G120产品构成到不同部件之间的区别，您将快速掌握G120选型技巧。2.快速了解SINAMICS分布式变频器的组成，快速掌握选型技巧。3. 快速掌握对于需要闭环矢量控制的场合，如何选型及如何配置编码器。</p>
+</blockquote>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1298"  target="_blank" rel="noopener"
+    >G120学习教程：驱动功能</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1.详细介绍使用BOP-2如何备份参数。2.掌握PID功能相关参数设置。3. 快速掌握速度环饱和转矩限幅设置方法。以及主从控制如何实现。4.抱闸控制原理与案例分析</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=905"  target="_blank" rel="noopener"
+    >G120学习教程：通信</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1.USS基本通信配置及实现方法。2.Modbus RTU基本通信配置及实现方法。3. Profibus DP与PROFINET基本通信配置及实现方法。4.关于G120变频器路由功能。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4971"  target="_blank" rel="noopener"
+    >G120学习教程： 抱闸功能</a>  ⭐⭐</p>
+</li>
+</ul>
+<blockquote>
+<p>深入了解G120的抱闸功能及工作原理，不同控制方式下如何处理溜车现象，西门子工程师在在实际现场处理抱闸功能问题的经验</p>
+</blockquote>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=865"  target="_blank" rel="noopener"
+    >G120学习教程：调试</a> ⭐⭐</p>
+<blockquote>
+<p>1.快速掌握BOP-2 STARTER/Startdrive的操作技巧. 2.快速完成变频器的基本调试及设置技巧。3. 快速掌握对于需要闭环矢量控制的场合，如何完成带编码器的闭环调试工作。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1589"  target="_blank" rel="noopener"
+    >G120学习教程：安全功能</a> ⭐⭐⭐</p>
+<blockquote>
+<p>基本安全和扩展安全的配置过程和方法，包括：1.基本STO配置方法与技巧 2.PROFIsafe配置方法与技巧 3.扩展安全功能配置方法 4.安全功能诊断方法。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1470"  target="_blank" rel="noopener"
+    >G120学习教程：诊断功能</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1.如何查看变频器故障记录。2.快速诊断变频器状态。3. 快速掌握使用STARTER记录G120运行数据。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4210"  target="_blank" rel="noopener"
+    >G120精通大师</a> ⭐⭐⭐⭐</p>
+<blockquote>
+<p>1.如何查看变频器故障记录。2.快速诊断变频器状态。3. Modbus RTU和USS基本通信配置及实现方法。4.PROFINET基本通信和PROFIBUS DP基本通信配置及和PLC通信的详细配置步骤</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1538"  target="_blank" rel="noopener"
+    >G120学习教程：分布式变频器</a> ⭐⭐</p>
+<blockquote>
+<p>1.了解SINAMICS G110M变频器与1LE1电机组件构成, 2.掌握SINAMICS G110M变频器的组件关系,3.学习SINAMICS G110M变频器接线和相关注意要点</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4976"  target="_blank" rel="noopener"
+    >G系列变频诊断方法大全</a> ⭐⭐⭐⭐</p>
+<blockquote>
+<p>变频器故障和报警的诊断和处理方法，I/O接口的信号诊断以及现场的实际案例解析，在使用变频器时，如何巧妙地利用变频器的控制字、状态字和运行状态去分析和解决问题，变频器在使用通信功能时遇到数据传输、无法控制或干扰等问题时，如何分析和处理，西门子工程师在分析和解决问题时的方法和经验</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="s120">S120</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3708"  target="_blank" rel="noopener"
+    >跟我学S210系列</a> ⭐⭐</p>
+<blockquote>
+<p>1.对S210 的基础产品系列和功能有一个整体性，全面性的认识。2.了解扩展安全和测量功能的使用方法和操作步骤。3.熟悉startdrive和网页功能的使用和处理方法。4.清楚掌握产品的优化方法和步骤，缩短调试时间。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2214"  target="_blank" rel="noopener"
+    >S210伺服驱动快速入门</a> ⭐⭐</p>
+<blockquote>
+<p>1.了解 SINAMICS S210 可以配合的典型控制器及实现什么样的控制方式，2.熟悉 SINAMICS S210 通过 StartDrive 实现驱动的组态和调试，3.对 S7-1500与 S210 之间通讯端口的设置及TO的组态参数有初步的认识，4.掌握正确的添加工艺功能块，如何实现轴的故障诊断及状态监控，5.对S210伺服系统有一定的掌握和了解，特别是测量输入的特定功能</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1135"  target="_blank" rel="noopener"
+    >S120学习教程第一部分：产品介绍</a> ⭐⭐</p>
+<blockquote>
+<p>1：对SINAMICS S120驱动系列产品有全面性的认识。2：了解S120驱动系统组件的构成，很好的统筹项目方案的设计规划。3：更高效的，更准确的解决SINAMICS S120驱动产品选型方面的相关问题。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1132"  target="_blank" rel="noopener"
+    >S120学习教程第二部分：调试</a> ⭐⭐</p>
+<blockquote>
+<p>1.由浅入深的了解和进入S120系统，缩短阅读手册和相关资料的时间，帮助快速展开工作 2.通过形象具体的演示和讲解，可以直观的学习西门子顶级驱动系统的相关信息 3.视频的实用性强，帮助工程师厘清调试过程的多处细节，帮助夯实技术基础 4.故障排除的方法和分析手段均详细的展开，可以有效的获取故障和进行相关分析的技能 5.扩展知识范围，驱动工程师也可以进行编程工作</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1122"  target="_blank" rel="noopener"
+    >S120学习教程第三部分：操作</a> ⭐⭐</p>
+<blockquote>
+<p>1：了解BOP20界面的基本操作功能选择。2：通过BOP20直接进行参数修改。3：基于BOP20的操作面板，便捷的进行驱动的故障诊断和查询 4: 学习通过简单的设置，进行驱动轴的调试。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=926"  target="_blank" rel="noopener"
+    >S120学习教程第四部分：通信</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1：对SINAMICS S120通讯功能有一个整体性，全面性的认识。2：清楚西门子报文的具体含义及常用报文的区别应用。3：熟悉西门子上位控制器配合S120具体的组态配置流程及如何实现需要的工艺功能。4.：简单了解SINAMICS LINK通讯功能，方便后续的一些扩展性应用。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=666"  target="_blank" rel="noopener"
+    >S120学习教程第五部分：应用</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1：简单了解S120可以实现哪些常用功能。2：学习常用功能主从控制如何配置及功能实现。3：深入了解S120驱动系统内置基本定位功能中各个功能模块参数设置，以及如何通过通讯实现定位控制。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3082"  target="_blank" rel="noopener"
+    >S120驱动第三方直线永磁同步电机系列视频</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1.对直线电机的基础概念有一个整体性，全面性的认识。2.了解直线电机调试的基本要素和步骤方法。3.了解S120的磁极位置辨识和优化的相关步骤和方法。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="v20">V20</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=930"  target="_blank" rel="noopener"
+    >SINAMICS V20跟我学</a> ⭐⭐</p>
+<blockquote>
+<p>了解SINAMICS V20系列产品  了解产品的基本功能  了解常用功能的基本用法  学会关于功能设置的操作流程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=968"  target="_blank" rel="noopener"
+    >SINAMICS V20跟我学-高级功能</a> ⭐⭐</p>
+<blockquote>
+<p>了解SINAMICS V20系列产品  了解产品的基本功能  了解常用功能的基本用法  学会关于功能设置的操作流程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1459"  target="_blank" rel="noopener"
+    >V20学习教程第一部分：产品介绍</a> ⭐⭐</p>
+<blockquote>
+<p>您将全方面了解SINAMICS V20， 了解SINAMICS V20系列产品  了解产品的基本功能  了解常用功能的基本用法  学会关于功能设置的操作流程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1441"  target="_blank" rel="noopener"
+    >V20学习教程第二部分：调试</a> ⭐⭐</p>
+<blockquote>
+<p>了解SINAMICS V20系列产品,  了解产品的基本功能  了解常用功能的基本用法  学会关于功能设置的操作流程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1466"  target="_blank" rel="noopener"
+    >V20学习教程第三部分：通信</a> ⭐⭐⭐</p>
+<blockquote>
+<p>您将全方面了解SINAMICS V20， 了解SINAMICS V20系列产品  了解产品的基本功能  了解常用功能的基本用法  学会关于功能设置的操作流程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2976"  target="_blank" rel="noopener"
+    >V20基本操作演示系列</a> ⭐⭐</p>
+<blockquote>
+<p>了解SINAMICS V20如何通过参数下载上传和下载参数，了解如何使用面板运行变频器，了解如何修改MODBUS通信的地址</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="" >SINAMICS V20操作指南</a> ⭐⭐⭐</p>
+<blockquote>
+<p>了解SINAMICS V20如何进行快速调试和恢复出厂设置,  了解SINAMICS V20如何进行起停和调速的调节  了解SINAMICS V20宏的使用</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="v90">V90</h3>
+<ul>
+<li>
+<p><a class="link" href="http://www.ad.siemens.com.cn/study/product/V90.aspx?ProductID=AH02"  target="_blank" rel="noopener"
+    >V90 精英训练营</a> ⭐⭐-&gt;⭐⭐⭐⭐</p>
+<blockquote>
+<p>伺服驱动产品在制造业的占比越来越高，在这个发展过程中，工程师必须具备一定的伺服控制基础和伺服驱动调试的经验，才能在制造业升级改造的浪潮之中占据一席之地。对于广大工程师来说，V90是走入伺服世界的快捷有效途径，V90作为全集成自动化的重要组成部分，可以快速高效的集成在自动化系统中。西门子V90 精英训练营围绕V90伺服驱动器产品展开，可以帮助工程师快速学习当前最流行伺服驱动产品知识，带您熟悉伺服功能及调试，实现对伺服的完美掌控。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1501"  target="_blank" rel="noopener"
+    >V90 产品基础学习</a> ⭐⭐</p>
+<blockquote>
+<p>1.快速了解V90产品的设计，构成以及亮点。2.对V90的BOP面板操作有一个整体性，全面性的认识。3.了解博途软件中的V90操作步骤和实际的参数设置过程。4.熟悉V90的调试软件使用和操作方法。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1934"  target="_blank" rel="noopener"
+    >SINAMICS V90快速入门</a> ⭐⭐</p>
+<blockquote>
+<p>1.掌握 V90 常见的模块组成及周边产品的基础知识，2.获取多种 V90 控制方式的对比和特点知识，增加对产品的了解和把握</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4235"  target="_blank" rel="noopener"
+    >V90 精通课程</a> ⭐⭐⭐</p>
+<blockquote>
+<p>理解Modbus通信工作原理，理解Modbus报文含义，掌握V90 Modbus通信配置，学会S7-200SMART和V90进行Modbus通信的控制方法</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4899"  target="_blank" rel="noopener"
+    >玩转V90扭矩控制功能</a> ⭐⭐⭐</p>
+<blockquote>
+<p>了解V90扭矩相关参数含义及用途，了解V90扭矩相关报文含义及用法，掌握V90和各类PLC不同搭配情况下扭矩相关功能的实现方法</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2998"  target="_blank" rel="noopener"
+    >V90驱动优化及控制性能相关问题分享</a> ⭐⭐⭐</p>
+<blockquote>
+<p>1.SINAMICSV90 优化的操作流程及常见问题的解答，2.SINAMICSV90 定位过程中过冲、噪音等现象分析，3.SINAMICS V90 在不同用法下的优化差异讲解，4.建立伺服优化的一些基础概念和对后续优化学习扫清障碍</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4890"  target="_blank" rel="noopener"
+    >V90驱动器安装与维护</a> ⭐⭐</p>
+<blockquote>
+<p>学习掌握V90相关的基本安装操作和维护，为产品配置、调制与维护打好基础。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="变频器故障及维护">变频器故障及维护</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5243"  target="_blank" rel="noopener"
+    >如何呵护您的驱动器</a> ⭐⭐</p>
+<blockquote>
+<p>了解使用环境及选型设计对驱动器的影响，减少由于环境等因素造成的设备故障。了解安装与调试对驱动器的影响，避免使用不当等造成的损坏。了解如何更好的维护驱动器，以延长其使用寿命，减少设备故障率</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3834"  target="_blank" rel="noopener"
+    >变频器故障解读及分析</a> ⭐⭐⭐⭐</p>
+<blockquote>
+<p>了解典型常见故障，熟悉故障处理方法，提高故障处理和分析的经验和技能，提高用户解决问题的效率，缩短用户停机的时间，减少用户的成本 ，熟悉并了解S120驱动产品的基本原理、功能及特性，从入门到熟练掌握相关的基本操作，奠定产品配置、调试与维护的基础</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3133"  target="_blank" rel="noopener"
+    >驱动问题揭秘分析</a> ⭐⭐</p>
+<blockquote>
+<p>1.学习CBE20在进行SINAMICS LINK通信时无法出现对应参数的操作方法。2.了解脚本在软件中的操作过程和使用方法。3.学习整流装置的原理和相关控制状态。4.清楚6RA80下的逻辑无环流的功能图和参数处理思路和方法。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="23-工控机">2.3 工控机</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5244"  target="_blank" rel="noopener"
+    >跟我学西门子工控机硬件维护</a> ⭐⭐⭐</p>
+<blockquote>
+<p>了解西门子工控机的使用和维护知识，了解工控机的主要故障和相关信息，了解硬盘故障和相关的处理方法，了解如何更好的维护西门子工控机，减少故障率。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="24-电源">2.4 电源</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4443"  target="_blank" rel="noopener"
+    >SIMATIC PLC 电源选型</a> ⭐⭐</p>
+<blockquote>
+<p>1.系统的了解西门子电源产品；2.全面系统的了解SIMATIC  PLC电源产品；3.清晰SIMATIC  PLC电源功能、应用场景和安装方式；4.明白PM/PS电源的区别，以及S7-1500电源消耗计算及选型；5.知道在用ET200SP替代ET200S时，如何进行电源选型；6.如何使用TIA  Selection  Tool  电源选型。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4982"  target="_blank" rel="noopener"
+    >SIMATIC PLC 电源功能</a> ⭐⭐</p>
+<blockquote>
+<p>1.了解PLC电源的特殊功能；2.知道了实现S7-1500  PLC扩展保持存储区的硬件，组态和配置；3.明白了ET200SP  PS电源实现电流监控的原理，和实现方式；4.学会PLC电源特殊功能的使用。&quot;</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4965"  target="_blank" rel="noopener"
+    >SIMATIC PLC 电源诊断</a> ⭐⭐</p>
+<blockquote>
+<p>1.全面了解SIMATIC  PLC电源的诊断；2.清楚PLC电源的诊断方式；3.学会排查PLC电源的故障；4.电源使用方面的常见问题。&quot;</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4444"  target="_blank" rel="noopener"
+    >SITOP电源选型介绍</a> ⭐⭐</p>
+<blockquote>
+<p>了解SITOP电源的分类，了解SITOP电源的基本参数，了解SITOP电源的选型，了解UPS和电池的选型，了解冗余模块的选型，了解选择模块的选型，了解缓冲模块和浪涌模块的选型，掌握一些选型的常见问题</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4535"  target="_blank" rel="noopener"
+    >SITOP电源功能介绍</a> ⭐⭐</p>
+<blockquote>
+<p>您将全方面了解SITOP电源功能如下相关内容：了解选择模块的功能实现， 了解SITOP电源的PROFINET功能，了解SITOP电源的OPC  UA功能，了解SITOP电源的USP安全关机功能</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2629"  target="_blank" rel="noopener"
+    >西门子SITOP工业电源小课堂系列</a> ⭐⭐</p>
+<blockquote>
+<p>针对TIA Selection Tool中PLC、分布式I/O等各类设备的直流供电需求进行讲解，用软件中的24V DC耗电设备视图进行快速和最优化的电源配置。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="25-西门子-simocode-pro">2.5 西门子 SIMOCODE pro</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/study/product/Details.aspx?&amp;ProductID=A13"  target="_blank" rel="noopener"
+    >西门子 SIMOCODE pro</a> ⭐⭐ -&gt; ⭐⭐⭐⭐</p>
+<blockquote>
+<p>本视频涵盖SIMOCODE pro 的设计、施工、调试及运维全生命周期中涉及的产品功能描述，产品安装接线操作，产品软件配置参数，及终端用户运维中典型操作。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="3-软件">3. 软件</h1>
+<h2 id="31-plc-编程">3.1 PLC 编程</h2>
+<h3 id="s7-200-smart">S7-200 SMART</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/study/video/FreeVideo.aspx?ProductID=AA02&amp;OrderID=39#"  target="_blank" rel="noopener"
+    >S7-200SMART  精英训练营</a> ⭐⭐ -&gt; ⭐⭐⭐⭐</p>
+<blockquote>
+<p>官方培训</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3358"  target="_blank" rel="noopener"
+    >快速了解S7-200 SMART 系统</a> ⭐⭐</p>
+<blockquote>
+<p>1、从5个方面快速了解S7-200 SMART ——家族产品 、硬件、软件、通信及功能 2、新手如何选择S7-200 SMART  ——选型要点，使用环境要求，软件，硬件配置，通信资源，系统功能案例分析</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4907"  target="_blank" rel="noopener"
+    >S7-1200跟我学软件和编程2022版</a> ⭐⭐ -&gt; ⭐⭐⭐⭐</p>
+<blockquote>
+<p>1.了解S7-1200 家族产品功能及特点，2.了解S7-1200 PLC的产品硬件，3.了解S7-1200 PLC的工作原理，4.了解S7-1200 PLC的编程基础，5.了解S7-1200 PLC的编程标准化结构，6.了解TIA Portal的常用功能，7.了解S7-1200 PLC 编程实例</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3365"  target="_blank" rel="noopener"
+    >S7-200 SMART 软件及编程精讲</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>通过认真学习，您将获得如下收益：掌握 STEP7 MicroWIN SMART的操作及调试，掌握 S7-200 SMART 系统块组态，掌握 S7-200 SMART 程序扫描周期原理，掌握 S7-200 SMART 存储区及数据类型及寻址方法，掌握 S7-200 SMART 各种编程指令并结合应用案例演示，掌握 S7-200 SMART 子程序，中断，库的使用</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3194"  target="_blank" rel="noopener"
+    >S7-200 SMART 编程小技巧</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>掌握自由口协议实现ModbusRTU通信，CRC校验的实现方法？，解决上升沿不起作用，定时器/计数器不工作的实际问题，掌握流量累积结果不准确的解决方法，学会查找统计数据内的最大/最小值，掌握现场有干扰，模拟量输入信号不稳定的解决方法</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1055"  target="_blank" rel="noopener"
+    >S7-200 SMART 跟我学/跟我做之通信功能</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>了解串口通信和以太网通信的基本原理，了解串口通信和以太网通信的配置方法，了解串口通信和以太网通信的应用场合，学会串口通信和以太网通信指令的使用，学会运串口通信和以太网通信的调试过程，学会PROFINET的通信原理和通信过程，掌握一些通信的常见问题</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4400"  target="_blank" rel="noopener"
+    >S7-200 SMART 通信小技巧</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>掌握自由口通信的故障诊断方法，处理故障游刃有余，了解MODBUS RTU轮询的几种方法， 技多不压身，掌握MODBUS RTU故障诊断方法，知其然并知其所以然</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3370"  target="_blank" rel="noopener"
+    >S7-200 SMART 串口通信精讲</a>  ⭐⭐⭐⭐</p>
+<blockquote>
+<p>串口通信1+3 ——助您轻松应对广泛的串口通信应用需求，</p>
+<p>1：系统梳理串口通信的概念原理，串口通信概念及模式，RS232和RS485接口对比，报文帧结构，通信协议及通信接口针脚定义， 通信距离及网络连接，串口通信指令概览
+3：依据通信协议学习编程及分析方法
+通信协议： 自由口通信、Modbus RTU通信、USS通信
+学习分析方法：指令编程参数解读，结合报文分析，结合实例演示
+串口通信在实际工程中应用广泛！认真学习本课程，再和打印机，扫描枪，现场仪表，变频器，上位机等通信设备进行串口通信时，通信变得So Easy</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1084"  target="_blank" rel="noopener"
+    >S7-200 SMART 跟我学/跟我做之PID功能</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>您将全方面了解S7-200 SMART PID功能如下相关内容: 了解PID功能的基本原理  了解PID的配置方法  了解PID的应用场合  学会关于PID 参数的快速调试</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="s7-12001500">S7-1200/1500</h3>
+<ul>
+<li>
+<p><a class="link" href="http://www.ad.siemens.com.cn/study/product/S7-1200_Novel.aspx?&amp;ProductID=AD13"  target="_blank" rel="noopener"
+    >S7-1200 PLC精英训练营</a>  ⭐⭐- &gt; ⭐⭐⭐⭐</p>
+<blockquote>
+<p>S7-1200 PLC精英训练营围绕西门子新世代PLC的旗舰产品S7-1200学习。课程由浅入深，原理与应用相结合，涉及产品的全面系统功能。既包含使用S7-1200完成一个项目从最初的选型到博途软件的使用，到组态、编程、调试及各种通信方式的基本知识；也深入研究了S7-1200 PID、高速计数、位置控制工艺功能，SCL编程，诊断等高级进阶功能。从而帮助学员通过该课程的学习掌握自动化工程师的必备技能。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://sdapp.siemens.com.cn/training/bt/#/bt?id=113"  target="_blank" rel="noopener"
+    >TIA Portal 高级编程课程（基于S7-1500 PLC）</a>   ⭐⭐ -&gt; ⭐⭐⭐⭐</p>
+<blockquote>
+<p>TIA Portal 是一个集成工程组态的新概念，它作为一个统一的工程组态环境，可以对控制、可视化和驱动解决方案进行编程和组态。在这里您将对TIA Portal STEP7/TIA Portal WinCC/WinCC Unifi ed 软件有一个系统全面和深入的了解。同时，让您可以直观、高效地完成S7-1500 的硬件组态、通信配置、编程、调试、运行诊断以及项目的归档等工作。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="http://www.ad.siemens.com.cn/study/product/PLC.aspx?&amp;ProductID=AL02"  target="_blank" rel="noopener"
+    >PLC 编程精英训练营 基于S7-1500</a>  ⭐⭐⭐⭐</p>
+<blockquote>
+<p>基于西门子全新一代TIA Portal软件平台和主流高端S7-1500 的PLC编程系统课程，一部助你从小白到大师的PLC编程宝典。课程按照PLC的学习规律与特点，合理地拆分为三个阶段循序展开执行：</p>
+<p>阶段一、带你高效、细致地搭建PLC基础知识体系， 弥补PLC编程的知识鸿沟，走进PLC世界的必经之路；</p>
+<p>阶段二、带着思考与积淀迈向PLC编程的真实战场，结合实例掌握西门子PLC经典实用的编程语言、指令与技能，成为合格的PLC工程师；</p>
+<p>阶段三、完成一场程序员的头脑风暴，用IT化、标准化的思维来解锁PLC的复杂应用，通过典型算法套路和数据结构的磨练，通过标准化编程的训练去点亮你的技能树，新世界已然在你面前。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://sdapp.siemens.com.cn/training/bt/#/bt?id=114"  target="_blank" rel="noopener"
+    >TIA Portal SCL 结构化控制语言编程</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>TIA Portal 是一个集成工程组态的新概念，它作为一个统一的工程组态环境，可以对控制、可视化和驱动解决方案进行编程和组态。在这里您将对TIA Portal STEP7/TIA Portal WinCC/WinCC Unifi ed 软件有一个系统全面和深入的了解。同时，让您可以直观、高效地完成S7-1500 的硬件组态、通信配置、编程、调试、运行诊断以及项目的归档等工作。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3347"  target="_blank" rel="noopener"
+    >走进博途V17</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>您将第一时间了解和掌握博途V17为我们带来的新功能和硬件的新特性，掌握STEP7 V17创新带来的操作上新的体验和便利，了解STEP7 CEM和CFC新的编程语言在应用编程上的灵活性和便利性， 掌握Safety和Security新特性、新功能为我们解决了哪些问题，掌握在博途V17的加持下，CPU及仿真等选件有哪些扩展</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1387"  target="_blank" rel="noopener"
+    >TIA博途.探索之旅系列学习教程</a>  ⭐⭐</p>
+<blockquote>
+<p>1.TIA STEP7的软件的操作 2.TIA STEP7对于S7-1500产品的组态过程 3.TIA STEP7的编程效率 4.S7-1500产品支持高级功能</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1192"  target="_blank" rel="noopener"
+    >S7-1200 内部培训讲座</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.了解S7-1200的家族产品，2.了解S7-1200 PLC的产品基本功能，3.了解S7-1200 PLC支持的常用的通讯和编程指令，4.了解S7-1200 PLC支持的PID和运动控制等高级功能，5.了解S7-1200 PLC支持的高级通讯（OPC，Email等）和编程指令</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=435"  target="_blank" rel="noopener"
+    >S7-1200跟我学—软件及编程</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.了解S7-1200的家族产品，2.了解S7-1200 PLC的产品基本功能，3.了解S7-1200 PLC的基本运行原理，4.了解S7-1200 PLC的基本指令和使用，5.了解S7-1200 PLC的基本编程规则，6.了解TIA STEP7的使用界面，7.了解S7-1200 PLC支持的基本通讯和编程指令，8.了解S7-1200 PLC支持的PID和运动控制等高级功能</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4405"  target="_blank" rel="noopener"
+    >S7-1200、S7-1500 SCL 小实例</a>  ⭐⭐⭐⭐</p>
+<blockquote>
+<p>您将通过一个个的小实例了解 S7-1200、S7-1500 SCL 程序编写思路， 逻辑编程思路，变量类型转换，间接寻址方法，顺控编程方法， 数学运算方法</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4419"  target="_blank" rel="noopener"
+    >洞悉指令</a>  ⭐⭐⭐⭐</p>
+<blockquote>
+<p>掌握任务功能的拆解与封装。清楚PLC的编程案例的具体处理思路和方法。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3022"  target="_blank" rel="noopener"
+    >S7-1500 OPC UA 通信你会用了吗</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.了解OPC UA服务器在S7-1500中的组态和配置，以及访问方式，了解安全通讯的组态和策略的设置，3.证书的选择和导入导出</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4398"  target="_blank" rel="noopener"
+    >三步学会 S7-1200 OPC UA 通信</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>您将全方面了解 S7-1200 OPC UA ，了解博途软件中组态各项重要参数含义，了解OPC UA 的安全设置，了解通信接口配置和步骤，了解OPC UA 服务器方法编程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5046"  target="_blank" rel="noopener"
+    >OPC UA 性能优化</a>  ⭐⭐⭐⭐</p>
+<blockquote>
+<p>您将了解 S7-1200 OPC UA 服务器功能，如何优化通信，安全注意事项，使用注意事项</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2497"  target="_blank" rel="noopener"
+    >深入浅出S7-1200 PROFINET IO通信</a>  ⭐⭐</p>
+<blockquote>
+<p>1.了解PROFINET协议的原理，2.了解PROFINET常用诊断方法，3.了解S7-1200组态智能IO的过程</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="s7-300400">S7-300/400</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1799"  target="_blank" rel="noopener"
+    >S7-300/400PLC经典编程软件使用攻略之STEP7概述</a>  ⭐⭐</p>
+<blockquote>
+<p>STEP7软件安装与卸载， 解决STEP7软件PG/PC接口设置的实际问题， 掌握STEP7软件SIMATIC管理器的使用， 学会STEP7软件硬件组态和网络组态</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1816"  target="_blank" rel="noopener"
+    >S7-300/400PLC经典STEP7软件使用攻略之编程基础</a>  ⭐⭐</p>
+<blockquote>
+<p>掌握S7-300/400PLC数据类型及参数类型？了解S7-300/400PLC状态字  掌握S7-300/400PLC故障诊断的方法  学会S7-300/400 PLC仿真</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1826"  target="_blank" rel="noopener"
+    >S7-300/400PLC经典STEP7软件使用攻略之程序结构</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>掌握S7-300/400PLC程序组成， 掌握S7-300/400PLC程序块属性及存储， 掌握S7-300/400PLC的程序执行过程， 掌握S7-300/400PLC的中断过程</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="33-hmi">3.3 HMI</h2>
+<ul>
+<li>
+<p><a class="link" href="https://new.siemens.com/cn/zh/products/automation/simatic-hmi/design-masterclass.html"  target="_blank" rel="noopener"
+    >HMI 设计大师班 </a>  ⭐⭐⭐⭐</p>
+<blockquote>
+<p>UX 专家 Oliver Gerstheimer，通过 7 个 视频课程，带您了解如何创建和设计出色的可视化解决方案，让您的 HMI 设计水平更上一层楼。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3475"  target="_blank" rel="noopener"
+    >如虎添翼之SIMATIC HMI Option+</a>   ⭐⭐⭐⭐</p>
+<blockquote>
+<ol>
+<li>体会TIA Portal软件操作的便捷性，2. 掌握HMI Option+的功能，实现面板的功能扩展，3. 掌握如何使用全局库方式实现项目之间数据的引用</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h3 id="精彩面板">精彩面板</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5161"  target="_blank" rel="noopener"
+    >WinCC flexible SMART 跟我学之基本介绍</a>   ⭐⭐</p>
+<blockquote>
+<p>快速了解精彩面板家族成员，快速了解WinCC flexible SMART 软件安装， 快速了解简单入门实例的组态以及模拟调试的方法&quot;</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="wincc">WinCC</h3>
+<ul>
+<li>
+<p><a class="link" href="http://www.ad.siemens.com.cn/study/product/WinCC.aspx?ProductID=AB02"  target="_blank" rel="noopener"
+    >WINCC 精英训练营</a>  ⭐⭐-&gt; ⭐⭐⭐⭐</p>
+<blockquote>
+<p>门子 WinCC 精英训练营是基于SIMATIC WinCC(经典WinCC)产品的课程，课程从入门到精通，手把手教您SCADA系统的组态和调试。</p>
+<p>课程从软件安装开始，建立第一个简单的项目，然后是使用变量，组态画面，创建消息，完成变量归档等。学员还将学习到SIMATIC WinCC更加复杂的功能和应用技巧，包括图形系统的高级应用，脚本系统，复杂的系统架构应用等。</p>
+<p>具有自动化基础的学员通过学习，熟练掌握该课程内容，将可以独立地进行SIMATIC WinCC的项目组态和操作。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1346"  target="_blank" rel="noopener"
+    >WinCC画面编辑器的使用</a>  ⭐⭐</p>
+<blockquote>
+<ol>
+<li>如何灵活的使用画面窗口 2. I/O 域显示不同数据类型的变量3. WinCC 画面中通过按钮实现位反转功能4. WinCC 画面对象动态填充5. 如何在 WinCC 画面中修改对象的背景颜色6. 如何组态 WinCC 多语言项目7. 在画面中如何动态选择实时趋势进行显示</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3003"  target="_blank" rel="noopener"
+    >WinCC组态技巧</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>该系列视频根据来自于现场用户的具体需求，通过 WinCC 的基础功能结合了众多工程师的使用经验抛砖引玉式的通过综合各种组态技巧，巧妙地实现千奇百怪的实际需求。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1768"  target="_blank" rel="noopener"
+    >WinCC变量归档</a>  ⭐⭐</p>
+<blockquote>
+<p>WinCC V7.4SP1如何链接断开备份归档，WinCC V7.4SP1中组态事件控制的变量记录，WinCC V7.4SP1如何组态变量变化时归档 ，WinCC V7.4SP1如何组态变量周期归档，WinCC V7.4SP1使用变量控制变量归档的启动和停止，WinCC V7.4SP1中如何实现数据处理后归档，WinCC V7.4SP1整点归档， WinCC如何组态变量周期归档， 如何在WinCC中组态事件控制的变量记录， WinCC中如何实现数据处理后归档，WinCC如何组态变量变化时归档，使用变量控制变量归档的启动和停止，WinCC整点归档，WinCC如何链接断开备份归档</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1245"  target="_blank" rel="noopener"
+    >WinCC报表功能</a>  ⭐⭐</p>
+<blockquote>
+<ol>
+<li>WinCC中组态报表打印的常规步骤  2. WinCC中使用标准控件打印历史数据报表 3. WinCC中如何实现绝对时间范围内数据的打印</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1793"  target="_blank" rel="noopener"
+    >WinCC报警功能</a>  ⭐⭐</p>
+<blockquote>
+<p>1.对 SCADA 监控系统中的报警有一个全面的了解与认识。2.了解 WinCC 报警基本原理以及组态方法。3.掌握合理归类报警并在系统中合理过滤显示以达到高效辅助操作人员响应生产事件。4.如何合理对报警事件进行归档组态。5.灵活的对报警事件历史进行追溯查询并进行统计。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4412"  target="_blank" rel="noopener"
+    >WinCC 报警系列</a>  ⭐⭐</p>
+<blockquote>
+<p>对 SCADA 监控系统中的报警有一个全面的了解与认识，了解 WinCC 报警基本原理以及组态方法，. 掌握合理归类报警并在系统中合理过滤显示以达到高效辅助操作人员响应生产事件，如何合理对报警事件进行归档组态，灵活的对报警事件历史进行追溯查询并进行统计。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1783"  target="_blank" rel="noopener"
+    >西门子SIMATIC WinCC报警功能详解</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>您将能够最简单直接的明了 WinCC 报警的基础知识点，快速理解离散量报警与模拟量报警的区别，便于在实际应用中正确高效的使用。系列视频中包含了旧版本以及较新版本的组态展示，也能够让工程师在做老项目升级时有所参考。还能学到常用组态技巧：如何在报警中关联过程值以及如何使用状态变量和确认变量。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2426"  target="_blank" rel="noopener"
+    >VBS-让WinCC插上翅膀</a>  ⭐⭐⭐⭐</p>
+<blockquote>
+<ol>
+<li>VBS 之于 WinCC，2. 变量读写、文件系统操作及 Excel 数据访问等应用</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2498"  target="_blank" rel="noopener"
+    >深入浅出WinCC通信</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>通过这个视频的学习，您将了解 WinCC 中的数据请求机制。在实际项目实施过程中方能合理的进行画面组态来避免不必要的通信负荷，在报警组态过程中您将知道如何规划报警变量以降低通信负荷使得项目运行流畅。当项目运行出现问题时，也能通过本视频所涉及的知识进行通信问题的诊断和优化。还能了解如何通过 PLCSIM 和 VM 进行通信仿真实验。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4968"  target="_blank" rel="noopener"
+    >SIMATIC WinCC V7.5 SP2 与 S7-1200/1500 通信</a>  ⭐⭐</p>
+<blockquote>
+<p>WinCC V7.5 SP2 不同更新包版本与不同固件版本的 S7-1200/1500 建立通信的组态步骤以及注意事项。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5178"  target="_blank" rel="noopener"
+    >SIMATIC WinCC V7.5 SP2 OPC UA 通信</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>介绍 WinCC V7.5 SP2 OPC UA 通信。WinCC 作为 OPC UA 服务器 UAExpert 作为客户端以及 WinCC 作为客户端进行 OPC UA 通信的组态过程。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="tia-wincc">TIA WINCC</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2233"  target="_blank" rel="noopener"
+    >关于 Portal WinCC你应该知道的事情</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>二、本系列视频主要展示了西门子 HMI 精智面板应用的各个方面，例如通信、报警、数据记录、画面动画等基本功能的快速上手；
+三、介绍一些特殊应用需求的实现方法，例如面板中显示 PDF 和 HTML 文档、面板进行视频监视、手机 App 访问面板等等。手册中找不到实例，找不到实现方法的一些实际应用需求的实现尽在本系列视频。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4607"  target="_blank" rel="noopener"
+    >触摸屏使用小技巧</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>获得更多的TIA Portal软件组态技巧，有效减少项目组态时间、提高组态效率</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="wincc-unified">WinCC Unified</h3>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4892"  target="_blank" rel="noopener"
+    >WinCC Unified V17 应用实战</a>  ⭐⭐</p>
+<blockquote>
+<p>您将快速掌握如何使用 WinCC Unifeid 组态项目。并掌握以下内容：如何创建WinCC Unifeid和PLC的通信连接，如何在WinCC UnifeidPC项目中创建变量， 如何制作WinCC Unifeid画面</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5164"  target="_blank" rel="noopener"
+    >WinCC Unified JS 菜鸟课程</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>对 WinCC Unified 脚本所能实现的功能有初步了解，了解 WinCC Unified 脚本线程以及运行机制，熟悉 WinCC Unified 中 JavaScript 编写环境 ，清楚 WinCC Unified 脚本调试工具的使用方法。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4516"  target="_blank" rel="noopener"
+    >WinCC Unified Java Script 脚本系统浅谈</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>JavaScript 的特点及基本用法，JavaScript 在 WinCC Unified 中的使用技巧， JavaScript 在 WinCC Unified 中的诊断方法。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="34-运动控制">3.4 运动控制</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2530"  target="_blank" rel="noopener"
+    >SIZER软件选型教程</a>  ⭐⭐</p>
+<blockquote>
+<p>1.从复杂的英文软件操作中拨云见日，可以快速的开展选型工作，2.通过工程师直观的展示和详细的说明，做到学为所用，可以缩短学习时间并且降低学习难度曲线，3.利用案例了解操作流程，可以对工具软件的全貌进行了解和掌握</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1438"  target="_blank" rel="noopener"
+    >使用SIZER软件进行变频器的谐波计算</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.对EN61000-2-4标准有一个整体性，全面性的认识。2.了解IEEE519谐波相关范围和标准值。3.熟悉GB/T14549-1993d对于公用电网谐波的指标和相关要求。4.清楚三种标准的比对以及SIZER下的操作步骤。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2306"  target="_blank" rel="noopener"
+    >STARTER软件调试S120入门指南</a>  ⭐⭐</p>
+<blockquote>
+<p>1：了解S120伺服驱动系统的通用硬接线连接
+2：针对项目生成进行详细的介绍和解释。
+3：熟悉SINAMICS S120伺服驱动系统调试工具的基本界面及操作功能</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1681"  target="_blank" rel="noopener"
+    >S7-1500 运动控制介绍</a>  ⭐⭐</p>
+<blockquote>
+<p>1.S7-1500标准CPU运动控制的技术参数和使用，2.S7-1500标准CPU组态S120进行运动控制的过程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3204"  target="_blank" rel="noopener"
+    >走进Startdrive V17</a>   ⭐⭐⭐</p>
+<blockquote>
+<p>1：基本定位功能；EPOS基本定位功能具体功能介绍，通过实际演示，介绍 SINAMICS S120，V90控制器基于Startdrive V17如何实现EPOS功能 2：测量功能，测量功能原理说明，Startdrive  V17如何配置测量功能，并实现驱动系统优化，基于测量功能的应用，实际使用中可以带来哪些便捷的优势 3：Safety功能在Startdrive V17环境的应用，介绍Safety的主要功能分类及应用，通过实际操作，如何实现安全功能方便的配置， 安全验收测试的激活及应用</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2411"  target="_blank" rel="noopener"
+    >S7-1500T 运动控制化繁为简</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.了解运动控制的概念及驱动系统的组成。2.了解运动控制工艺对象的基本特点。3.了解如何在三分钟实现单轴、同步以及运动机构控制。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2786"  target="_blank" rel="noopener"
+    >S7-1500T 连接驱动</a>  ⭐⭐</p>
+<blockquote>
+<p>1.使用S7-1500T组态S120进行运动控制的组态全过程，2.使用S7-1500T组态V90进行运动控制的组态全过程</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4963"  target="_blank" rel="noopener"
+    >S7-1500T小技巧</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>学会使用外部编码器做轴反馈信号的多种方法，掌握如何批量控制轴，了解位置监视功能和轴运动的停止的关系，掌握固定挡块夹紧功能，来实现力矩控制，掌握修正往复运动造成的偏差的方法，深入了解MC_RESET指令，知道为什么有时候故障无法复位的原因，了解工艺DB中的重要变量含义，掌握多种诊断故障的方法&quot;</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4402"  target="_blank" rel="noopener"
+    >S7-1500T同步功能初探</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.了解相对同步和绝对同步的区别及适用场景，2.学会如何组态和编程，以完成齿轮和凸轮同步任务，3.深度了解同步的几种模式，4.学会使用PLC的新指令MC_GearOut和Cam_Out</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2785"  target="_blank" rel="noopener"
+    >1500T 轴的回零功能介绍</a>  ⭐⭐</p>
+<blockquote>
+<p>MC_Home指令的各种回零模式详解</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=2433"  target="_blank" rel="noopener"
+    >西门子运动控制功能库(S7-1500T)</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.了解西门子提供的运动控制库，2.了解各种运动控制库的应用场合</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3816"  target="_blank" rel="noopener"
+    >效率倍增-伺服驱动功能库详解</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.掌握DRIVE Lib 等通信功能。2.学习一体化诊断的实现方法。3.降低安全的实现难度，并且提升安全程序的安全等级。4.拓展多种复杂功能的实现以及减少工程师编程负荷。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5228"  target="_blank" rel="noopener"
+    >西门子机器人库先知道</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>可以初步了解西门子机器人库，对机器人库有基础的认识，能够实现使用库对机器人进行实际控制。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1336"  target="_blank" rel="noopener"
+    >S7-200 SMART 跟我学/跟我做之运动控制</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>您将全方面了解S7-200 SMART运动控制功能如下相关内容： 了解运动控制功能的基本原理 了解运动控制的配置方法 了解运动控制的应用场合 学会运动控制指令的使用 学会运动控制面板的调试过程 掌握一些运动控制过程中的常见问题</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=5186"  target="_blank" rel="noopener"
+    >S7-200SMART V2.7新功能学习教程之直线插补功能</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>深入的了解和掌握S7-200SMARTV2.7新功能的相关技术细节，了解直线插补的功能，扩宽视野，掌握直线插补的应用，多轴联动</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=1696"  target="_blank" rel="noopener"
+    >V90与PLC应用功能指南</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>1.对V90的一键优化功能有一个整体性，全面性的认识。2.了解PLC通过工艺对象TO以及通过FB284功能块实现V90 PN 的位置控制。3.熟悉S7-200Smart通过Modbus RTU通信实现V90的速度控制以及脉冲方式控制V90。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="http://www.ad.siemens.com.cn/study/product/Automation.aspx?ProductID=AD09"  target="_blank" rel="noopener"
+    >小型自动化（基于 S7-1200 和 V90 ）项目实战训练营</a>  ⭐⭐⭐⭐</p>
+<blockquote>
+<p>西门子小型自动化（基于 S7-1200和 V90 ）项目实战训练营课程，主要围绕S7-1200 PLC与V90伺服驱动器产品展开，通过学习一台拧螺丝机控制系统的选型以及功能实现过程，以小见大，带领大家掌握小型自动化控制系统的设计、实现过程中相关的知识点与内容，从而进一步提高自动化工程师的系统整合技能。</p>
+</blockquote>
+</li>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=3176"  target="_blank" rel="noopener"
+    >V90 和 S7-200 SMART Modbus RTU 通信探秘系列</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>理解Modbus通信工作原理，理解Modbus报文含义，掌握V90 Modbus通信配置，学会S7-200SMART和V90进行Modbus通信的控制方法</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="35-工具">3.5 工具</h2>
+<ul>
+<li>
+<p><a class="link" href="https://www.ad.siemens.com.cn/1847/Video/VideoPlay?courseId=4919"  target="_blank" rel="noopener"
+    >自动化 PLC 工程师的工具箱</a>  ⭐⭐⭐</p>
+<blockquote>
+<p>使用TIA Selection Tool选择、组态和订购全集成自动化 (TIA) 中的设备，使用SIMATIC Automation Tool无需TIA Portal对 SIMATIC S7 站进行调试和维护操作，使用PRONETA 快速测试系统接线和模块组态，使用SINETPLAN对基于 PROFINET 的自动化系统和网络进行规划设计，TIA 博途选件的概览和应用场景，如何选择西门子软件兼容的软件产品或检查当前配置的兼容性，OPC通信的测试软件OPC Scout/UA Expert使用方法，第三方通信测试工具软件的使用</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="4-附">4 附</h1>
+<p>根据官方网站辛苦整理，方便自己也方便大家找到需要的知识，共同提高。如果没有公司支持，个人学习成本比较高。想获取学习资源，请 私信联系 或微信[PRE_ZHY]联系，添加请注明 <strong>西门子资源</strong></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 世间阁
+    </section>
+    
+    <section class="powerby">
+        
+
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">ZHY</a> <br />
+        
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#11-编程">1.1 编程</a></li>
+    <li><a href="#12-网络知识">1.2 网络知识</a></li>
+    <li><a href="#13-运动相关">1.3 运动相关</a></li>
+    <li><a href="#14-其他知识">1.4 其他知识</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#21-plc">2.1 PLC</a></li>
+    <li><a href="#22-变频驱动及伺服">2.2 变频驱动及伺服</a>
+      <ol>
+        <li><a href="#g120">G120</a></li>
+        <li><a href="#s120">S120</a></li>
+        <li><a href="#v20">V20</a></li>
+        <li><a href="#v90">V90</a></li>
+        <li><a href="#变频器故障及维护">变频器故障及维护</a></li>
+      </ol>
+    </li>
+    <li><a href="#23-工控机">2.3 工控机</a></li>
+    <li><a href="#24-电源">2.4 电源</a></li>
+    <li><a href="#25-西门子-simocode-pro">2.5 西门子 SIMOCODE pro</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#31-plc-编程">3.1 PLC 编程</a>
+      <ol>
+        <li><a href="#s7-200-smart">S7-200 SMART</a></li>
+        <li><a href="#s7-12001500">S7-1200/1500</a></li>
+        <li><a href="#s7-300400">S7-300/400</a></li>
+      </ol>
+    </li>
+    <li><a href="#33-hmi">3.3 HMI</a>
+      <ol>
+        <li><a href="#精彩面板">精彩面板</a></li>
+        <li><a href="#wincc">WinCC</a></li>
+        <li><a href="#tia-wincc">TIA WINCC</a></li>
+        <li><a href="#wincc-unified">WinCC Unified</a></li>
+      </ol>
+    </li>
+    <li><a href="#34-运动控制">3.4 运动控制</a></li>
+    <li><a href="#35-工具">3.5 工具</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
