@@ -6,7 +6,23 @@
         <description>Recent content in Categories on 世间阁</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nylzhy.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nylzhy.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>SIEMENS</title>
+        <link>https://nylzhy.github.io/categories/siemens/</link>
+        <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://nylzhy.github.io/categories/siemens/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>可编程控制器</title>
+        <link>https://nylzhy.github.io/categories/%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8/</link>
+        <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://nylzhy.github.io/categories/%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>IEC 61131</title>
         <link>https://nylzhy.github.io/categories/iec-61131/</link>
         <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
@@ -20,14 +36,6 @@
         <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
         
         <guid>https://nylzhy.github.io/categories/plc-%E6%A0%87%E5%87%86%E5%8C%96/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>可编程控制器</title>
-        <link>https://nylzhy.github.io/categories/%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8/</link>
-        <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://nylzhy.github.io/categories/%E5%8F%AF%E7%BC%96%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%99%A8/</guid>
         <description></description>
         </item>
         <item>
@@ -60,14 +68,6 @@
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
         <guid>https://nylzhy.github.io/categories/delta-plc/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>SIEMENS</title>
-        <link>https://nylzhy.github.io/categories/siemens/</link>
-        <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://nylzhy.github.io/categories/siemens/</guid>
         <description></description>
         </item>
         <item>
